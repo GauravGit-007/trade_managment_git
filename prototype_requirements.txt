@@ -1,0 +1,50 @@
+# Core framework
+fastapi==0.110.0
+uvicorn==0.27.1
+
+# Data handling
+pandas==1.5.3
+numpy==1.23.5
+
+# Web scraping
+requests==2.31.0
+beautifulsoup4==4.12.2
+
+# WebSockets for Tastytrade
+websockets==11.0.3
+
+# Database
+python-dotenv==1.0.0
+sqlite-utils==3.35
+
+# OpenAI (Azure compatible)
+openai==1.12.0
+
+# ML / Preprocessing
+scikit-learn==1.3.0
+joblib==1.3.2
+tensorflow==2.13.0
+lightgbm==4.1.0
+
+# Technical indicators
+pandas-ta==0.3.14b0
+
+# Async ops
+aiohttp==3.9.1
+
+# Dev tools
+python-multipart==0.0.6
+
+# Deep learning
+torch==2.1.2
+transformers==4.37.2
+
+# Feed parsing
+feedparser==6.0.10
+
+# Reinforcement Learning
+stable-baselines3==2.1.0
+gymnasium==0.28.1
+
+
+#compatible with python 3.11

@@ -1,0 +1,47 @@
+# Core framework
+fastapi
+uvicorn
+
+# Data handling
+pandas
+numpy
+
+# Web scraping
+requests
+beautifulsoup4
+
+# WebSockets for Tastytrade
+websockets
+
+# Database
+python-dotenv
+sqlite-utils  # CLI + convenience tools for sqlite
+
+# OpenAI (Azure compatible)
+openai>=1.0.0
+
+# ML / Preprocessing (optional for future modeling)
+scikit-learn
+joblib
+tensorflow
+lightgbm
+
+# Optional for technical indicators
+pandas-ta
+
+# For async operations
+aiohttp
+
+# Dev tools
+python-multipart
+
+torch 
+transformers
+
+feedparser
+
+pandas-ta
+
+# Reinforcement Learning
+stable-baselines3
+gymnasium
