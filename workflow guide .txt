@@ -30,7 +30,7 @@ now shortcut for testing                     (automated steps)
 
 
 
-1 .   run-->      python common_setup.py  (include all tasks of step 1 and one models\news_model.py task of step 2 aswell)
+1 .   run-->      python automated workflow.py  (include all tasks of step 1 and one models\news_model.py task of step 2 aswell) may not show anything for 10 mins but it works
 2.    run-->      python models\lstm.py
 3.    run-->      python services\monitor_actuals.py
 
