@@ -174,6 +174,12 @@ class SLTrainingPipeline:
                 'metric': 'multi_logloss',
                 'learning_rate': self.config['training']['baseline']['learning_rate'],
                 'num_leaves': self.config['training']['baseline']['num_leaves'],
+                'feature_fraction': 0.7,
+                'bagging_fraction': 0.8,
+                'bagging_freq': 1,
+                'min_data_in_leaf': 50,
+                'lambda_l1': 0.1,
+                'lambda_l2': 1.0,
                 'verbose': -1,
                 'random_state': 42
             }
@@ -259,7 +265,7 @@ class SLTrainingPipeline:
         
         # Training setup
         criterion = nn.CrossEntropyLoss()
-        optimizer = torch.optim.Adam(model.parameters(), lr=self.config['training']['pytorch']['lr'])
+        optimizer = torch.optim.Adam(model.parameters(), lr=self.config['training']['pytorch']['lr'], weight_decay=1e-4)
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, factor=0.5)
         
         # Training loop

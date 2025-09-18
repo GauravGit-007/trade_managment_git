@@ -1,4 +1,4 @@
-TRADE MANAGEMENT - MACHINE FLOW (RL + SL)
+TRADE MANAGEMENT - MACHINE FLOW (RL + SL)...
 =========================================
 
 Purpose
