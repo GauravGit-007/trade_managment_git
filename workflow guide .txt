@@ -44,3 +44,8 @@ like for supervised
                             Or a specific symbol
 
     run-->    python supervised\sl_evaluate_agent.py --symbol "/ES:XCME{=h}" --horizon 1
+
+    important things you should keep in mind
+
+1.   when running any sl or rl decision_loop.py file it will also create a trade history file in the root where you can check the trade records
+      and see what action is the model taking,and what price is it trading on currenly,and this file will auto update itself each time you run the decision_loop

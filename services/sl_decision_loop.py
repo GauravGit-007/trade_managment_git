@@ -130,6 +130,66 @@ def log_decision(
     return decision_id
 
 
+HISTORY_FILE_SL = os.path.join(os.path.dirname(os.path.dirname(__file__)), "trade_history_sl.txt")
+
+
+def _clear_history_file(path: str):
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            f.write("")
+    except Exception:
+        pass
+
+
+def _compute_running_accuracy(path: str, new_correct: int, new_count_inc: int) -> float:
+    total_correct = 0
+    total_trades = 0
+    try:
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                for line in f:
+                    if line.startswith("Correct:"):
+                        val = line.strip().split(":",1)[1].strip().lower()
+                        if val == "yes":
+                            total_correct += 1
+                        total_trades += 1
+    except Exception:
+        pass
+    total_correct += new_correct
+    total_trades += new_count_inc
+    return (total_correct / total_trades * 100.0) if total_trades > 0 else 0.0
+
+
+def _log_trade(path: str, symbol: str, price_prev: float, price_next: float, action: int):
+    # Determine correctness on trades (skip holds from accuracy denominator)
+    direction = 0
+    if action in (0,1):
+        direction = -1
+    elif action in (3,4):
+        direction = +1
+    correct_flag = "n/a"
+    correct_inc = 0
+    denom_inc = 0
+    if direction != 0:
+        denom_inc = 1
+        moved = price_next - price_prev
+        is_correct = (moved > 0 and direction > 0) or (moved < 0 and direction < 0)
+        correct_flag = "Yes" if is_correct else "No"
+        correct_inc = 1 if is_correct else 0
+    running_acc = _compute_running_accuracy(path, correct_inc, denom_inc)
+    try:
+        with open(path, "a", encoding="utf-8") as f:
+            f.write(f"Symbol: {symbol}\n")
+            f.write(f"TradePrice: {price_prev}\n")
+            f.write(f"NextPrice: {price_next}\n")
+            f.write(f"Action: {action}\n")
+            f.write(f"Correct: {correct_flag}\n")
+            f.write(f"RunningAccuracy(TradesOnly): {running_acc:.2f}%\n")
+            f.write("---\n")
+    except Exception:
+        pass
+
+
 def run_once(symbol: str):
     model, feature_cols, meta, model_version = load_latest_model(symbol)
     db_symbol = canonicalize_symbol_for_db(symbol)
@@ -188,11 +248,18 @@ def run_once(symbol: str):
         confidence,
     )
 
+    # Trade history append
+    price_prev = float(info.get("price_prev", 0.0))
+    price_next = float(info.get("price_next", price_prev))
+    _log_trade(HISTORY_FILE_SL, symbol, price_prev, price_next, int(action))
+
     print(f"[SL] Decision: symbol={symbol} action={int(action)} prob={confidence:.2f}")
 
 
 if __name__ == "__main__":
     symbol_env = os.environ.get("SL_SYMBOL")
+    # Clear history at the start of a run
+    _clear_history_file(HISTORY_FILE_SL)
     if symbol_env:
         run_once(symbol_env)
     else:

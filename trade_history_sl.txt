@@ -1,0 +1,70 @@
+Symbol: /NQ:XCME
+TradePrice: 21268.0
+NextPrice: 21283.75
+Action: 2
+Correct: n/a
+RunningAccuracy(TradesOnly): 0.00%
+---
+Symbol: /ES:XCME
+TradePrice: 5903.75
+NextPrice: 5904.5
+Action: 2
+Correct: n/a
+RunningAccuracy(TradesOnly): 0.00%
+---
+Symbol: /RTY:XCME
+TradePrice: 2103.9
+NextPrice: 2102.4
+Action: 2
+Correct: n/a
+RunningAccuracy(TradesOnly): 0.00%
+---
+Symbol: /QG:XNYM
+TradePrice: 3.615
+NextPrice: 3.615
+Action: 2
+Correct: n/a
+RunningAccuracy(TradesOnly): 0.00%
+---
+Symbol: /QM:XNYM
+TradePrice: 63.425
+NextPrice: 63.425
+Action: 2
+Correct: n/a
+RunningAccuracy(TradesOnly): 0.00%
+---
+Symbol: BTC/USD:CXTALP
+TradePrice: 103826.18
+NextPrice: 104272.89
+Action: 2
+Correct: n/a
+RunningAccuracy(TradesOnly): 0.00%
+---
+Symbol: ETH/USD:CXTALP
+TradePrice: 2517.93
+NextPrice: 2504.02
+Action: 2
+Correct: n/a
+RunningAccuracy(TradesOnly): 0.00%
+---
+Symbol: /MES:XCME
+TradePrice: 5903.5
+NextPrice: 5904.5
+Action: 2
+Correct: n/a
+RunningAccuracy(TradesOnly): 0.00%
+---
+Symbol: /MNQ:XCME
+TradePrice: 21268.0
+NextPrice: 21284.0
+Action: 2
+Correct: n/a
+RunningAccuracy(TradesOnly): 0.00%
+---
+Symbol: /MCL:XNYM
+TradePrice: 63.43
+NextPrice: 63.41
+Action: 2
+Correct: n/a
+RunningAccuracy(TradesOnly): 0.00%
+---
