@@ -1,0 +1,16 @@
+# Example config for supervised training
+labels:
+  horizon_minutes: 60
+  threshold: 0.0003
+  cost: 0.0001
+dataset:
+  window: 32
+  stride: 1
+training:
+  baseline:
+    model_type: lightgbm
+    test_size: 0.2
+  pytorch:
+    epochs: 10
+    batch_size: 64
+    lr: 0.001

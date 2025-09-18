@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+*.pyo
+*.pyd
+*.so
+
+# Jupyter / notebooks checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Data & outputs
+outputs/
+models/
+*.parquet
+*.feather
+*.h5
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.joblib
+*.pkl
+
+# Local configs / secrets
+*.env
+.env*
+tokens.json
+
+# SQLite databases and backups
+*.db
+*.db.*
+
+# Cache
+.cache/
+**/__pycache__/
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Coverage / test
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+# Node (if any frontend)
+node_modules/

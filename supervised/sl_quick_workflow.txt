@@ -1,0 +1,47 @@
+# SL QUICK WORKFLOW (Tested sequence up to evaluation)
+# ---------------------------------------------------
+# Notes:
+# - Symbols in your data include the {=h} suffix (e.g., /ES:XCME{=h}).
+# - The SL evaluator (like RL) skips Hold actions when computing directional accuracy.
+# - Use PowerShell in the project root.
+
+## 0) Activate environment
+.venv\Scripts\Activate.ps1
+
+## 1) Setup SL database tables
+python supervised\setup_database.py --all
+
+## 2) Run the full SL pipeline (data prep, train LGBM+PyTorch, evaluate, deploy)
+# Option A: use all available data
+python supervised\sl_workflow.py --action full_pipeline
+
+# Option B: run with specific symbols (matching your dataset)
+python supervised\sl_workflow.py --action full_pipeline --symbols "/ES:XCME{=h}" "/NQ:XCME{=h}" "/MES:XCME{=h}"
+
+## 3) Run SL decision loop (makes and logs live decisions)
+python services\sl_decision_loop.py
+
+## 4) Evaluate SL decisions (directional accuracy, PnL, risk)
+# All symbols, 1-hour horizon
+python supervised\sl_evaluate_agent.py --horizon 1
+
+# Or a specific symbol
+python supervised\sl_evaluate_agent.py --symbol "/ES:XCME{=h}" --horizon 1
+
+## 5) (Optional) Start monitoring once to see health snapshot
+python supervised\sl_monitoring.py --model models\lightgbm_sl_all_*.txt --once
+
+## 6) (Optional) Common setup up to monitor_actuals
+python common_setup.py
+
+# Expected artifacts
+# - Trained models: models\lightgbm_sl_all_YYYYMMDD_HHMMSS.txt
+# - Pipeline results: outputs\sl_pipeline_results_YYYYMMDD_HHMMSS.json
+# - Evaluation results: outputs\sl_evaluation_results_YYYYMMDD_HHMMSS.json
+# - Deployment config: outputs\sl_deployment_config_YYYYMMDD_HHMMSS.json
+
+# Troubleshooting quick tips
+# - Data shape (0, N): symbols not matching; use symbols with {=h} or omit --symbols.
+# - LightGBM early stopping: handled via callbacks; no change needed.
+# - Label error [-1,0,1]: fixed via label remap in training and inverse map at inference.
+# - SQL errors with BBL_20_2.0: handled by using BBL_20_2_0 column names in evaluation SQL.

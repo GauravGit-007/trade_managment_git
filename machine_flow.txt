@@ -1,0 +1,277 @@
+TRADE MANAGEMENT - MACHINE FLOW (RL + SL)
+=========================================
+
+Purpose
+-------
+A single reference describing how both Reinforcement Learning (RL) and Supervised Learning (SL) models work end-to-end:
+- Which files/scripts are involved
+- How data flows between them and the database
+- How trading decisions are produced
+- Symbols, timeframe, and operational guidance
+
+Timeframe and Symbols
+---------------------
+- Timeframe: 1-hour bars (historical_data_1h and processed_candles_with_ta.csv use hourly cadence)
+- Decision cadence: 1-hour (RL env lookback is in bars; SL labels set to horizon_minutes=60)
+- Symbols in current dataset (with hourly suffix):
+  /ES:XCME{=h}, /NQ:XCME{=h}, /MES:XCME{=h}, /MNQ:XCME{=h}, /RTY:XCME{=h}, /QM:XNYM{=h}, /QG:XNYM{=h}, /MCL:XNYM{=h}, BTC/USD:CXTALP{=h}, ETH/USD:CXTALP{=h}
+
+Core Data Sources
+-----------------
+Database: db/trade_data.db (SQLite)
+- historical_data_1h: hourly OHLCV per symbol
+- positions: current open positions per underlying
+- lstm_predictions (optional): model-based forecasts joined by env
+- rl_decisions / rl_experiences: RL decisions and experiences
+- sl_decisions / sl_alerts: SL decisions and alerts
+
+Flat Files:
+- db/processed_candles_with_ta.csv: engineered OHLCV+TA for SL training
+- outputs/: models’ artifacts (pipeline/eval results)
+- models/: trained models and metadata
+
+Reinforcement Learning (RL) Flow
+--------------------------------
+Goal: Train an agent that interacts with an environment (simulated market) to maximize reward.
+
+Key Files:
+- rl/env.py
+  - Defines EnvConfig and TradingEnv
+  - Loads hourly data from DB, builds observation vector with TA/sentiment/lstm components
+  - Observation: flatten(window * features + position + cash_pnl)
+  - Action space: 5 discrete actions: {0,1,2,3,4} = {strong sell, sell, hold, buy, strong buy}
+- rl/train_agent.py
+  - Trains PPO agent over the environment for specified symbols
+  - Saves zip model to outputs/
+- services/rl_decision_loop.py
+  - Loads latest PPO model
+  - Builds current observation via TradingEnv
+  - Predicts action → steps env once → logs to rl_decisions and rl_experiences
+- rl/evaluate_agent.py
+  - Evaluates RL decisions using historical bars and directional accuracy logic
+
+Data Flow (RL):
+1) services/historical_data.py and services/news_service.py populate DB tables
+2) rl/train_agent.py trains PPO with rl/env.py using DB data
+3) Trained PPO saved to outputs/ppo_*.zip
+4) services/rl_decision_loop.py loads PPO, queries positions, predicts action, logs rl_decisions(+ experiences)
+5) rl/evaluate_agent.py reads rl_decisions and historical_data_1h to compute accuracy/PnL
+
+Decision Logic (RL):
+- The PPO policy picks an action a∈{0..4}. The env interprets as position delta units (sell/hold/buy) considering max_position and costs. Reward includes price change, position, and penalties.
+
+Supervised Learning (SL) Flow
+-----------------------------
+Goal: Learn a classifier that maps the latest market features to a trading action (buy/hold/sell), aligned with a future return horizon.
+
+Key Files:
+- supervised/make_labels.py
+  - Given processed candles CSV, adds future return columns and label_{horizon}
+  - Labels: -1 (sell), 0 (hold), +1 (buy)
+- supervised/sl_training_pipeline.py
+  - Loads supervised/config.yaml (defaults if missing)
+  - prepare_training_data(): reads db/processed_candles_with_ta.csv
+    - Optional symbol filtering (canonicalizes to {=h})
+    - Adds labels (horizon_minutes=60, threshold, cost) and engineered features
+  - train_lightgbm_model():
+    - Maps labels to [0,1,2] for LightGBM, CV with TimeSeriesSplit
+    - Saves model to models/lightgbm_sl_*.txt and meta *.pkl (feature_cols, config)
+  - train_pytorch_model():
+    - Exports temporary CSV, trains SmallCNN over windowed tensors, saves *.pth + meta
+- supervised/infer_supervised.py
+  - Wraps LightGBM/PyTorch inference to produce class {-1,0,1}
+  - Maps class to RL action space: {-1,0,1} → {0,2,4}
+- services/sl_decision_loop.py
+  - Loads latest LightGBM model and metadata (feature_cols)
+  - Builds current observation via TradingEnv; extracts last-row feature vector matching training
+  - Predicts class; applies probability gating (SL_MIN_TRADE_PROB, default 0.6)
+    - If prob < threshold or class==0 → Hold (2)
+    - If class>0 → Buy (4), if class<0 → Sell (0)
+  - Logs to sl_decisions
+- supervised/sl_evaluation.py (offline backtest)
+  - Backtests models on DB data; note: TA column names must match DB schema if used
+- supervised/sl_evaluate_agent.py (decision evaluation)
+  - Reads sl_decisions from DB and computes:
+    - Directional Accuracy (trades only)
+    - Directional Accuracy incl. holds within ±hold_threshold (SL_EVAL_HOLD_THRESHOLD)
+    - PnL and risk metrics
+- supervised/sl_monitoring.py
+  - Health snapshot + alerts via sl_alerts
+
+Data Flow (SL):
+1) services/historical_data.py and services/news_service.py populate DB
+2) supervised/sl_workflow.py --action full_pipeline
+   - prepare_data → train LGBM+PyTorch → evaluate → deploy
+3) services/sl_decision_loop.py loads latest model, queries positions, predicts & logs sl_decisions
+4) supervised/sl_evaluate_agent.py evaluates recorded decisions against future bars
+
+Decision Logic (SL):
+- Labels are generated from future net returns at horizon_minutes (default 60m)
+  - future_return_net = (close[t+h]-close[t])/close[t] - cost
+  - buy if > threshold; sell if < -threshold; else hold
+- Classifier outputs probs over classes; we trade when confidence exceeds SL_MIN_TRADE_PROB
+
+Linkage and Key Tables
+----------------------
+- TradingEnv ↔ DB (historical_data_1h, positions, optional lstm_predictions)
+- sl_decision_loop.py ↔ supervised/infer_supervised.py (feature_cols, class→action mapping)
+- sl_training_pipeline.py ↔ models/ (trained model + meta with feature_cols)
+- *_evaluate_agent.py ↔ decisions tables + historical bars for scoring
+
+Common Workflows
+---------------
+1) Setup
+   - python supervised/setup_database.py --all
+   - python services/historical_data.py
+   - python services/news_service.py
+   - python services/fetch_positions.py
+
+2) Train + Deploy SL
+   - python supervised/sl_workflow.py --action full_pipeline
+   - or pass explicit symbols with {=h}
+
+3) Make Live SL Decisions
+   - setx SL_MIN_TRADE_PROB 0.6
+   - python services/sl_decision_loop.py
+
+4) Evaluate SL Decisions
+   - setx SL_EVAL_HOLD_THRESHOLD 0.0005
+   - python supervised/sl_evaluate_agent.py --horizon 1
+
+5) Monitor
+   - python supervised/sl_monitoring.py --model models/lightgbm_sl_all_*.txt --once
+
+Operational Notes
+-----------------
+- Evaluation “no such column: rsi_14”: DB schema may lack those TA columns; keep SL evaluation based on decision logs (sl_evaluate_agent.py), or extend DB schema if you want TA-based backtests.
+- If many Holds: lower labels.threshold (e.g., 0.0002), retrain per-symbol, and/or increase SL_MIN_TRADE_PROB (0.6→0.65) for higher-quality trades.
+- Align horizon: evaluation --horizon 1 matches labels.horizon_minutes=60.
+- Feature alignment: ensure supervised model meta.feature_cols matches how sl_decision_loop extracts last-row features from the env.
+
+Best Trading Times (Guidance)
+-----------------------------
+- Hourly bars: liquidity and volatility concentrate near US market open (14:30–16:30 UTC depending on DST) and futures rebalancing windows. Signals may perform better when volatility is non-zero.
+- Avoid illiquid overnight hours for thin symbols unless spread/cost assumptions are modeled.
+
+Symbols: What They Indicate
+---------------------------
+- /ES:XCME: S&P 500 E-mini futures
+- /NQ:XCME: Nasdaq-100 E-mini futures
+- /RTY:XCME: Russell 2000 futures
+- /MES:XCME, /MNQ:XCME: Micro E-mini variants (smaller contract)
+- /QM:XNYM, /QG:XNYM, /MCL:XNYM: NYMEX energy micros (crude/other)
+- BTC/USD:CXTALP, ETH/USD:CXTALP: Crypto spot pairs
+
+Key Configuration Knobs
+-----------------------
+- supervised/config.yaml
+  - labels.horizon_minutes (60)
+  - labels.threshold (lower → more trades)
+  - labels.cost (transaction cost assumption)
+  - dataset.window (lookback bars)
+- EnvConfig in rl/env.py: lookback_bars, include_sentiment, include_lstm_pred
+- Environment variables:
+  - SL_MIN_TRADE_PROB (default 0.6)
+  - SL_EVAL_HOLD_THRESHOLD (default 0.0005)
+
+Quality Targets and Tuning
+--------------------------
+- Non-Hold rate of 20–40% with min trade prob 0.55–0.65
+- Directional accuracy (traded) 60–75% realistic; >80% rare without strong priors
+- Retrain on rolling 60–90 days for live adaptiveness
+
+Appendix: File Index
+--------------------
+- services/historical_data.py, services/news_service.py, services/fetch_positions.py
+- rl/env.py, rl/train_agent.py, services/rl_decision_loop.py, rl/evaluate_agent.py
+- supervised/make_labels.py, supervised/sl_training_pipeline.py, supervised/train_baseline.py, supervised/train_pytorch.py
+- supervised/infer_supervised.py, services/sl_decision_loop.py
+- supervised/sl_evaluate_agent.py, supervised/sl_evaluation.py, supervised/sl_monitoring.py
+- supervised/setup_database.py, supervised/sl_workflow.py, supervised/sl_quick_workflow.txt
+- .gitignore, requirements.txt
+                          
+
+
+                          summary             
+
+📑 TRADE MANAGEMENT – MACHINE FLOW (RL + SL)
+
+1️⃣ PURPOSE
+──────────
+You have two engines for making trading decisions:
+• 🤖 RL (Reinforcement Learning) → learns by trial and error in a simulated market, optimizing long-term reward.
+• 📊 SL (Supervised Learning) → learns from historical data labeled with “buy/sell/hold” signals.
+
+This flow explains how both engines work, which files do what, and how data moves through the system.
+
+2️⃣ TIMEFRAME & SYMBOLS
+───────────────────────
+• ⏱ Everything runs on HOURLY bars — training data, predictions, and decisions.
+• 📈 Symbols: ES, NQ, RTY, MES, MNQ, QM, QG, MCL, BTC/USD, ETH/USD (futures + crypto).
+
+3️⃣ CORE DATA
+─────────────
+• 🗄 Database (SQLite): historical candles, positions, RL/SL decisions, optional LSTM forecasts.
+• 📂 Flat Files: processed candles CSV, trained model artifacts, evaluation outputs.
+
+4️⃣ RL (REINFORCEMENT LEARNING) FLOW
+───────────────────────────────────
+🎯 Goal: Train an agent to maximize rewards by interacting with a simulated market.
+
+🔑 Steps:
+• 📥 Data Load → `services/historical_data.py` fills DB with hourly candles + news.
+• 🏗 Environment → `rl/env.py` builds observation vector (lookback window + positions + PnL).
+• 🧠 Train Agent → `rl/train_agent.py` runs PPO training → saves model to `outputs/`.
+• ⚡ Live Decisions → `services/rl_decision_loop.py` loads model, predicts action, logs to DB.
+• 📊 Evaluation → `rl/evaluate_agent.py` checks decisions vs historical bars, computes accuracy/PnL.
+
+🎮 Action Space: {0,1,2,3,4} = {Strong Sell, Sell, Hold, Buy, Strong Buy}
+
+5️⃣ SL (SUPERVISED LEARNING) FLOW
+────────────────────────────────
+🎯 Goal: Train a classifier to map current features → buy/sell/hold decision.
+
+🔑 Steps:
+• 🏷 Label Data → `supervised/make_labels.py` adds future-return labels.
+• 🧠 Train Model → `supervised/sl_training_pipeline.py` trains LightGBM/PyTorch → saves to `models/`.
+• ⚡ Deploy & Run → `services/sl_decision_loop.py` loads model, predicts class, converts to RL-style action, logs to DB.
+• 📊 Evaluate → `supervised/sl_evaluate_agent.py` computes accuracy, PnL, hold metrics.
+
+📌 Decision Logic:
+• If confidence < threshold → HOLD
+• Else → BUY or SELL depending on predicted direction.
+
+6️⃣ RL–SL LINKAGE
+─────────────────
+• Both use the same `TradingEnv` to build feature vectors.
+• SL’s output is mapped to RL-style actions for consistency.
+• Both log decisions to the same DB (different tables).
+
+7️⃣ TYPICAL WORKFLOW
+────────────────────
+• 🏗 Setup → Populate DB with candles + news + positions.
+• 🧠 Train → Run SL pipeline to generate models.
+• ⚡ Deploy → Run decision loop to produce live signals.
+• 📊 Evaluate → Compare predictions with future bars.
+• 📡 Monitor → Run monitoring script for health/alerts.
+
+8️⃣ KNOBS YOU CAN TUNE
+──────────────────────
+• 🏷 Labels → horizon, threshold, transaction cost.
+• 🧠 Model → lookback window size, feature set.
+• 🎚 Decision Filters → `SL_MIN_TRADE_PROB` (confidence threshold).
+• 🔧 RL Env → lookback bars, include sentiment/LSTM predictions.
+
+9️⃣ OPERATIONAL GUIDANCE
+───────────────────────
+• Tune thresholds per symbol for better trade frequency.
+• Too many holds? ↓ lower label threshold or retrain.
+• Focus on liquid hours near US market open & futures rebalance windows.
+
+🧭 SUMMARY
+──────────
+This is a TWO-TRACK trading machine:
+• RL = explores and learns optimal behavior by trial & error.
+• SL = follows historical patterns for fast, deterministic decisions.
+
+Both feed into the same database, making comparison, evaluation, and monitoring consistent.

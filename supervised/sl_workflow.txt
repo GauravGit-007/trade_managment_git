@@ -1,0 +1,353 @@
+# SUPERVISED LEARNING WORKFLOW GUIDE
+# ===================================
+# This guide explains how to test and run the SL workflow from square one
+# Database: trade_data.db (SQLite database in the db/ folder)
+
+## PREREQUISITES
+================
+
+1. **Python Environment**
+   - Ensure you have Python 3.8+ installed
+   - Activate your virtual environment: `.venv\Scripts\Activate.ps1` (PowerShell)
+   - Install required packages: `pip install -r requirements.txt`
+
+2. **Database Setup**
+   - The SL system connects to: `db/trade_data.db`
+   - This is the same SQLite database used by your RL system
+   - Make sure the database exists and has data
+
+3. **Required Data**
+   - Historical data in `historical_data_1h` table
+   - Processed candles with technical indicators in `processed_candles_with_ta.csv`
+   - News sentiment data (optional)
+
+## STEP-BY-STEP TESTING WORKFLOW
+=================================
+
+### STEP 1: VERIFY DATABASE CONNECTION
+-------------------------------------
+```powershell
+# Navigate to project directory
+cd "D:\GAURAV PROJECTS\backup\trade_management"
+
+# Activate virtual environment
+.venv\Scripts\Activate.ps1
+
+# Test database connection
+python -c "from db.database import TradeDatabase; conn, cursor = TradeDatabase.sql_connect(); print('Database connected successfully!'); TradeDatabase.close_connection(conn)"
+```
+
+**Expected Output:**
+```
+Database connected successfully!
+```
+
+### STEP 2: SETUP SL DATABASE TABLES
+-----------------------------------
+```powershell
+# Create SL-specific tables in trade_data.db
+python supervised\setup_database.py --all
+```
+
+**What this does:**
+- Creates `sl_decisions` table (stores SL trading decisions)
+- Creates `sl_alerts` table (stores performance alerts)
+- Creates `sl_model_performance` table (stores evaluation metrics)
+- Creates `sl_training_history` table (stores training run history)
+- Creates useful views for data analysis
+
+**Expected Output:**
+```
+Created SL database tables:
+- sl_decisions: Trading decisions made by SL models
+- sl_alerts: Performance alerts and notifications
+- sl_model_performance: Model evaluation metrics
+- sl_training_history: Training run history
+Created SL database views:
+- v_sl_recent_decisions: Recent trading decisions
+- v_sl_performance_summary: Performance metrics by model/symbol
+- v_sl_alerts_summary: Recent alerts summary
+All SL tables verified successfully!
+```
+
+### STEP 3: CHECK AVAILABLE DATA
+-------------------------------
+```powershell
+# Check if you have processed candles data
+python -c "import pandas as pd; df = pd.read_csv('db/processed_candles_with_ta.csv'); print(f'Data shape: {df.shape}'); print(f'Columns: {list(df.columns)[:10]}...')"
+```
+
+**Expected Output:**
+```
+Data shape: (10000, 25)  # Example numbers
+Columns: ['timestamp', 'symbol', 'open', 'high', 'low', 'close', 'volume', 'rsi_14', 'ema_21', 'ema_50']...
+```
+
+### STEP 4: TEST DATA PREPARATION
+--------------------------------
+```powershell
+# Test data preparation (this will create training data)
+python supervised\sl_workflow.py --action prepare_data --symbols /ES:XCME /NQ:XCME
+```
+
+**What this does:**
+- Loads data from `db/processed_candles_with_ta.csv`
+- Creates classification labels based on future returns
+- Adds engineered features (price ratios, volatility, momentum)
+- Saves processed data to `outputs/sl_training_data_YYYYMMDD_HHMMSS.parquet`
+
+**Expected Output:**
+```
+Preparing training data...
+Training data saved to: outputs/sl_training_data_20240101_120000.parquet
+Data shape: (5000, 30)
+Features: 25
+```
+
+### STEP 5: TRAIN LIGHTGBM MODEL (RECOMMENDED FIRST)
+---------------------------------------------------
+```powershell
+# Train LightGBM model (faster and more stable)
+python supervised\sl_workflow.py --action train --model_types lightgbm --symbols /ES:XCME /NQ:XCME
+```
+
+**What this does:**
+- Prepares training data
+- Trains LightGBM classifier with cross-validation
+- Saves model to `models/lightgbm_sl_all_YYYYMMDD_HHMMSS.txt`
+- Saves metadata to `models/lightgbm_sl_all_YYYYMMDD_HHMMSS.txt.meta.pkl`
+
+**Expected Output:**
+```
+Training models: ['lightgbm']
+Training LightGBM model...
+Cross-validation scores: [0.65, 0.68, 0.62, 0.70, 0.66]
+Mean CV score: 0.662
+LightGBM model saved: models/lightgbm_sl_all_20240101_120000.txt
+Training results saved to: outputs/sl_training_results_20240101_120000.json
+Training completed
+```
+
+### STEP 6: TEST MODEL INFERENCE
+-------------------------------
+```powershell
+# Test model inference with example state
+python supervised\infer_supervised.py --model models\lightgbm_sl_all_*.txt --model_type lightgbm --state_json examples\state_example.json
+```
+
+**Expected Output:**
+```
+{"action": 2, "prob": 0.75, "class": 0}
+```
+
+### STEP 7: EVALUATE MODEL PERFORMANCE
+-------------------------------------
+```powershell
+# Evaluate the trained model
+python supervised\sl_workflow.py --action evaluate --model_paths models\lightgbm_sl_all_*.txt --symbols /ES:XCME
+```
+
+**What this does:**
+- Runs backtesting on historical data
+- Calculates performance metrics (Sharpe ratio, drawdown, win rate)
+- Saves evaluation results to `outputs/sl_evaluation_results_YYYYMMDD_HHMMSS.json`
+
+**Expected Output:**
+```
+Evaluating models on symbols: ['/ES:XCME']
+Evaluating lightgbm_sl_all_20240101_120000 on /ES:XCME...
+Evaluation results saved to: outputs/sl_evaluation_results_20240101_120000.json
+Evaluation completed
+```
+
+### STEP 8: DEPLOY MODEL FOR LIVE TRADING
+----------------------------------------
+```powershell
+# Deploy the best model
+python supervised\sl_workflow.py --action deploy --model models\lightgbm_sl_all_*.txt --symbols /ES:XCME /NQ:XCME
+```
+
+**What this does:**
+- Creates deployment configuration
+- Initializes monitoring system
+- Checks model health
+- Saves deployment config to `outputs/sl_deployment_config_YYYYMMDD_HHMMSS.json`
+
+**Expected Output:**
+```
+Deploying model: models/lightgbm_sl_all_20240101_120000.txt
+Symbols: ['/ES:XCME', '/NQ:XCME']
+Deployment config saved to: outputs/sl_deployment_config_20240101_120000.json
+Model health: healthy
+Model info: {'model_path': '...', 'model_type': 'lightgbm', 'training_date': '...', 'feature_count': 25}
+```
+
+### STEP 9: TEST LIVE DECISION LOOP
+----------------------------------
+```powershell
+# Test SL decision loop (makes actual trading decisions)
+python services\sl_decision_loop.py
+```
+
+**What this does:**
+- Loads the deployed SL model
+- Gets current market state from database
+- Makes trading decisions for all symbols
+- Logs decisions to `sl_decisions` table in database
+
+**Expected Output:**
+```
+[SL] Current snapshot position for /ES:XCME: 0.0
+[SL] Decision: symbol=/ES:XCME action=2 prob=0.75
+[SL] Current snapshot position for /NQ:XCME: 0.0
+[SL] Decision: symbol=/NQ:XCME action=4 prob=0.68
+```
+
+### STEP 10: START MONITORING
+-----------------------------
+```powershell
+# Start real-time monitoring (run in separate terminal)
+python supervised\sl_monitoring.py --model models\lightgbm_sl_all_*.txt --interval 5 --once
+```
+
+**What this does:**
+- Monitors recent SL decisions
+- Calculates performance metrics
+- Checks for alerts (high drawdown, low win rate, etc.)
+- Logs alerts to `sl_alerts` table
+
+**Expected Output:**
+```
+[SL Monitor] Running monitoring cycle at 2024-01-01 12:00:00
+[SL Monitor] Status: HEALTHY
+[SL Monitor] Decisions: 10, PnL: $125.50
+[SL Monitor] Win Rate: 70.0%, Confidence: 0.72
+```
+
+## COMPLETE PIPELINE TEST
+=========================
+
+### OPTION 1: FULL PIPELINE (RECOMMENDED)
+----------------------------------------
+```powershell
+# Run everything from data prep to deployment
+python supervised\sl_workflow.py --action full_pipeline --symbols /ES:XCME /NQ:XCME
+```
+
+**What this does:**
+- Steps 1-8 automatically
+- Trains both LightGBM and PyTorch models
+- Evaluates all models
+- Selects best model
+- Deploys best model
+
+### OPTION 2: USING MAIN WORKFLOW
+--------------------------------
+```powershell
+# Use the main workflow system
+python workflow.py --mode sl
+```
+
+## DATABASE CONNECTIONS
+======================
+
+### SL Tables in trade_data.db:
+- `sl_decisions` - Trading decisions made by SL models
+- `sl_alerts` - Performance alerts and notifications  
+- `sl_model_performance` - Model evaluation metrics
+- `sl_training_history` - Training run history
+
+### Views for Analysis:
+- `v_sl_recent_decisions` - Recent trading decisions
+- `v_sl_performance_summary` - Performance metrics by model/symbol
+- `v_sl_alerts_summary` - Recent alerts summary
+
+### Check Database Contents:
+```powershell
+# Check SL decisions
+python -c "from db.database import TradeDatabase; conn, cursor = TradeDatabase.sql_connect(); cursor.execute('SELECT COUNT(*) FROM sl_decisions'); print(f'SL Decisions: {cursor.fetchone()[0]}'); TradeDatabase.close_connection(conn)"
+
+# Check SL alerts
+python -c "from db.database import TradeDatabase; conn, cursor = TradeDatabase.sql_connect(); cursor.execute('SELECT COUNT(*) FROM sl_alerts'); print(f'SL Alerts: {cursor.fetchone()[0]}'); TradeDatabase.close_connection(conn)"
+```
+
+## TROUBLESHOOTING
+==================
+
+### Common Issues:
+
+1. **Database Connection Error:**
+   ```
+   Error: Could not connect to SQLite database
+   ```
+   **Solution:** Check if `db/trade_data.db` exists and has proper permissions
+
+2. **No Training Data:**
+   ```
+   Error: No data found for symbol
+   ```
+   **Solution:** Ensure `db/processed_candles_with_ta.csv` exists and has data
+
+3. **Model Not Found:**
+   ```
+   Error: Model not found
+   ```
+   **Solution:** Check if model files exist in `models/` directory
+
+4. **Import Errors:**
+   ```
+   ModuleNotFoundError: No module named 'lightgbm'
+   ```
+   **Solution:** Install missing packages: `pip install lightgbm torch scikit-learn`
+
+### Debug Mode:
+```powershell
+# Enable debug logging
+$env:SL_DEBUG = "1"
+python supervised\sl_workflow.py --action full_pipeline
+```
+
+## PERFORMANCE EXPECTATIONS
+===========================
+
+### Typical Results:
+- **Training Time:** 2-5 minutes for LightGBM, 10-20 minutes for PyTorch
+- **Accuracy:** 60-70% for classification
+- **Sharpe Ratio:** 0.5-1.5 (depends on market conditions)
+- **Win Rate:** 55-65% (realistic for trading)
+
+### Success Indicators:
+- ✅ Model trains without errors
+- ✅ Cross-validation accuracy > 60%
+- ✅ Sharpe ratio > 0.5
+- ✅ No critical alerts in monitoring
+
+## NEXT STEPS AFTER TESTING
+===========================
+
+1. **Compare with RL:** Run `python workflow.py --mode hybrid` to compare SL vs RL
+2. **Optimize Parameters:** Adjust `config.yaml` for better performance
+3. **Add More Features:** Experiment with additional technical indicators
+4. **Production Deployment:** Set up automated retraining and monitoring
+
+## QUICK REFERENCE COMMANDS
+===========================
+
+```powershell
+# Setup
+python supervised\setup_database.py --all
+
+# Full pipeline
+python supervised\sl_workflow.py --action full_pipeline --symbols /ES:XCME /NQ:XCME
+
+# Test decision loop
+python services\sl_decision_loop.py
+
+# Monitor performance
+python supervised\sl_monitoring.py --model models\lightgbm_sl_all_*.txt --interval 5
+
+# Check database
+python -c "from db.database import TradeDatabase; conn, cursor = TradeDatabase.sql_connect(); cursor.execute('SELECT COUNT(*) FROM sl_decisions'); print(f'Decisions: {cursor.fetchone()[0]}'); TradeDatabase.close_connection(conn)"
+```
+
+This workflow will help you test the SL system from scratch and understand how it connects to your existing database!

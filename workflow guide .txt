@@ -1,0 +1,46 @@
+                   manual steps
+
+1 python services\
+    historical_data  10 min
+    news_services   2-3 min
+    auth_tokens  instant
+    fetch_positions   instant
+
+   2  models\
+        news_model   4-5 min
+        (lstm 7-8 min epoch 13,17,23/100  not fix) yahi tak jayega fir ho jayega complete
+
+    3 services\
+        monitor_actuals instant
+
+   4 rl\
+        train_agent  5 min for 50000 steps for each 10 symbols    5 x 10 = 50 min foe one training session
+
+    5 services\
+        rl_decision_loop  2 -2:30 min
+
+    6 rl\
+        evaluate_agent  instant
+
+
+
+
+now shortcut for testing                     (automated steps)
+
+
+
+
+1 .   run-->      python common_setup.py  (include all tasks of step 1 and one models\news_model.py task of step 2 aswell)
+2.    run-->      python models\lstm.py
+3.    run-->      python services\monitor_actuals.py
+
+then run your learning approach these three satisfy all the basic requirements before running
+
+like for supervised
+4.   run-->    python supervised\sl_workflow.py --action full_pipeline --symbols "/ES:XCME{=h}" "/NQ:XCME{=h}" "/MES:XCME{=h}" "/RTY:XCME{=h}" "/QM:XNYM{=h}" "/QG:XNYM{=h}" "/MCL:XNYM{=h}" "BTC/USD:CXTALP{=h}" "ETH/USD:CXTALP{=h}"
+5.   run-->    python services\sl_decision_loop.py        makes and logs live decisions
+6.   run-->   python supervised\sl_evaluate_agent.py --horizon 1                    # All symbols, 1-hour horizon
+
+                            Or a specific symbol
+
+    run-->    python supervised\sl_evaluate_agent.py --symbol "/ES:XCME{=h}" --horizon 1
