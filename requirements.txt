@@ -51,3 +51,5 @@ gymnasium
 
 Seaborn
 Pyarrow
+matplotlib
+lightgbm
