@@ -32,13 +32,13 @@ now shortcut for testing                     (automated steps)
 
 1 .   run-->      python automated workflow.py  (include all tasks of step 1 and one models\news_model.py task of step 2 aswell) may not show anything for 10 mins but it works
 2.    run-->      python models\lstm.py
-3.    run-->      python services\monitor_actuals.py
+3.    run-->      python services\monitor_actuals.pypython services\monitor_actuals.py
 
 then run your learning approach these three satisfy all the basic requirements before running
 
 like for supervised
-4.   run-->    python supervised\sl_workflow.py --action full_pipeline --symbols "/ES:XCME{=h}" "/NQ:XCME{=h}" "/MES:XCME{=h}" "/RTY:XCME{=h}" "/QM:XNYM{=h}" "/QG:XNYM{=h}" "/MCL:XNYM{=h}" "BTC/USD:CXTALP{=h}" "ETH/USD:CXTALP{=h}"
-5.   run-->    python services\sl_decision_loop.py        makes and logs live decisions
+4.   run the whole line-->    python supervised\sl_workflow.py --action full_pipeline --symbols "/ES:XCME{=h}" "/NQ:XCME{=h}" "/MES:XCME{=h}" "/RTY:XCME{=h}" "/QM:XNYM{=h}" "/QG:XNYM{=h}" "/MCL:XNYM{=h}" "BTC/USD:CXTALP{=h}" "ETH/USD:CXTALP{=h}"
+5.   run-->    python services\sl_decision_loop.py        #makes and logs live decisions
 6.   run-->   python supervised\sl_evaluate_agent.py --horizon 1                    # All symbols, 1-hour horizon
 
                             Or a specific symbol

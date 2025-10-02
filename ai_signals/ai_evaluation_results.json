@@ -1,0 +1,87 @@
+{
+  "individual_results": [
+    {
+      "symbol": "/MCL:XNYM{=h}",
+      "timestamp": "2025-10-02T22:17:13.690987",
+      "action": "BUY",
+      "confidence": 0.85,
+      "status": "No price data available",
+      "directional_accuracy": null,
+      "profit_loss": null
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "timestamp": "2025-10-02T22:17:11.676189",
+      "action": "SELL",
+      "confidence": 0.75,
+      "status": "No price data available",
+      "directional_accuracy": null,
+      "profit_loss": null
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "timestamp": "2025-10-02T22:17:09.749453",
+      "action": "BUY",
+      "confidence": 0.85,
+      "status": "No price data available",
+      "directional_accuracy": null,
+      "profit_loss": null
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "timestamp": "2025-10-02T22:17:07.778795",
+      "action": "BUY",
+      "confidence": 0.85,
+      "status": "No price data available",
+      "directional_accuracy": null,
+      "profit_loss": null
+    },
+    {
+      "symbol": "/MNQ:XCME{=h}",
+      "timestamp": "2025-10-02T22:17:04.258961",
+      "action": "BUY",
+      "confidence": 0.85,
+      "status": "No price data available",
+      "directional_accuracy": null,
+      "profit_loss": null
+    },
+    {
+      "symbol": "/MES:XCME{=h}",
+      "timestamp": "2025-10-02T22:17:02.327502",
+      "action": "BUY",
+      "confidence": 0.85,
+      "status": "No price data available",
+      "directional_accuracy": null,
+      "profit_loss": null
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "timestamp": "2025-10-02T22:17:00.555630",
+      "action": "BUY",
+      "confidence": 0.85,
+      "status": "No price data available",
+      "directional_accuracy": null,
+      "profit_loss": null
+    },
+    {
+      "symbol": "/ES:XCME{=h}",
+      "timestamp": "2025-10-02T22:16:58.320883",
+      "action": "STRONG_BUY",
+      "confidence": 0.85,
+      "status": "No price data available",
+      "directional_accuracy": null,
+      "profit_loss": null
+    }
+  ],
+  "overall_statistics": {
+    "total_decisions": 8,
+    "evaluated_decisions": 0,
+    "directional_accuracy": 0,
+    "average_confidence": 0,
+    "total_pnl": 0,
+    "win_rate": 0,
+    "average_pnl_per_trade": 0
+  },
+  "evaluation_timestamp": "2025-10-02T22:19:26.481876",
+  "evaluation_period_hours": 1
+}

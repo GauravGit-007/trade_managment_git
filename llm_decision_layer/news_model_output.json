@@ -10428,5 +10428,1775 @@
     "market_signal": "Down",
     "sentiment_label": "negative",
     "sentiment_score": 0.9140188097953796
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Indian Tech Stocks Decline on US Changes to H-1B Visa Program. Indian tech stocks declined on Monday as US President Donald Trump\u2019s hefty fee for new H-1B visas may lead to operational difficulties for outsourcing giants.  Trump\u2019s overhaul of the program, by mandating a $100,000 fee for new applications, may disrupt projects of Indian outsources like Tata Consultancy Services Ltd. and Infosys Ltd. that derive a large chunk of revenue from the US.  TCS shares fell as much as 3.4%, the most in more than two months, while those of Infosys slipped 3.9%.",
+    "instrument": "NASDAQ",
+    "source": "Bloomberg \u2022 2h ago",
+    "url": "https://finance.yahoo.com/news/indian-tech-stocks-decline-us-043431572.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999971389770508
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "BYD\u2019s Stock Falls After Report Buffett Sold His Entire Stake. Berkshire Hathaway Inc. has exited its entire holding in BYD, according to a CNBC report on Sunday that also cited a spokesperson for the US firm confirming the development.  A filing by Berkshire Hathaway Energy, the subsidiary that held BYD\u2019s shares, listed the value of the investment as zero as of March 31, CNBC reported.  The past two decades have seen BYD go from a little-known Chinese battery provider for cell phones to the nation\u2019s biggest electric and hybrid vehicle maker.",
+    "instrument": "GENERAL",
+    "source": "Bloomberg \u2022 3h ago",
+    "url": "https://finance.yahoo.com/news/byd-stock-falls-report-buffett-041416407.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9892395734786987
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Asian shares are mostly higher after Wall Street's record week. Asian shares traded mostly higher Monday, cheered by a record finish last week on Wall Street.  Japan's benchmark Nikkei 225 jumped 1.0% in afternoon trading to 45,515.33, rebounding from the decline late last week over concerns about the Bank of Japan's selling its holdings.  The Dow Jones Industrial Average added 172 points, or 0.4%, and the Nasdaq composite climbed 0.7%.",
+    "instrument": "NASDAQ",
+    "source": "Associated Press \u2022 3h ago",
+    "url": "https://finance.yahoo.com/news/asian-shares-mostly-higher-wall-035235217.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9998966455459595
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Indian IT stocks slide on US visa crackdown. (Reuters) -Indian information technology majors saw their shares slump on Monday after U.S. President Donald Trump imposed a $100,000 fee on new H-1B visa applications, threatening to inflate costs and slow revenue growth in their biggest market.  \"Due to the near-term pressure on margins amid an already tough market, we believe this is sentimentally negative for the sector,\" ICICI Direct, an online trading platform for ICICI Securities, said in a client note on Monday.  ICICI Securities estimated that Trump's order could knock about 1 percentage point off profit margins and about 6% off earnings for IT firms, assuming they continue to hire Indians under the program.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Reuters \u2022 3h ago",
+    "url": "https://finance.yahoo.com/news/indian-stocks-slide-amid-us-035209398.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999996423721313
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Q2 Rundown: American Woodmark (NASDAQ:AMWD) Vs Other Home Construction Materials Stocks. Wrapping up Q2 earnings, we look at the numbers and key takeaways for the home construction materials stocks, including American Woodmark (NASDAQ:AMWD) and its peers.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 3h ago",
+    "url": "https://finance.yahoo.com/news/q2-rundown-american-woodmark-nasdaq-033127646.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9999953508377075
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Regional Banks Stocks Q2 Results: Benchmarking Simmons First National (NASDAQ:SFNC). Wrapping up Q2 earnings, we look at the numbers and key takeaways for the regional banks stocks, including Simmons First National (NASDAQ:SFNC) and its peers.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 3h ago",
+    "url": "https://finance.yahoo.com/news/regional-banks-stocks-q2-results-033114955.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9999988079071045
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "BOJ Removes Japan Stocks Overhang With Slow ETFs Sell-Down. While benchmark stock gauges fell Friday in a knee-jerk reaction when the Bank of Japan said it would be selling its \u00a575 trillion ($507 billion) stockpile, traders quickly pared much of the decline as focus turned to the very gradual nature of the program.  The BOJ intends to reduce its holdings by about \u00a5620 billion by market value per year.  The announcement also came at the end of a week that saw the blue-chip Nikkei-225 and broader Topix index set fresh record highs.",
+    "instrument": "GENERAL",
+    "source": "Bloomberg \u2022 3h ago",
+    "url": "https://finance.yahoo.com/news/boj-removes-japan-stocks-overhang-032826630.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.5656108856201172
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Nofar USA Secures 1 GW of Solar Projects Across U.S. Markets. Nofar USA has acquired and partnered on more than a gigawatt of solar projects spanning major U.S. power markets.",
+    "instrument": "S&P 500, NASDAQ, Russell 2000",
+    "source": "Oilprice.com \u2022 4h ago",
+    "url": "https://finance.yahoo.com/news/nofar-usa-secures-1-gw-030550474.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9988419413566589
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Stocks edge up after Trump's visa crackdown, rate outlook in focus. SINGAPORE (Reuters) -Asian stocks drifted higher and the dollar steadied on Monday, with markets weighing the Federal Reserve's monetary policy path after a rate cut last week, while President Donald Trump's immigration crackdown on worker visas kept sentiment in check.  India's benchmark index slipped after the Trump administration said on Friday it would ask companies to pay $100,000 for new H-1B worker visas, a blow to the tech sector that relies on skilled workers from India and China.  U.S. stock futures eased with the S&P futures down 0.1%, while European futures indicated a subdued open.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Reuters \u2022 5h ago",
+    "url": "https://finance.yahoo.com/news/asian-stocks-hesitant-trumps-visa-015021671.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9915607571601868
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Why the bull market for stocks may now hinge on the 10-year Treasury yield. With stocks at record highs, Ron Albahary Albahary at Laird Norton has been leaning into ways to hedge volatility while \u201chedging is cheap.\u201d",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "MarketWatch \u2022 6h ago",
+    "url": "https://finance.yahoo.com/news/why-bull-market-stocks-may-113000881.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9850929379463196
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Chinese Savers Have $23 Trillion and Few Options Beyond Stocks. The CSI 300 Index has surged more than 25% since its April lows, fueled by enthusiasm over artificial intelligence and easing relations with the US, which culminated in a call between Donald Trump and Xi Jinping last week.  The idea that China\u2019s small investors will shift a chunk of their $23 trillion savings pile to the stock market is a tantalizing one for global firms, who are showing signs of returning after years on the sidelines.  \u201cThe pressure to save is fading,\u201d said William Bratton, head of cash equity research in Asia Pacific at BNP Paribas Exane.",
+    "instrument": "GENERAL",
+    "source": "Bloomberg \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/chinese-savers-23-trillion-few-000000336.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9990959167480469
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Dow, S&P 500, Nasdaq futures see slight pullback from week of record highs for major gauges. Markets are holding steady pre-market open following a week of fresh records for the major gauges.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance \u2022 28m ago",
+    "url": "https://finance.yahoo.com/news/live/dow-sp-500-nasdaq-futures-see-slight-pullback-from-week-of-record-highs-for-major-gauges-234423767.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9839712977409363
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "U.S. stocks are chipping away at Europe\u2019s outperformance, and Powell slipped in this dovish signal on Fed rates that Wall Street overlooked. The S&P 500 is now up 13% year to date and the Nasdaq is up 17%. Meanwhile, the DAX stock market index in Germany is up 19% so far this year.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Fortune \u2022 9h ago",
+    "url": "https://finance.yahoo.com/news/u-stocks-chipping-away-europe-221451319.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999808073043823
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Prediction Markets and DAOs Are Cousins, Says Syndicate Co-Founder. Syndicate itself has transitioned away from DAOs, but a co-founder sees echoes of them evident in prediction markets.",
+    "instrument": "Bitcoin, Ethereum",
+    "source": "decrypt \u2022 13h ago",
+    "url": "https://finance.yahoo.com/news/prediction-markets-daos-cousins-says-180818449.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9999455213546753
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Key US Inflation Metric to Ease as Focus Shifts to Jobs Market. A report on Friday is forecast to show the personal consumption expenditures price index excluding food and energy rose 0.2% in August, compared with 0.3% in July.  Fed Chair Jerome Powell pointed to a cooling labor market to explain why officials lowered interest rates on Wednesday for the first time this year, but he made clear that the central bank remains vigilant on inflation as President Donald Trump\u2019s tariffs continue to work through the economy.  \u201cIt\u2019s challenging to know what to do,\u201d Powell said.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Bloomberg \u2022 13h ago",
+    "url": "https://finance.yahoo.com/news/key-us-inflation-metric-ease-200000101.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.8627572059631348
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "3 market experts tell us why they're skeptical about retail traders' favorite meme stock. Eric Jackson has set an $82 price target for Opendoor. Some investors see that as too bullish given fundamentals and the state of the housing market.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Business Insider \u2022 13h ago",
+    "url": "https://finance.yahoo.com/news/3-market-experts-tell-us-173001627.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9997467398643494
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "'This isn't your grandfather's S&P 500': Wall Street strategists say stocks could keep rising from records. Stocks are at record highs, but some strategists think they could keep moving up based on historical trends.",
+    "instrument": "S&P 500",
+    "source": "Yahoo Finance \u2022 37m ago",
+    "url": "https://finance.yahoo.com/news/this-isnt-your-grandfathers-sp-500-wall-street-strategists-say-stocks-could-keep-rising-from-records-150045296.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9816082119941711
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "The hottest thing in the stock market is suddenly boring tech. For bulls, the wild rally in a bunch of typically quiet companies that were founded before Mark Zuckerberg and Sam Altman were even born, demonstrates how unrelenting demand for AI computing gear is benefiting a broad range of businesses. To bears, however, it\u2019s the latest sign that the stock market has been swallowed by a bubble that\u2019s destined to pop.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Bloomberg \u2022 12h ago",
+    "url": "https://finance.yahoo.com/news/hottest-thing-stock-market-suddenly-130007003.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.8965456485748291
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "A $5 Billion Reason to Buy Intel Stock Here. Nvidia just made a $5 billion investment in Intel Corp. Should you buy Intel here?",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Barchart \u2022 19h ago",
+    "url": "https://finance.yahoo.com/news/5-billion-reason-buy-intel-120002811.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9999793767929077
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Fed's Powell, Miran set to speak with stocks at record highs: What to watch this week. Stocks hit a record high as the market digests the Fed's rate cut and looks for economic ripple effects.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance \u2022 19h ago",
+    "url": "https://finance.yahoo.com/news/feds-powell-miran-set-to-speak-with-stocks-at-record-highs-what-to-watch-this-week-114521452.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9946788549423218
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Best money market account rates today, September 21, 2025 (best account provides 4.4% APY). If you\u2019re searching for today\u2019s best money market account rates, we\u2019ve narrowed down some of the top offers. Learn more about money market account rates today.",
+    "instrument": "GENERAL",
+    "source": "Yahoo Personal Finance \u2022 21h ago",
+    "url": "https://finance.yahoo.com/personal-finance/banking/article/best-money-market-account-rates-today-sunday-september-21-2025-100016782.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9999940395355225
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "What to Expect in Markets This Week: Inflation Data; Fed Speakers; Earnings from Micron, Costco. Coming up: PCE inflation data; Federal Reserve speakers: home sales data; consumer sentiment; earnings from Micron, Costco, AutoZone, and CarMax",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Investopedia \u2022 22h ago",
+    "url": "https://finance.yahoo.com/news/expect-markets-week-inflation-data-090000179.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9999940395355225
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Kalshi Outpaces Polymarket in Prediction Market Volume Amid Surge in U.S. Trading. Kalshi\u2019s weekly trading volume exceeded $500 million with an average open interest of around $189 million, surpassing Polymarket\u2019s figures, according to Dune analytics data.",
+    "instrument": "GENERAL",
+    "source": "CoinDesk \u2022 1d ago",
+    "url": "https://finance.yahoo.com/news/kalshi-outpaces-polymarket-prediction-market-230013767.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999897480010986
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Rob Arnott revolutionized stock investing. Decades later, he's still disrupting the market's favorite strategies.. Rob Arnott pioneered smart beta decades ago. The investor sat down for lunch with Business Insider to talk ETFs, investing, and eclipse chasing.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Business Insider \u2022 1d ago",
+    "url": "https://finance.yahoo.com/news/rob-arnott-revolutionized-stock-investing-174501086.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9555602073669434
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "From Retail Darling to AI Powerhouse, This $2.4 trillion Growth Stock Is a Great Buy. Once a hot retail stock could soon be the best AI bet.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Barchart \u2022 1d ago",
+    "url": "https://finance.yahoo.com/news/retail-darling-ai-powerhouse-2-160002712.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "This Blue-Chip Dividend Stock Just Raised Its Payout by 7%. Should You Buy Shares Here?. J.P. Morgan\u2019s recent 7.1% dividend increase to $1.50 per share, backed by record earnings and a new $50 billion share buyback plan, highlights strong capital management and signals confidence in sustained shareholder returns despite sector headwinds.",
+    "instrument": "S&P 500",
+    "source": "Barchart \u2022 1d ago",
+    "url": "https://finance.yahoo.com/news/blue-chip-dividend-stock-just-130002463.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Stock Market Rally Risks Losing Steam as Economic Bounce Fades. The S&P 500 Index has added $15 trillion in market value since early April and notched 27 records in 2025.  Its 34% gain over the last five months \u2014 led by a surge in Big Tech shares \u2014 is a feat topped in just four other instances since 1950, according to data compiled by Bloomberg.  The worry among some investors, however, is that the rebound has already priced in a range of positive developments, from easier monetary policy to the economy\u2019s resilience in the face of tariffs.",
+    "instrument": "S&P 500",
+    "source": "Bloomberg \u2022 1d ago",
+    "url": "https://finance.yahoo.com/news/stock-market-rally-risks-losing-130000607.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9989340901374817
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Stocks Show Little Geopolitical Worry After $16 Trillion Rally. Expected volatility in the US stock market is hovering around one-year lows.  All while Russia has sent drones into NATO airspace, Israel presses a ground assault on Gaza and Japan\u2019s government teeters along with the one in France \u2014 again.  While geopolitical risks are undoubtedly increasing around the world, the playbook for investors remains the same: Keep an eye on it, but don\u2019t fret unless politics and humanitarian disasters affect economic forecasts or asset prices like oil.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000, Crude Oil",
+    "source": "Bloomberg \u2022 1d ago",
+    "url": "https://finance.yahoo.com/news/stocks-show-little-geopolitical-worry-110000613.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.5538558959960938
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Best money market account rates today, September 20, 2025 (best account provides 4.4% APY). If you\u2019re searching for today\u2019s best money market account rates, we\u2019ve narrowed down some of the top offers. Learn more about money market account rates today.",
+    "instrument": "GENERAL",
+    "source": "Yahoo Personal Finance \u2022 1d ago",
+    "url": "https://finance.yahoo.com/personal-finance/banking/article/best-money-market-account-rates-today-saturday-september-20-2025-100031324.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9999943971633911
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "The stock market finally has what it wants \u2014 and is now asking 'now what?'. A long-awaited rate cut pierced through the year's economic uncertainty to extend Wall Street's record run.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Yahoo Finance \u2022 19h ago",
+    "url": "https://finance.yahoo.com/news/the-stock-market-finally-has-what-it-wants--and-is-now-asking-now-what-100005498.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9980447292327881
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "What I learned from a shopping trip with Dan Ives, Wall Street's biggest Tesla bull and the funkiest dresser on cable news. When I went shopping with Tesla bull Dan Ives, I realized that his love of hot pink is mirrored in his stock calls.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Business Insider \u2022 1d ago",
+    "url": "https://finance.yahoo.com/news/learned-shopping-trip-dan-ives-091102451.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9951767921447754
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Why investors are turning bullish on European markets again. European fund managers are turning more optimistic as trade tensions ease, inflation fears fade, and central banks start to cut interest rates. Despite US labour concerns, growth hopes remain firm, with investors favouring defensives and betting on a soft landing.View on euronews",
+    "instrument": "GENERAL",
+    "source": "Euronews \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/why-investors-turning-bullish-european-050055841.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999866485595703
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "A growing chorus of Wall Street icons has a message for investors: buy gold. Wall Street icons are urging investors to buy gold as the precious metal stays on track for its best year since the 1970s.",
+    "instrument": "GENERAL",
+    "source": "Business Insider \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/growing-chorus-wall-street-icons-005624362.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9998677968978882
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Stay Ahead of the Trend With These 3 Dividend Stocks \u2013 Before They Soar. The Fed\u2019s 2025 rate cut makes dividend stocks more attractive\u2014here are 3 strong buys in REITs, utilities, and consumer staples to consider now.",
+    "instrument": "S&P 500",
+    "source": "Barchart \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/stay-ahead-trend-3-dividend-230002999.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999997615814209
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "These 5 stocks could be the big winners as retail bankruptcies pile up, UBS says. Retail bankruptcies have spiked this year. UBS analysts say investors should watch these stocks as potential beneficiaries of the trend.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Business Insider \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/5-stocks-could-big-winners-224927587.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999924898147583
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Cathie Wood Just Keeps Buying Up This 1 New IPO Stock. Cathie Wood\u2019s ARK Invest continues to pile into Bullish, boosting its stake.",
+    "instrument": "NASDAQ",
+    "source": "Barchart \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/cathie-wood-just-keeps-buying-220002659.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9998297691345215
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "S&P 500 Gains and Losses Today: Paramount Surges Amid Deal Buzz, Apple Rises as iPhone 17 Goes on Sale. More details about a possible deal in the media industry contributed to another leg up for Paramount and Warner Bros Discovery, while a report from a short seller sent shares of DexCom sharply lower.",
+    "instrument": "S&P 500",
+    "source": "Investopedia \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/p-500-gains-losses-today-211648375.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.7072593569755554
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Stock Indexes Rally to New Record Highs on Fed Rate Cut Optimism. The S&P 500 Index ($SPX ) (SPY ) on Friday closed up +0.49%, the Dow Jones Industrials Index ($DOWI ) (DIA ) closed up +0.37%, and the Nasdaq 100 Index ($IUXX ) (QQQ ) closed up +0.70%. December E-mini S&P futures (ESZ25 ) rose +0.42%, and December E-mini Nasdaq futures...",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Barchart \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/stock-indexes-rally-record-highs-203959536.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9989204406738281
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Cracking product-market fit: Lessons from founders and investors at TechCrunch Disrupt 2025. Rajat Bhageria (Chef Robotics), Ann Bordetsky (NEA), and Murali Joshi (ICONIQ) share actionable strategies for finding product-market fit at TechCrunch Disrupt 2025.",
+    "instrument": "GENERAL",
+    "source": "TechCrunch \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/crack-code-startup-traction-insights-143000439.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7145533561706543
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Wall Street \u2018Nirvana\u2019 Nears as Fed Fuels 2021-Style Risk Rally. An interest-rate cut meant to cushion the weakening labor market might once have sparked caution.  It\u2019s the Great Resilience Trade \u2014 and Wall Street insists its logic is stronger than in past manias.  In the 1990s, the defense was internet productivity.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Bloomberg \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/wall-street-nirvana-nears-fed-201503313.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999390840530396
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Why Blink Charging (BLNK) Stock Is Trading Up Today. Shares of EV charging infrastructure provider Blink Charging (NASDAQ:BLNK) jumped 9.9% in the afternoon session after positive sentiment swept the electric vehicle (EV) charging sector following several encouraging industry-wide developments.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/why-blink-charging-blnk-stock-200640319.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999994039535522
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Why Is monday.com (MNDY) Stock Soaring Today. Shares of work management platform monday.com (NASDAQ:MNDY) jumped 6.2% in the afternoon session after investment firm DA Davidson reiterated its Buy rating on the stock while maintaining its $275 price target.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/why-monday-com-mndy-stock-200635868.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Malibu Boats (MBUU) Stock Trades Down, Here Is Why. Shares of recreational boats manufacturer Malibu Boats (NASDAQ:MBUU) fell 2.6% in the afternoon session after a major competitor, Brunswick, announced the consolidation of its fiberglass boat manufacturing operations, signaling potential weakness across the industry.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/malibu-boats-mbuu-stock-trades-200634966.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999979734420776
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Why Harley-Davidson (HOG) Stock Is Falling Today. Shares of american motorcycle manufacturing company Harley-Davidson (NYSE:HOG) fell 4.1% in the afternoon session after its Japanese unit was fined approximately 211 million yen, or $1.4 million, by the country's antitrust watchdog for imposing excessive sales quotas on dealers.",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/why-harley-davidson-hog-stock-200632441.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999816417694092
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Why Expeditors (EXPD) Stock Is Trading Lower Today. Shares of logistics and freight forwarding company Expeditors (NYSE:EXPD) fell 2.8% in the afternoon session after investors reacted to an 'underweight' rating from Barclays and digested ongoing concerns about the company's weak financial performance.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "StockStory \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/why-expeditors-expd-stock-trading-200628014.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999990463256836
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Apple (AAPL) Stock Is Up, What You Need To Know. Shares of iPhone and iPad maker Apple (NASDAQ:AAPL) jumped 3.3% in the afternoon session after the successful launch of its new iPhone 17 lineup prompted a significant price target increase from analysts at JPMorgan.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "StockStory \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/apple-aapl-stock-know-200628275.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999995231628418
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Brighthouse Financial (BHF) Stock Trades Up, Here Is Why. Shares of insurance and annuity provider Brighthouse Financial (NASDAQ:BHF) jumped 30% in the afternoon session after reports emerged that the company was in advanced talks to be acquired by a consortium led by Aquarian Holdings at a significant premium.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/brighthouse-financial-bhf-stock-trades-200626008.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999933242797852
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "Snowflake (SNOW) Stock Trades Up, Here Is Why. Shares of cloud data platform provider Snowflake (NYSE:SNOW) jumped 3.3% in the afternoon session after positive momentum built around its expanding role in enterprise Artificial Intelligence (AI), underscored by strong customer growth and a new strategic data partnership with Workday.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "StockStory \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/snowflake-snow-stock-trades-why-200617488.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999998807907104
+  },
+  {
+    "published_at": "2025-09-22",
+    "text": "AAON (AAON) Stock Trades Up, Here Is Why. Shares of heating and cooling solutions company AAON (NASDAQ:AAON) jumped 3.4% in the afternoon session after the company participated in an investor conference, which appeared to boost market confidence in its outlook.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/aaon-aaon-stock-trades-why-200617939.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "South Korean president says US tariffs talks worrying FX market. SEOUL (Reuters) -South Korean President Lee Jae Myung said negotiations with the U.S. on tariffs have stirred concerns in the foreign exchange market but he was confident the two sides will reach a solution, a statement from Lee's office said on Tuesday.  Lee made the comments during a meeting with some members of the U.S. Congress in New York on Monday while attending the United Nations General Assembly meeting this week, the statement said.  \"President Lee said there is concern that instability can arise in South Korea's foreign exchange market during the course of tariff negotiations with the U.S. but the two sides will be able to find a solution that ensures commercial rationality,\" it said.",
+    "instrument": "GENERAL",
+    "source": "Reuters \u2022 1h ago",
+    "url": "https://finance.yahoo.com/news/south-korean-president-says-us-032814927.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9458909034729004
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Nvidia stock is up big on the company's OpenAI partnership \u2014 and it's pulling the whole market higher. Nvidia's rise on Monday spurred a bigger rally that boosted the S&P 500 to a new record. The chip titan will invest $100 bilion in ChatGPT maker OpenAI.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Business Insider \u2022 1h ago",
+    "url": "https://finance.yahoo.com/news/nvidia-stock-big-companys-openai-025815468.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.999995231628418
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Asia stocks buoyed by AI rush, gold at fresh peaks. SYDNEY (Reuters) -Asian share markets looked to build on recent hefty gains on Tuesday as optimism around all things AI sucked money into the tech sector, while wagers on several more U.S. interest rate cuts kept gold on a hot streak.  Wall Street had been led to another record as Nvidia announced it would invest up to $100 billion in OpenAI with the first data centre gear to be delivered in the second half of 2026.  \"With U.S. tech/AI currently in red-hot form, we'd need to see something leftfield to derail the upbeat flows that are the driving force of Oracle, Apple, Nvidia, Tesla, and some of the U.S. hardware plays,\" said Chris Weston, head of research at broker Pepperstone.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Reuters \u2022 2h ago",
+    "url": "https://finance.yahoo.com/news/asia-stocks-buoyed-ai-rush-020201633.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999972581863403
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Exxon Mobil begins production at new base stock facilities in Singapore. Exxon Mobil Corp has started production at new facilities at its Singapore oil refinery complex to produce base stocks from residue fuel, it said on Tuesday. The technology combines processes to convert fuel oil and other bottom-of-the-barrel crude products into higher-value lube base stocks and distillates, the company said. \"The new facilities expand our Group II base stocks production capacity by 20,000 barrels per day, including up to 6,000 barrels per day of the new-to-industry EHC 340 MAXTM,\" Exxon stated.",
+    "instrument": "Crude Oil",
+    "source": "Reuters \u2022 3h ago",
+    "url": "https://finance.yahoo.com/news/exxon-mobil-begins-production-stock-010350301.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9992695450782776
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Here's all of Wall Street's best investing advice now that the Fed's rate-cut cycle has begun. Wall Street is feeling bullish on areas like cyclical stocks, industrials, and small-caps as the Fed resumes its rate-cutting cycle.",
+    "instrument": "Russell 2000, S&P 500",
+    "source": "Business Insider \u2022 4h ago",
+    "url": "https://finance.yahoo.com/news/heres-wall-streets-best-investing-235359704.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "1 Safe Passive Income Stock Yielding Over 5% to Grab Now. This income stock offers more than just a high yield.",
+    "instrument": "GENERAL",
+    "source": "Barchart \u2022 5h ago",
+    "url": "https://finance.yahoo.com/news/1-safe-passive-income-stock-233002598.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9743772745132446
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Stock market today: Dow, S&P 500, Nasdaq futures waver after another record-setting day on Wall Street. US stock futures TK after another record-setting day on Wall Street.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance \u2022 3h ago",
+    "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-waver-after-another-record-setting-day-on-wall-street-230319860.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9999762773513794
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Nvidia Commits $100 Billion to OpenAI in Historic AI Infrastructure Deal\u2014Stock Pops. Nvidia shifts from supplier to investor, deepening ties with OpenAI in a record-scale deal.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "decrypt \u2022 5h ago",
+    "url": "https://finance.yahoo.com/news/nvidia-commits-100-billion-openai-230219106.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8735036253929138
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Oracle\u2019s new Gen X and Millennial CEOs get stock options worth $350 million\u2014but they\u2019ll have to keep the stock soaring to collect. CEOs Clay Magouyrk and Michael Sicilia will take over for Safra Catz, who will take on a new role as executive vice chair of the board.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Fortune \u2022 6h ago",
+    "url": "https://finance.yahoo.com/news/oracle-gen-x-millennial-ceos-214908624.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9999834299087524
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "S&P 500 Gain & Losses Today: Oracle, Nvidia Shares Advance; Kenvue Stock Slips. Shares of a test equipment firm soared on Monday, Sept. 22, 2025, while reports of a looming announcement from Trump administration officials weighed on a consumer health stock.",
+    "instrument": "S&P 500",
+    "source": "Investopedia \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/p-500-gain-losses-today-205536311.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9946271777153015
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Is Lucid (LCID) Stock Soaring Today. Shares of luxury electric car manufacturer Lucid (NASDAQ:LCID) jumped 5.9% in the afternoon session after news of its partnership with Uber to supply 20,000 Gravity SUVs for a new robotaxi program continued to resonate with investors.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-lucid-lcid-stock-soaring-204715049.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.999996542930603
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Dillard's (DDS) Stock Is Down Today. Shares of department store chain Dillard\u2019s (NYSE:DDS) fell 4.2% in the afternoon session after a broad analyst consensus rated the stock a 'Sell', citing worries about the company's financial outlook.",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-dillards-dds-stock-down-204711927.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999991655349731
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "GATX (GATX) Stock Trades Up, Here Is Why. Shares of leasing services company GATX (NYSE:GATX) jumped 2.3% in the afternoon session after Citigroup initiated coverage on the company with a \"Buy\" rating and a $201 price target.",
+    "instrument": "GENERAL",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/gatx-gatx-stock-trades-why-204710138.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Super Micro (SMCI) Stock Trades Up, Here Is Why. Shares of server solutions provider Super Micro (NASDAQ:SMCI) jumped 3% in the afternoon session after the company unveiled a new lineup of AI-optimized computing systems at its INNOVATE! event in Madrid, Spain.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/super-micro-smci-stock-trades-204708134.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.999985933303833
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Seagate Technology (STX) Stock Is Up, What You Need To Know. Shares of data storage manufacturer Seagate (NASDAQ:STX) jumped 3.8% in the afternoon session after the stock received a significant price target increase from financial services firm Cantor Fitzgerald.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/seagate-technology-stx-stock-know-204702160.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999984502792358
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Upwork (UPWK) Stock Trades Down, Here Is Why. Shares of online work marketplace Upwork (NASDAQ:UPWK) fell 4.3% in the afternoon session after the stock's negative momentum continued as the company's President and CEO, Hayden Brown, disclosed a significant sale of company stock.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/upwork-upwk-stock-trades-down-204659598.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999990463256836
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Moderna (MRNA) Stock Is Trading Up Today. Shares of biotechnology company Moderna (NASDAQ:MRNA) jumped 6.1% in the afternoon session after the company announced it delivered the first mRNA vaccines fully manufactured in Canada to the nation's provinces and territories.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-moderna-mrna-stock-trading-204656556.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9992820620536804
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Herc (HRI) Stock Is Up, What You Need To Know. Shares of equipment rental company Herc Holdings (NYSE:HRI) jumped 3.4% in the afternoon session after sentiment in the equipment rental sector improved as a major competitor, United Rentals (URI), received a significant price target increase from JP Morgan. The bank maintained its \"Overweight\" rating on United Rentals and raised its price target by 15% to $1,150. Such a move for a large player often signals strong confidence in the entire industry, which appeared to lift shares of peers like He",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/herc-hri-stock-know-204653694.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Tilray (TLRY) Stock Is Trading Lower Today. Shares of cannabis company Tilray Brands (NASDAQ:TLRY) fell 1.6% in the afternoon session after a strike in British Columbia expanded to include the province's cannabis distribution warehouse, halting the acceptance and shipment of orders.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-tilray-tlry-stock-trading-204650015.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999990463256836
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Instacart (CART) Stock Is Up, What You Need To Know. Shares of online grocery delivery platform Instacart (NASDAQ:CART) jumped 2.7% in the afternoon session after the company announced a partnership with Vroom Delivery to bring its Carrot Ads platform to 3,500 convenience stores across the United States.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/instacart-cart-stock-know-204645848.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9996991157531738
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Chegg (CHGG) Stock Is Up Today. Shares of online study and academic help platform Chegg (NYSE:CHGG) jumped 8.7% in the afternoon session after a broad rally in technology stocks fueled by renewed optimism around artificial intelligence (AI).",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-chegg-chgg-stock-today-204644191.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999996423721313
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why MicroStrategy (MSTR) Stock Is Down Today. Shares of bitcoin development company MicroStrategy (NASDAQ:MSTR) fell 2.3% in the afternoon session after the company announced it purchased an additional 850 bitcoins for $99.7 million, funding the acquisition by selling its own shares.",
+    "instrument": "NASDAQ, Bitcoin",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-microstrategy-mstr-stock-down-204637764.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9990308284759521
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why eXp World (EXPI) Stock Is Falling Today. Shares of real estate technology company eXp World (NASDAQ:EXPI) fell 3.5% in the afternoon session after news of a major merger between two of its key competitors, Compass and Anywhere Real Estate, created significant competitive pressure.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-exp-world-expi-stock-204636231.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999997615814209
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Mercury General (MCY) Stock Is Up Today. Shares of auto insurance provider Mercury General (NYSE:MCY) jumped 3.4% in the afternoon session after Raymond James reaffirmed its \"Strong Buy\" rating and increased its price target on the stock. The financial services firm boosted the price target by 11.11% from $90.00 to a new target of $100.00. This adjustment reflected continued confidence in the company's financial performance and growth outlook. The positive sentiment was also reflected in the market, as the stock reached a new all-time",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-mercury-general-mcy-stock-204633755.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Keurig Dr Pepper (KDP) Stock Is Down Today. Shares of beverage company Keurig Dr Pepper (NASDAQ:KDP) fell 3.5% in the afternoon session after BNP Paribas Exane downgraded the stock to \"Underperform\" from \"Neutral,\" citing broad concerns over its recent merger announcement with JDE Peet.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-keurig-dr-pepper-kdp-204632390.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999990463256836
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why SoundHound AI (SOUN) Stock Is Up Today. Shares of voice AI technology company SoundHound AI (NASDAQ:SOUN) jumped 7.5% in the afternoon session after the company agreed to acquire Interactions Corporation, an AI-driven customer service firm, in a deal valued at up to $85 million.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-soundhound-ai-soun-stock-204631062.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9998379945755005
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why IonQ (IONQ) Stock Is Trading Up Today. Shares of quantum computing company IonQ (NYSE:IONQ) jumped 3.1% in the afternoon session after B. Riley Securities raised its price target on the stock to $100 from $75 and maintained its 'Buy' rating.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-ionq-ionq-stock-trading-204627287.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Dell (DELL) Stock Trades Up, Here Is Why. Shares of computer hardware and IT solutions company Dell (NYSE:DELL) jumped 2.8% in the afternoon session after investor optimism grew around the company's performance in the artificial intelligence (AI) hardware market, supported by a broader rally in technology stocks.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/dell-dell-stock-trades-why-204624157.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999992847442627
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Opendoor (OPEN) Stock Is Nosediving. Shares of technology real estate company Opendoor (NASDAQ:OPEN) fell 7.2% in the afternoon session after a prominent hedge fund manager called the company \"total garbage,\" asserting its business model does not work.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-opendoor-open-stock-nosediving-204624942.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999639987945557
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Zillow (ZG) Stock Is Trading Lower Today. Shares of online real estate marketplace Zillow (NASDAQ:ZG) fell 6.4% in the afternoon session after news broke of a nationwide class-action lawsuit filed against the company, accusing it of deceptive practices related to its agent referral program.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-zillow-zg-stock-trading-204621560.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9997450709342957
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "monday.com (MNDY) Stock Trades Down, Here Is Why. Shares of work management platform monday.com (NASDAQ:MNDY) fell 2.9% in the afternoon session after a regulatory filing signaled an insider's intent to sell a notable block of shares.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/monday-com-mndy-stock-trades-204619696.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999518394470215
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Himax (HIMX) Stock Is Up, What You Need To Know. Shares of semiconductor maker Himax Technologies (NASDAQ:HIMX) jumped 4.3% in the afternoon session after a broad rally in the semiconductor sector lifted chip stocks across the board, driven by positive news from industry giants.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/himax-himx-stock-know-204619481.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why The Trade Desk (TTD) Stock Is Up Today. Shares of digital advertising platform The Trade Desk (NASDAQ:TTD) jumped 4.5% in the afternoon session after investors reacted positively to news that a key competitor, Google, faced an antitrust trial that could force the breakup of its advertising technology business.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-trade-desk-ttd-stock-204617236.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999998807907104
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Is Wabtec (WAB) Stock Rocketing Higher Today. Shares of rail equipment company Westinghouse Air Brake Technologies (NYSE:WAB) jumped 5.9% in the afternoon session after the company announced a landmark $4.2 billion locomotive order from Kazakhstan's national railway, marking the largest contract in the company's history.",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-wabtec-wab-stock-rocketing-204614911.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999992847442627
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Bally's (BALY) Stock Is Trading Up Today. Shares of gaming, betting and entertainment company Bally's Corporation (NYSE:BALY) jumped 4.9% in the afternoon session after Greek gambling company Intralot secured \u20ac660 million ($776 million) in financing to help fund its acquisition of Bally's Interactive International division.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-ballys-baly-stock-trading-204613505.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999808073043823
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Amkor (AMKR) Stock Trades Up, Here Is Why. Shares of semiconductor packaging and testing company Amkor Technology (NASDAQ:AMKR) jumped 4.5% in the afternoon session after the company announced it completed a sale of new bonds to pay off older, more expensive debt.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/amkor-amkr-stock-trades-why-204610938.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9998917579650879
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Apple (AAPL) Stock Is Up, What You Need To Know. Shares of iPhone and iPad maker Apple (NASDAQ:AAPL) jumped 4.2% in the afternoon session after reports of strong early demand for its new iPhone 17 lineup prompted positive commentary and price target increases from multiple analysts.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/apple-aapl-stock-know-204608316.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Norfolk Southern (NSC) Stock Is Up Today. Shares of freight transportation company Norfolk Southern (NYSE:NSC) jumped 2.6% in the afternoon session after the largest U.S. railroad union backed its proposed $72 billion acquisition by Union Pacific following a landmark job security agreement.",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-norfolk-southern-nsc-stock-204603576.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999964237213135
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Lam Research (LRCX) Stock Is Trading Up Today. Shares of semiconductor equipment maker Lam Research (NASDAQ:LRCX) jumped 4.1% in the afternoon session after Morgan Stanley analyst Joseph Moore upgraded the company's stock from an Underweight to an Equal-Weight rating.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-lam-research-lrcx-stock-204603424.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9440079927444458
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "MGM Resorts (MGM) Stock Trades Down, Here Is Why. Shares of hospitality and casino entertainment company MGM Resorts (NYSE:MGM) fell 3.2% in the afternoon session after analysts lowered their price targets, citing concerns about weaker-than-expected growth in Las Vegas.",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/mgm-resorts-mgm-stock-trades-204602842.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999998807907104
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Reynolds (REYN) Stock Trades Up, Here Is Why. Shares of household products company Reynolds (NASDAQ:REYN) jumped 3.6% in the afternoon session after reports revealed it would be added to the S&P SmallCap 600 index.",
+    "instrument": "NASDAQ, Russell 2000",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/reynolds-reyn-stock-trades-why-204551477.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999409914016724
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Coinbase (COIN) Stock Is Down Today. Shares of blockchain infrastructure company Coinbase (NASDAQ:COIN) fell 2.8% in the afternoon session after a widespread sell-off in the cryptocurrency market triggered by massive liquidations.",
+    "instrument": "NASDAQ, Bitcoin, Ethereum",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-coinbase-coin-stock-down-204550046.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999899864196777
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why Jabil (JBL) Stock Is Up Today. Shares of electronics manufacturing services provider Jabil (NYSE:JBL) jumped 3.7% in the afternoon session after UBS raised its price target on the stock to $230 from $208, while maintaining a Neutral rating. The adjustment from the investment bank arrived as Jabil's stock reached a new all-time high of $232.88. This performance reflected a strong upward trend for the company, which also had its quarterly results scheduled for later in the week. The higher price target, despite the unchanged ra",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-jabil-jbl-stock-today-204550653.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "AeroVironment (AVAV) Stock Trades Up, Here Is Why. Shares of aerospace and defense company AeroVironment (NASDAQ:AVAV) jumped 3.1% in the afternoon session after the company announced it was awarded a new firm-fixed-price contract option by the U.S. Space Force to deliver two advanced antenna systems.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/aerovironment-avav-stock-trades-why-204543441.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999992847442627
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Why CAVA (CAVA) Stock Is Trading Up Today. Shares of mediterranean fast-casual restaurant chain CAVA (NYSE:CAVA) jumped 3.2% in the afternoon session after the company announced another restaurant opening in Metro Detroit, signaling continued progress in its national expansion plans.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "StockStory \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/why-cava-cava-stock-trading-204542564.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999996423721313
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Stock Indexes Post New Record Highs on AI Optimism. The S&P 500 Index ($SPX ) (SPY ) on Monday closed up +0.44%, the Dow Jones Industrials Index ($DOWI ) (DIA ) closed up +0.14%, and the Nasdaq 100 Index ($IUXX ) (QQQ ) closed up +0.55%. December E-mini S&P futures (ESZ25 ) rose +0.40%, and December E-mini Nasdaq futures...",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Barchart \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/stock-indexes-post-record-highs-203940303.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9966202974319458
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "How Trump's new H-1B visa rules will affect Mag 7 stocks. At $100,000 per foreign employee, the new rules will undoubtedly have some impact on the tech giants' operations \u2014 and their share prices",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Quartz \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/trumps-h-1b-visa-rules-203318025.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7976152300834656
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Tesla stock jumps to new 2025 closing high as bull run rolls on. Tesla shares chugged higher and hit a new 2025 closing high, shaking off a tough start to the year as investors look ahead to the company\u2019s self-driving future and new products.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/tesla-stock-jumps-to-new-2025-closing-high-as-bull-run-rolls-on-202224560.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999814033508301
+  },
+  {
+    "published_at": "2025-09-23",
+    "text": "Apple Positive for 2025 as Rebounding Stock Nears Record. The stock rose 4.3% to $256.10, and is now up 2.3% for 2025.  The stock has risen nearly 50% off a low hit during the peak of tariff-related uncertainty in April, at which point Apple was down more than 30% on the year.  Recent strength in the stock came amid waning tariff fears and growing optimism that strong demand for its latest iPhones \u2014 especially the more expensive models \u2014 would support growth.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Bloomberg \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/apple-positive-2025-rebounding-stock-202220746.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Wall Street Is Eating Up This Dividend Stock. Should You Buy Shares Before They Surge as Much as 30%?. Kroger stock is drawing Wall Street attention as robust earnings, dividend growth, and new wellness/beauty launches drive forecasts up\u2014analysts now see as much as 27% upside in the shares, with a \u201cModerate Buy\u201d rating and continued buyback support.",
+    "instrument": "S&P 500",
+    "source": "Barchart \u2022 3h ago",
+    "url": "https://finance.yahoo.com/news/wall-street-eating-dividend-stock-233002807.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "These 3 Dividend Stocks Just Raised Their Payouts by Double Digits. With borrowing costs easing and strong fundamentals supporting double-digit dividend increases, these three REITs stand well-positioned to deliver steady growth and income, benefiting from both macroeconomic tailwinds and solid operational execution.",
+    "instrument": "S&P 500, Russell 2000",
+    "source": "Barchart \u2022 3h ago",
+    "url": "https://finance.yahoo.com/news/3-dividend-stocks-just-raised-233002997.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Stock market today: Dow, S&P 500, Nasdaq futures edge up after Wall Street's record-setting rally stalls. US stock futures ticked up after Wall Street ended a record-setting rally.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance \u2022 20m ago",
+    "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-futures-edge-up-after-wall-streets-record-setting-rally-stalls-230354377.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.8592499494552612
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Micron's Q4 earnings surpass Wall Street's expectations in latest test of AI trade. Micron's fourth quarter results surpassed Wall Street analysts' projections on the top and bottom lines.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance \u2022 4h ago",
+    "url": "https://finance.yahoo.com/news/microns-q4-earnings-surpass-wall-streets-expectations-in-latest-test-of-ai-trade-192351138.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "The investor behind the Opendoor rally has spurred a 120% gain in another stock. Erick Jackson unveiled a bullish call on Better stock this week, sending shares up as much as 120% in two days.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Business Insider \u2022 4h ago",
+    "url": "https://finance.yahoo.com/news/investor-behind-opendoor-rally-spurred-224214668.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "As Boeing's stock rises on a new foreign deal, US officials signal China may be next to order planes. Boeing's stock climbed Tuesday after the American aerospace giant announced a significant jetliner order from Uzbekistan and as optimism builds around a potentially larger aircraft sale to China.  David Perdue, the U.S. ambassador to China, said he thinks negotiations over a possible deal involving Boeing and China are likely in their \u201cfinal\u201d days or weeks.  \u201cThis is a huge order, and it's very important to the president, very important to Boeing,\u201d Perdue said Tuesday while visiting China with a group of U.S. lawmakers.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Associated Press Finance \u2022 5h ago",
+    "url": "https://finance.yahoo.com/news/boeings-stock-rises-foreign-deal-213435762.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.987322986125946
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Stocks Settle Lower on Weakness in Big Tech. The S&P 500 Index ($SPX ) (SPY ) on Tuesday closed down -0.55%, the Dow Jones Industrials Index ($DOWI ) (DIA ) closed down -0.19%, and the Nasdaq 100 Index ($IUXX ) (QQQ ) closed down -0.73%. December E-mini S&P futures (ESZ25 ) fell -0.54%, and December E-mini Nasdaq futures...",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Barchart \u2022 6h ago",
+    "url": "https://finance.yahoo.com/news/stocks-settle-lower-weakness-big-204215738.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9988441467285156
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "US stocks may surge another 20% before historic crash, says 'black swan' fund Universa. NEW YORK (Reuters) -Market euphoria could carry U.S. stocks another 20% higher before giving way to a collapse on the scale of the 1929 crash that ushered in a global recession, according to tail-risk hedge fund Universa Investments.  The benchmark S&P 500 has gained about 13% this year, hitting a fresh record high on Monday after the Federal Reserve last week cut interest rates for the first time since December.  For Mark Spitznagel, chief investment officer and founder of Universa, stocks may rise roughly another 20% from current levels, driving the S&P 500 index - which was last at about 6,653 points - to over 8,000 points.",
+    "instrument": "S&P 500",
+    "source": "Reuters \u2022 6h ago",
+    "url": "https://finance.yahoo.com/news/us-stocks-may-surge-another-204005119.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999079704284668
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "MillerKnoll (NASDAQ:MLKN) Beats Q3 Sales Expectations But Quarterly Revenue Guidance Misses Expectations. Office furniture manufacturer MillerKnoll (NASDAQ:MLKN) announced better-than-expected revenue in Q3 CY2025, with sales up 10.9% year on year to $955.7 million. On the other hand, next quarter\u2019s revenue guidance of $946 million was less impressive, coming in 1.5% below analysts\u2019 estimates. Its non-GAAP profit of $0.45 per share was 31.1% above analysts\u2019 consensus estimates.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 6h ago",
+    "url": "https://finance.yahoo.com/news/millerknoll-nasdaq-mlkn-beats-q3-202458789.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9998028874397278
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Micron (NASDAQ:MU) Posts Better-Than-Expected Sales In Q3 But Quarterly Revenue Guidance Misses Expectations. Memory chips maker Micron (NYSE:MU) reported Q3 CY2025 results beating Wall Street\u2019s revenue expectations, with sales up 46% year on year to $11.32 billion. On the other hand, next quarter\u2019s revenue guidance of $2 billion was less impressive, coming in 83.3% below analysts\u2019 estimates. Its non-GAAP profit of $3.03 per share was 5.9% above analysts\u2019 consensus estimates.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 6h ago",
+    "url": "https://finance.yahoo.com/news/micron-nasdaq-mu-posts-better-201438904.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9744201898574829
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Stock market today: Dow, S&P 500, Nasdaq slide after Powell flags Fed's challenge, 'highly valued' stocks. Wall Street heard from Chair Jerome Powell for the first time since the Federal Reserve started cutting interest rates again.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance \u2022 6h ago",
+    "url": "https://finance.yahoo.com/news/live/stock-market-today-dow-sp-500-nasdaq-slide-after-powell-flags-feds-challenge-highly-valued-stocks-174834474.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.6038508415222168
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Oracle Is Poised to Get a TikTok Boost. Should You Buy, Sell, or Hold ORCL Stock Here?. Oracle stock could get a fresh catalyst from its expanded role in securing TikTok\u2019s U.S. operations amid soaring cloud momentum.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Barchart \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/oracle-poised-tiktok-boost-buy-194457391.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "SentinelOne and PubMatic Stocks Trade Down, What You Need To Know. A number of stocks fell in the afternoon session after Federal Reserve Chair Jerome Powell delivered cautious remarks on the economy, spooking investors and pulling indexes back from record highs.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/sentinelone-pubmatic-stocks-trade-down-194043530.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999994039535522
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Upland Software, Shopify, Domo, Five9, and GoDaddy Stocks Trade Down, What You Need To Know. A number of stocks fell in the afternoon session after Federal Reserve Chair Jerome Powell delivered cautious remarks on the economy, spooking investors and pulling indexes back from record highs.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/upland-software-shopify-domo-five9-194039616.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999986886978149
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Analysts Still Can\u2019t Get Enough of Palantir\u2019s \u2018Secret Sauce\u2019 as BofA Hikes Price Target. Should You Buy PLTR Stock Here?. Bank of America maintains a Buy rating on Palantir stock and raises price target to $215. Here\u2019s why the investment firm recommends owning PLTR shares at current levels.",
+    "instrument": "NASDAQ",
+    "source": "Barchart \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/analysts-still-t-enough-palantir-193955638.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.999997615814209
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Why Dillard's (DDS) Stock Is Up Today. Shares of department store chain Dillard\u2019s (NYSE:DDS) jumped 5.5% in the afternoon session after its wholly-owned subsidiary, CDI Contractors, named former Arkansas Secretary of Commerce Mike Preston as its next CEO. The general contractor and construction management company announced that Mark Beach, its current president and CEO, planned to retire. Dillard's President Alex Dillard commented on the change, stating, \u201cWe believe we have assembled a great leadership team at CDI with Mike, Jonathan",
+    "instrument": "GENERAL",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/why-dillards-dds-stock-today-193043300.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9819998741149902
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Why Cencora (COR) Stock Is Trading Up Today. Shares of healthcare distributor Cencora (NYSE:COR) jumped 4.5% in the afternoon session after peer company McKesson raised its long-term earnings growth outlook, boosting investor sentiment across the pharmaceutical distribution sector.",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/why-cencora-cor-stock-trading-193043988.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Why Sally Beauty (SBH) Stock Is Up Today. Shares of beauty supply retailer Sally Beauty (NYSE:SBH) jumped 3.6% in the afternoon session after investor optimism grew around the company's growth plans and a new delivery partnership.",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/why-sally-beauty-sbh-stock-193037472.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999996423721313
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "PENN Entertainment (PENN) Stock Is Up, What You Need To Know. Shares of casino, sports betting and entertainment operator PENN Entertainment (NASDAQ:PENN) jumped 2.3% in the afternoon session after JMP Securities reiterated its Market Outperform rating on the company's stock, along with a $25.00 price target.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/penn-entertainment-penn-stock-know-192616434.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999996423721313
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "AMC Networks (AMCX) Stock Is Up, What You Need To Know. Shares of television broadcasting and production company AMC Networks (NASDAQ:AMCX) jumped 1.5% in the afternoon session after the company announced it renewed \u201cThe Walking Dead: Dead City\u201d for a third season.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/amc-networks-amcx-stock-know-192615452.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.999303936958313
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Guardant Health (GH) Stock Is Up, What You Need To Know. Shares of diagnostics company Guardant Health (NASDAQ:GH) jumped 1.2% in the afternoon session after multiple financial analysts issued positive ratings on the stock. Canaccord Genuity reaffirmed its \"Buy\" rating with a $65 price target ahead of the company's investor day.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/guardant-health-gh-stock-know-192612842.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Smith & Wesson (SWBI) Stock Trades Up, Here Is Why. Shares of american firearms manufacturer Smith & Wesson (NASDAQ:SWBI) jumped 3.5% in the afternoon session after the company made two positive announcements, including the grand opening of its new world-class training academy and the introduction of a new rifle model.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/smith-wesson-swbi-stock-trades-192609562.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Why Option Care Health (OPCH) Stock Is Down Today. Shares of alternate site health provider Option Care Health (NASDAQ:OPCH) fell 3.1% in the afternoon session after investor concerns grew over ongoing contract negotiations for its key drug, Stelara, following a significant price reduction mandated by the Inflation Reduction Act (IRA).",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/why-option-care-health-opch-192607585.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999961853027344
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Why Rocket Lab (RKLB) Stock Is Up Today. Shares of aerospace and defense company Rocket Lab (NASDAQ:RKLB) jumped 4.9% in the afternoon session after the company announced it delivered two spacecraft to NASA for the ESCAPADE mission to Mars.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/why-rocket-lab-rklb-stock-192606830.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999964237213135
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Why Regeneron (REGN) Stock Is Down Today. Shares of biotech company Regeneron (NASDAQ:REGN) fell 4.8% in the afternoon session after a court ruling in Australia dealt a blow to the company's efforts to block a competing version of its blockbuster eye drug, EYLEA.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/why-regeneron-regn-stock-down-192600021.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9997770190238953
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Why Roku (ROKU) Stock Is Up Today. Shares of streaming TV platform Roku (NASDAQ: ROKU) jumped 1.4% in the afternoon session after the company announced the addition of ten new free channels to The Roku Channel, its free streaming service.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/why-roku-roku-stock-today-192558564.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999924898147583
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Why BeautyHealth (SKIN) Stock Is Nosediving. Shares of skincare company BeautyHealth (NASDAQ:SKIN) fell 5.5% in the afternoon session after TD Cowen raised its price target on the stock to $2.50 from $2.00 but maintained its 'Hold' rating.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/why-beautyhealth-skin-stock-nosediving-192551149.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.5600491166114807
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "U-Haul (UHAL) Stock Trades Up, Here Is Why. Shares of moving and storage solutions provider U-Haul (NYSE:UHAL) jumped 2.3% in the afternoon session after the company announced several new dealer partnerships, signaling a continued expansion of its rental network.",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/u-haul-uhal-stock-trades-192550916.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999991655349731
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Intel (INTC) Stock Trades Up, Here Is Why. Shares of computer processor maker Intel (NASDAQ:INTC) jumped 2.8% in the afternoon session after investors continued to react positively to a recent announcement that competitor Nvidia planned to invest $5 billion in the company and collaborate on new products.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/intel-intc-stock-trades-why-192549616.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Nike Could Be the Next Dividend Aristocrat, But Is NKE Stock a Buy?. Nike could join the ranks of the Dividend Aristocrats and boasts a healthy dividend yield of 2.2%. NKE stock has underperformed terribly over the last three years but could reward patient investors.",
+    "instrument": "S&P 500",
+    "source": "Barchart \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/nike-could-next-dividend-aristocrat-192549023.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999997615814209
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Why GXO Logistics (GXO) Stock Is Trading Up Today. Shares of contract logistics company GXO (NYSE:GXO) jumped 1.3% in the afternoon session after the company announced it signed a long-term tenancy agreement for a large warehouse in Malaysia, expanding its footprint in Asia.",
+    "instrument": "GENERAL",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/why-gxo-logistics-gxo-stock-192542654.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999946355819702
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Why Kohl's (KSS) Stock Is Trading Up Today. Shares of department store chain Kohl\u2019s (NYSE:KSS) jumped 2% in the afternoon session after the company received analyst upgrades and saw a surge in interest from retail investors, partly fueled by a stronger-than-expected earnings report.",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/why-kohls-kss-stock-trading-192542925.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Robinhood CIO says investors should watch Opendoor and Better Home stocks carefully. Robinhood CIO Stephanie Guild says investors should make it a point to \"understand\" Opendoor and Better Home.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Yahoo Finance \u2022 7h ago",
+    "url": "https://finance.yahoo.com/news/robinhood-cio-says-investors-should-watch-opendoor-and-better-home-stocks-carefully-192338198.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9967610239982605
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Build-A-Bear continues to rack up market gains, despite tariffs and teetering mall traffic. Tariffs and years of teetering mall traffic have roiled much of the toy industry.  Shares of Build-A-Bear Workshop are up more than 60% since the start of 2025, trading at just under $72 apiece as of Tuesday afternoon.  The toy industry overall has been \u201creasonably soft\u201d in recent years, notes Neil Saunders, managing director of GlobalData \u2014 but certain categories, including craft-oriented products, have done very well following the height of the COVID-19 pandemic.",
+    "instrument": "Russell 2000",
+    "source": "Associated Press Finance \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/build-bear-continues-rack-market-190825448.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9989460110664368
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Plug Power Just Reported Record Output. Should You Buy PLUG Stock Here?. Plug Power shares briefly rallied after the hydrogen fuel cell specialist reported record production at its Georgia facility. But PLUG stock may still be a high-risk bet for the remainder of 2025.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Barchart \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/plug-power-just-reported-record-185438381.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999988079071045
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Kenvue Stock Recoups Losses After Trump Links Tylenol to Autism. Shares may be rising because investors expected the White House to announce stricter regulations on the medication, Citi analysts said.",
+    "instrument": "S&P 500",
+    "source": "Investopedia \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/kenvue-stock-recoups-losses-trump-184601914.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.8001642823219299
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "You Don't Need Millions to Invest In Pre-IPO Stocks Anymore. How to Get In on the Ground Floor. It\u2019s easier than ever for everyday investors to access initial public offerings.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Investopedia \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/dont-millions-invest-pre-ipo-182800565.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.623432457447052
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Revvity Stock: Is RVTY Underperforming the Healthcare Sector?. Despite Revvity\u2019s weak performance relative to the healthcare sector, Wall Street analysts remain moderately optimistic about the stock\u2019s prospects.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Barchart \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/revvity-stock-rvty-underperforming-healthcare-182614299.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.999988317489624
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "HIMS Stock Just Got Rocked (Again) By the FDA. This Analyst Still Thinks Hims & Hers Can Surge 50%.. Despite a sharp selloff after the latest FDA warning, Hims & Hers continues to post triple-digit annual gains and strong revenue growth, with at least one analyst projecting a 50% upside.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Barchart \u2022 8h ago",
+    "url": "https://finance.yahoo.com/news/hims-stock-just-got-rocked-181254999.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Micron Needs a Rosy Outlook to Justify Its Soaring Stock Price. Wall Street is betting that Micron\u2019s results will feature a strong forecast for its high-bandwidth memory chips, a key component of the artificial intelligence infrastructure buildout.  The rising demand comes as major companies such as Oracle Corp. affirm their commitment to spending on AI and Nvidia Corp. is investing in OpenAI to support more AI infrastructure.  As a result of this spending, typically sleepy segments of the technology industry like memory and storage have become an epicenter of AI optimism, with shares of Seagate Technology Holdings Plc, Western Digital Corp. and Sandisk Corp. all seeing massive September rallies along with Micron, which is on track for its biggest one-month jump since December 2009.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Bloomberg \u2022 9h ago",
+    "url": "https://finance.yahoo.com/news/micron-needs-rosy-outlook-justify-111404711.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999997615814209
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "This Stock Could Be the \u2018Shopify of Mortgages.\u2019 Should You Buy It Here?. BETR stock soars as Eric Jackson says it\u2019s a \u201cpotential 350 bagger in 2 years.\u201d But owning Better shares is not without caveats in 2025.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Barchart \u2022 9h ago",
+    "url": "https://finance.yahoo.com/news/stock-could-shopify-mortgages-buy-180951215.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7759320139884949
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Top Stock Movers Now: Nvidia, Halliburton, Vistra, and More. Major U.S. equities indexes lost ground Tuesday afternoon, after Federal Reserve Chair Jerome Powell said the central bank faces a \"challenging situation\" ahead.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Investopedia \u2022 9h ago",
+    "url": "https://finance.yahoo.com/news/top-stock-movers-now-nvidia-180307002.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999980926513672
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Enphase (ENPH) Stock Trades Down, Here Is Why. Shares of home energy technology company Enphase (NASDAQ:ENPH) fell 2.9% in the afternoon session after an analyst at GLJ Research maintained a \"Sell\" rating on the stock, even while raising the price target. The analyst, Gordon Johnson, held firm on his negative outlook for the solar technology company. Although the price target was lifted to $23.49 from a previous $19.80, the reiterated \"Sell\" rating signaled continued skepticism about the stock's future performance. This analyst action appear",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 9h ago",
+    "url": "https://finance.yahoo.com/news/enphase-enph-stock-trades-down-175113654.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999948740005493
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Why Is Ruger (RGR) Stock Rocketing Higher Today. Shares of american firearm manufacturing company Ruger (NYSE:RGR) jumped 6.3% in the afternoon session after Beretta Holding S.A. disclosed its acquisition of a significant stake in the company, signaling a potential for future collaboration.",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 9h ago",
+    "url": "https://finance.yahoo.com/news/why-ruger-rgr-stock-rocketing-175109852.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999994039535522
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Why Bloom Energy (BE) Stock Is Nosediving. Shares of electricity generation and hydrogen production company Bloom Energy (NYSE:BE) fell 8% in the afternoon session after BofA Securities maintained its \"Underperform\" rating on the stock, even while it raised its price target.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "StockStory \u2022 9h ago",
+    "url": "https://finance.yahoo.com/news/why-bloom-energy-stock-nosediving-175108378.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999409914016724
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Stitch Fix (SFIX) Stock Is Up, What You Need To Know. Shares of personalized clothing company Stitch Fix (NASDAQ:SFIX) jumped 4.1% in the afternoon session after investors bid up the stock in anticipation of its fourth-quarter earnings results, scheduled for release after the next day's opening bell.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 9h ago",
+    "url": "https://finance.yahoo.com/news/stitch-fix-sfix-stock-know-175108691.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999483823776245
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Why ChargePoint (CHPT) Stock Is Up Today. Shares of EV charging solutions provider ChargePoint Holdings (NYSE:CHPT) jumped 3% in the afternoon session after the broader clean energy sector rallied amid a wave of positive news, including significant government investment plans.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "StockStory \u2022 9h ago",
+    "url": "https://finance.yahoo.com/news/why-chargepoint-chpt-stock-today-175102300.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999996423721313
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Primerica (PRI) Stock Trades Up, Here Is Why. Shares of financial services company Primerica (NYSE:PRI) jumped 5.4% in the afternoon session after BMO Capital upgraded its rating on the stock to 'Outperform' from 'Market Perform' and lifted its price target.",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 9h ago",
+    "url": "https://finance.yahoo.com/news/primerica-pri-stock-trades-why-175059968.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-09-24",
+    "text": "Camping World (CWH) Stock Trades Up, Here Is Why. Shares of recreational vehicle (RV) and boat retailer Camping World (NYSE:CWH) jumped 4.3% in the afternoon session after positive news from the recreational vehicle (RV) sector signaled growing innovation, lifting sentiment for major industry players.",
+    "instrument": "S&P 500",
+    "source": "StockStory \u2022 9h ago",
+    "url": "https://finance.yahoo.com/news/camping-world-cwh-stock-trades-175058113.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999942779541016
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "US gov't shutdown, stock reaction, jobs data pause: 3 Things. US stock futures (ES=F, NQ=F, YM=F) are slipping in Wednesday's pre-market trading in response to the US government shutting down for the first time since 2018 after lawmakers failed to reach a compromise in a spending bill. Gold prices (GC=F) continue their record run higher, nearing $3,900. The US Bureau of Labor Statistics (BLS) was originally scheduled to report September jobs data this Friday morning, October 3, but this shutdown could delay the release of the report and other key economic data. Certain government agencies' operations will also be temporarily shuttered. To watch more expert insights and analysis on the latest market action, check out more&nbsp;Morning Brief.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Yahoo Finance Video \u2022 1d ago",
+    "url": "https://finance.yahoo.com/video/us-govt-shutdown-stock-reaction-132407170.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9349185228347778
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Lithium Americas, Big Tech, Nike: Trending Stocks. The US government takes 5% stake in Lithium Americas (LAC) which turbo-charges its shares, Big Tech dips after 'casino app' lawsuit proceeds and Warren Buffet's Berkshire Hathaway (BRK-B) nears deal to buy Occidental. For more live coverage of markets watch the full episode of Market Sunrise and head to Yahoo Finance.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance Video \u2022 1d ago",
+    "url": "https://finance.yahoo.com/video/lithium-americas-big-tech-nike-130207889.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9986639022827148
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Big Pharma's big boost: Market Movers. Pharma giants in the US had a massive boost after Pfizer (PFE) avoided tariffs by coming to an agreement with Donald Trump to sell drugs directly to the American people at a lower price. Domestic competitors Eli Lilly (LLY) and Merck (MRK) are expected to follow suit, as Pfizer also announced $70 billion dollars worth of investment in the US. The ripple effects were also felt in Europe and beyond. For more live coverage of markets watch the full episode of Market Sunrise and head to Yahoo Finance.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance Video \u2022 1d ago",
+    "url": "https://finance.yahoo.com/video/big-pharmas-big-boost-market-120302259.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999985694885254
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "US government shuts down: What's next. The US government is shut down after Congress failed to reach a spending budget agreement. Yahoo Finance Washington Correspondent Ben Werschkul breaks down the latest, including factors standing between lawmakers and a deal, the impact on the US economy, and more. To watch more expert insights and analysis on the latest market action, check out more Morning Brief.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Yahoo Finance Video \u2022 1d ago",
+    "url": "https://finance.yahoo.com/video/us-government-shuts-down-whats-115435093.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9754734039306641
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Government shutdown begins: What it means for you. The US government has entered a shutdown after Democrats and Republicans failed to come to an agreement over key legislative points. Ramzan Karmali breaks down what happens next and what it means for Americans, as the country braces for travel disruptions, a data blackout, and far-reaching ramifications across markets. For more live coverage of markets watch the full episode of Market Sunrise and head to Yahoo Finance.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Yahoo Finance Video \u2022 1d ago",
+    "url": "https://finance.yahoo.com/video/government-shutdown-begins-means-100213630.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9961832165718079
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Private economic data is set to take on an even bigger role. Even before the latest threat of a government shutdown, policymakers and economists have nodded to a shift toward using more private data.",
+    "instrument": "GENERAL",
+    "source": "Yahoo Finance \u2022 1d ago",
+    "url": "https://finance.yahoo.com/news/private-economic-data-is-set-to-take-on-an-even-bigger-role-100049442.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.7639186382293701
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Wall Street sets more records, but bond yields drop following discouraging data on the job market. Stocks rose to more records on Wednesday, as Wall Street still doesn\u2019t care much about the shutdown of the U.S. government, but yields sank in the bond market following the latest discouraging signals on the economy.  The Dow Jones Industrial Average added 43 points, or 0.1%, to its own record set the day before, while the Nasdaq composite rose 0.4%.  The action was stronger in the bond market, where Treasury yields dropped after a report suggested hiring may have been much weaker across the country last month than economists expected.",
+    "instrument": "NASDAQ",
+    "source": "Associated Press \u2022 1d ago",
+    "url": "https://finance.yahoo.com/news/asian-shares-mixed-markets-shrug-033016066.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9956663846969604
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Stocks end third quarter on high note as Dow clinches record, Big Tech extends gains as AI trade rolls on. Stocks capped a historic third quarter \u2014 and the S&P 500\u2019s best September since 2010 \u2014 as investors bet on economic resilience, Big Tech dominance, and AI-driven growth.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/stocks-end-third-quarter-on-high-note-as-dow-clinches-record-big-tech-extends-gains-as-ai-trade-rolls-on-211744004.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Silver nears record in hockey stick rally, gold approaches $4,000 an ounce. Gold has surged 45% year to date, but silver is just a stone's throw away from an old record after six straight weeks of gains.",
+    "instrument": "GENERAL",
+    "source": "Yahoo Finance \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/silver-nears-record-in-hockey-stick-rally-gold-approaches-4000-an-ounce-185452976.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.999998927116394
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Why Sallie Mae (SLM) Stock Is Down Today. Shares of student loan provider Sallie Mae (NASDAQ:SLM) fell 1.4% in the afternoon session after an analyst at Morgan Stanley lowered the price target on the stock.",
+    "instrument": "NASDAQ",
+    "source": "StockStory \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/why-sallie-mae-slm-stock-185051201.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999755620956421
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Mega Wall Street dealmakers are having their best year ever. In 2025, companies have announced 49 global 'mega deals,' the highest such count through the first nine months of any year ever.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Yahoo Finance \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/mega-wall-street-dealmakers-are-having-their-best-year-ever-151648050.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999997615814209
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Spotify CEO to step down at the start of 2026. Spotify (SPOT) founder and CEO Daniel Ek will step down as chief executive and transition to a new role as executive chairman at the start of 2026. Shares of the music streaming platform are sliding lower on this news. Yahoo Finance senior entertainment reporter Allie Canal breaks down this news. To watch more expert insights and analysis on the latest market action, check out more&nbsp;Market Catalysts.",
+    "instrument": "NASDAQ",
+    "source": "Yahoo Finance Video \u2022 2d ago",
+    "url": "https://finance.yahoo.com/video/spotify-ceo-step-down-start-144228389.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9319483637809753
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Spotify stock drops after Daniel Ek says he\u2019ll step down as CEO in 2026. Spotify shares fell after CEO Daniel Ek announced he will step down and transition to executive chairman in 2026, as investors weighed the leadership change alongside weak earnings and softer guidance.",
+    "instrument": "NASDAQ",
+    "source": "Yahoo Finance \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/spotify-stock-drops-after-daniel-ek-says-hell-step-down-as-ceo-in-2026-121025941.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999916553497314
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Stocks Pressured as Government Shutdown Looms. The S&P 500 Index ($SPX ) (SPY ) today is down -0.17%, the Dow Jones Industrials Index ($DOWI ) (DIA ) is down -0.02%, and the Nasdaq 100 Index ($IUXX ) (QQQ ) is down -0.30%. December E-mini S&P futures (ESZ25 ) are down -0.15%, and December E-mini Nasdaq futures...",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Barchart \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/stocks-pressured-government-shutdown-looms-140130189.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999276399612427
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Cash Flow + Capital Gains: 3 Tech Stocks That Do Both. Discover 3 top-rated tech stocks that actually pay dividends, have growth, stability, and Wall Street \u201cStrong Buy\u201d ratings.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Barchart \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/cash-flow-capital-gains-3-140109079.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Spotify CEO resigns, CoreWeave & Meta, Exxon: Trending tickers. Morning Brief host Julie Hyman takes a look at some of Tuesday morning's trending tickers and stories. Spotify (SPOT) CEO Daniel Ek has stepped down as chief executive. He will be succeeded by Gustav S\u00f6derstr\u00f6m and Alex Norstr\u00f6m as co-CEOs. Exxon (XOM) is reportedly planning to lay off 2,000 employees, according to Bloomberg. CoreWeave (CRWV) signed a deal to supply Meta (META) with computing power. To watch more expert insights and analysis on the latest market action, check out more Morning Brief.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance Video \u2022 2d ago",
+    "url": "https://finance.yahoo.com/video/spotify-ceo-resigns-coreweave-meta-132849096.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9999916553497314
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Wolfspeed, Firefly, Google, SanDisk, Etsy: Trending Stocks. Wolfspeed (WOLF) soars by more than 1,700% after a Chapter 11 bankruptcy filing, Firefly (FLY) falls after a rocket crash, Google (GOOG) agrees to pay $24.5 million to settle lawsuit over Trump suspension, SanDisk (SNDK) soars on AI hardware demand, and Etsy (ETSY) ditches the Nasdaq to list on the New York Stock Exchange. Ramzan Karmali brings you the stocks you need to watch today. For more live coverage of markets watch the full episode of Market Sunrise and head to Yahoo Finance.",
+    "instrument": "NASDAQ",
+    "source": "Yahoo Finance Video \u2022 2d ago",
+    "url": "https://finance.yahoo.com/video/wolfspeed-firefly-google-sandisk-etsy-123054789.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9998243451118469
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Stock Index Futures Slip as Shutdown Deadline Looms, U.S. JOLTs Report and Fed Speak Awaited. December S&P 500 E-Mini futures (ESZ25) are down -0.23%, and December Nasdaq 100 E-Mini futures (NQZ25) are down -0.14% this morning as investors grew anxious with the deadline to avert a U.S. government shutdown approaching.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Barchart \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/stock-index-futures-slip-shutdown-102315772.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999581575393677
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "What To Expect From the September Jobs Report This Week. Forecasters say the job market likely bounced back in September, but we many not know for sure for some time: a government shutdown could delay Friday's crucial report on hiring.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Investopedia \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/expect-september-jobs-report-week-100000823.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999849796295166
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "S&P 500, Nasdaq slip as US government shutdown looms. The S&P 500 and the Nasdaq edged lower on Tuesday, the final day of the third quarter, on worries that a looming U.S. government shutdown could jeopardize the timely release of economic data.  At 10:08 a.m. ET, the Dow Jones Industrial Average fell 15.05 points, or 0.03%, to 46,301.02, the S&P 500 lost 8.48 points, or 0.13%, to 6,652.73, and the Nasdaq Composite shed 58.07 points, or 0.26%, to 22,533.08.  Communication services stocks on the S&P 500 fell 1.3%, dragged by losses in Meta Platforms and Alphabet, which fell 1.9% and 1.4%, respectively.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Reuters \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/wall-street-futures-fall-investor-094750833.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999840259552002
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Stocks buck seasonal slump to rise in September. A Fed rate cut, tech\u2019s AI surge, and expanding corporate margins have stocks rallying in a month that usually drags them down",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Quartz \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/stocks-buck-seasonal-slump-rise-090500624.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.6587849855422974
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "CenterPoint Unveils a $65 Billion Decade-Long Investment Plan. CenterPoint boosts long-term capital spending and raises earnings guidance amid surging Texas demand.",
+    "instrument": "S&P 500",
+    "source": "Oilprice.com \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/centerpoint-unveils-65-billion-decade-040000302.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 1.0
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Wall Street yawns at DC's looming shutdown as the Dow sets another record. U.S. stocks coasted to the finish of their latest winning month on Tuesday, as Wall Street yawned at the potential shutdown of the U.S. federal government that\u2019s looming.  A second report suggested the job market may be remaining in its \u201clow-hire, low-fire\u201d state.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Associated Press \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/asian-shares-trade-narrow-range-035545653.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.637687087059021
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "China factory activity shrinks again as firms watch for stimulus, US trade deal. BEIJING (Reuters) -China's manufacturing activity shrank for a sixth month in September, an official survey showed on Tuesday, suggesting producers are waiting for further stimulus to boost domestic demand, as well as clarity on a U.S. trade deal.  The prolonged slump underlines the twin pressures on China's economy: domestic demand has failed to mount a durable recovery in the years since the pandemic while U.S. President Donald Trump's tariffs have squeezed Chinese factories as well as overseas firms that buy components.  All the same, a separate private-sector survey of factory managers showed the fastest expansion since March, buoyed by rising new orders and accelerated production growth, including an uptick in new export orders.",
+    "instrument": "GENERAL",
+    "source": "Reuters \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/china-factory-activity-shrinks-sixth-013616676.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.999855637550354
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "EA is going private in a $55B deal: What to know. Electronic Arts (EA) is going private in a $55 billion all-cash deal. Raymond James analyst Andrew Marok and Wedbush Securities managing director Michael Pachter join Market Catalysts to discuss what the deal means for investors and what's next for the soon-to-be private company. To watch more expert insights and analysis on the latest market action, check out more Market Catalysts.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance Video \u2022 3d ago",
+    "url": "https://finance.yahoo.com/video/ea-going-private-55b-deal-155007712.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.6207346320152283
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Gold hits $3.8K, but investors should 'wait': Here's why. Gold (GC=F) hit $3,800 for the first time amid a recent rally. Yahoo Finance Senior Reporter Ines Ferr\u00e9 outlines the details of the commodity's rise, and Sevens Report Research founder Tom Essaye examines the precious metal from an investment perspective. To watch more expert insights and analysis on the latest market action, check out more Opening Bid.",
+    "instrument": "GENERAL",
+    "source": "Yahoo Finance Video \u2022 3d ago",
+    "url": "https://finance.yahoo.com/video/gold-hits-3-8k-investors-152825746.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9997108578681946
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "The stock market valuation chart we want now but can't have until 2035. While we can\u2019t accurately predict earnings through 2035, we have the ability to go back in time to 2015 and beyond to calculate what \"forward-realized CAPE\" would\u2019ve been based on actual earnings reported.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Yahoo Finance \u2022 4d ago",
+    "url": "https://finance.yahoo.com/news/the-stock-market-valuation-chart-we-want-now-but-cant-have-until-2035-204520281.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9998924732208252
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Costco tops Q4 earnings estimates while growing US sales. Costco Wholesale (COST) exceeded fourth quarter earnings estimates, reporting revenue of $86.16 billion (vs. estimates of $86.03 billion) and adjusted earnings of $5.87 per share (vs. estimates of $5.82). Yahoo Finance senior reporter Brooke DiPalma joins Josh Lipton on Market Domination Overtime in assessing Costco's quarterly results, the retailer's North American sales figures, and how the chain competes with Walmart (WMT). To watch more expert insights and analysis on the latest market action, check out more&nbsp;Market Domination Overtime.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance Video \u2022 7d ago",
+    "url": "https://finance.yahoo.com/video/costco-tops-q4-earnings-estimates-203634725.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.99998939037323
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "Costco stock sinks after US same-store sales miss forecasts as consumers weigh value push, tariff pressures. Costco's earnings and revenue topped forecasts for its fourth quarter while US same-store sales were slightly below expectations.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance \u2022 6d ago",
+    "url": "https://finance.yahoo.com/news/costco-stock-sinks-after-us-same-store-sales-miss-forecasts-as-consumers-weigh-value-push-tariff-pressures-201423787.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999459981918335
+  },
+  {
+    "published_at": "2025-10-02",
+    "text": "What Wall Street strategists think about record stock valuations. US stocks (^DJI, ^GSPC, ^IXIC) are trading at record highs after the Federal Reserve cut interest rates. Meanwhile, some on Wall Street warn the market may be in bubble territory. Yahoo Finance Senior Reporter Allie Canal outlines the latest, with comments from the Yahoo Finance team's recent interviews with strategists. To watch more expert insights and analysis on the latest market action, check out more Market Catalysts.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Yahoo Finance Video \u2022 13d ago",
+    "url": "https://finance.yahoo.com/video/wall-street-strategists-think-record-163035969.html",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.8817422389984131
   }
 ]
