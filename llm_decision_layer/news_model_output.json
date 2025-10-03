@@ -12198,5 +12198,15 @@
     "market_signal": "Flat",
     "sentiment_label": "neutral",
     "sentiment_score": 0.8817422389984131
+  },
+  {
+    "published_at": "2025-10-03",
+    "text": "US private jobs plunge by 32K in September, ADP reports. ADP reported private company jobs to have declined by 32,000 in September, throwing off experts' expectations of a gain of 51,000. Yahoo Finance senior business reporter Ines Ferr\u00e9 reacts to this data and how it ties back to investor forecasts for the Federal Reserve to further cut interest rates. The US Bureau of Labor Statistics (BLS) was originally scheduled to report September jobs data this Friday morning, October 3, but this shutdown could delay the release of the report and other key economic data. Certain government agencies' operations will also be temporarily shuttered. To watch more expert insights and analysis on the latest market action, check out more&nbsp;Morning Brief.",
+    "instrument": "NASDAQ, S&P 500, Russell 2000",
+    "source": "Yahoo Finance Video \u2022 1d ago",
+    "url": "https://finance.yahoo.com/video/us-private-jobs-plunge-32k-135107405.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9823015928268433
   }
 ]
