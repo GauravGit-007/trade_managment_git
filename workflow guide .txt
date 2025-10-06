@@ -32,7 +32,7 @@ now shortcut for testing                     (automated steps)
 
 1 .   run-->      python automated workflow.py  (include all tasks of step 1 and one models\news_model.py task of step 2 aswell) may not show anything for 10 mins but it works
 2.    run-->      python models\lstm.py
-3.    run-->      python services\monitor_actuals.pypython services\monitor_actuals.py
+3.    run-->      python services\monitor_actuals.py
 
 then run your learning approach these three satisfy all the basic requirements before running
 

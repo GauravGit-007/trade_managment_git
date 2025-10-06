@@ -1,83 +1,84 @@
 {
   "/ES:XCME{=h}": {
-    "action": "STRONG_BUY",
-    "confidence": 0.9,
-    "reasoning": "The RSI is significantly oversold at 17.54, indicating a potential reversal opportunity. The current price is below the 5-period SMA, suggesting a short-term undervaluation. Despite the downward trend, the positive news sentiment and high volume ratio suggest potential for a rebound. The ATR indicates manageable volatility, and the lack of negative news headlines reduces downside risk.",
-    "price_target": 6735.0,
-    "stop_loss": 6700.0,
-    "risk_reward_ratio": 2.5,
+    "action": "SELL",
+    "confidence": 0.75,
+    "reasoning": "The current price is significantly above both the 5-period and 20-period SMAs, indicating potential overvaluation. The RSI is above 60, suggesting the asset is nearing overbought conditions. The trend direction is down, which aligns with a selling strategy. The ATR indicates moderate volatility, which should be considered for risk management. News sentiment is neutral, providing no strong bullish signals to counteract the technical indicators.",
+    "price_target": 6740.0,
+    "stop_loss": 6800.0,
+    "risk_reward_ratio": 2.0,
     "key_factors": [
-      "RSI oversold",
-      "Positive news sentiment",
-      "Volume confirmation"
+      "Price above SMA",
+      "RSI nearing overbought",
+      "Downward trend direction"
     ],
     "time_horizon": "1-4 hours",
     "symbol": "/ES:XCME{=h}",
-    "timestamp": "2025-10-03T03:35:07.109263",
-    "current_price": 6717.0,
-    "action_code": 4
+    "timestamp": "2025-10-06T05:47:40.782816",
+    "current_price": 6785.75,
+    "action_code": 1
   },
   "/NQ:XCME{=h}": {
-    "action": "STRONG_BUY",
-    "confidence": 0.85,
-    "reasoning": "The RSI is significantly oversold at 17.33, indicating a potential reversal or bounce. The current price is below the 5-period SMA but approaching the 20-period SMA, suggesting a possible upward movement. Despite the downtrend, the volume ratio is high, which could indicate strong interest in the asset. News sentiment is neutral, which does not hinder a potential technical rebound. Given the oversold RSI and volume confirmation, a short-term buy opportunity is present.",
-    "price_target": 24950.0,
-    "stop_loss": 24700.0,
-    "risk_reward_ratio": 2.5,
+    "action": "SELL",
+    "confidence": 0.75,
+    "reasoning": "The current price is above both the 5-period and 20-period SMAs, indicating potential overvaluation in the short term. The RSI is above 60, suggesting the market is nearing overbought conditions. The trend direction is down, which aligns with a bearish outlook. Despite the neutral news sentiment, the volume ratio is elevated, indicating potential for a reversal. Given the lack of positive news catalysts and the technical indicators suggesting a bearish trend, a sell recommendation is appropriate.",
+    "price_target": 25050.0,
+    "stop_loss": 25200.0,
+    "risk_reward_ratio": 2.0,
     "key_factors": [
-      "RSI oversold",
-      "High volume ratio",
-      "Approaching 20-period SMA"
+      "RSI nearing overbought",
+      "Trend direction down",
+      "Elevated volume ratio"
     ],
     "time_horizon": "1-4 hours",
     "symbol": "/NQ:XCME{=h}",
-    "timestamp": "2025-10-03T03:35:09.024322",
-    "current_price": 24831.0,
-    "action_code": 4
+    "timestamp": "2025-10-06T05:47:42.502618",
+    "current_price": 25101.5,
+    "action_code": 1
   },
   "/MES:XCME{=h}": {
-    "action": "BUY",
-    "confidence": 0.85,
-    "reasoning": "The RSI is significantly oversold at 25.99, indicating a potential reversal or bounce. The current price is below the 5-period SMA, suggesting a short-term undervaluation. Despite the downward trend, the neutral news sentiment and low volume ratio suggest limited downside pressure. The ATR indicates moderate volatility, which can be favorable for a short-term rebound. Given these factors, a buy position is recommended with a tight stop loss to manage risk.",
-    "price_target": 6732.0,
-    "stop_loss": 6700.0,
-    "risk_reward_ratio": 2.5,
+    "action": "SELL",
+    "confidence": 0.75,
+    "reasoning": "The current price is significantly above both the 5-period and 20-period SMA, indicating potential overvaluation. The RSI is above 60, suggesting the asset is nearing overbought conditions. The trend direction is down, which aligns with a potential price correction. Despite the neutral news sentiment, the high volume ratio suggests increased trading activity, possibly indicating a reversal. Given the absence of recent positive news and the technical indicators suggesting a downward trend, a sell position is recommended.",
+    "price_target": 6740.0,
+    "stop_loss": 6800.0,
+    "risk_reward_ratio": 1.5,
     "key_factors": [
-      "RSI oversold",
-      "Neutral news sentiment",
-      "Low volume ratio"
+      "RSI nearing overbought",
+      "Price above SMA",
+      "Downward trend direction"
     ],
     "time_horizon": "1-4 hours",
     "symbol": "/MES:XCME{=h}",
-    "timestamp": "2025-10-03T03:35:10.666907",
-    "current_price": 6717.5,
-    "action_code": 3
+    "timestamp": "2025-10-06T05:47:44.185032",
+    "current_price": 6786.0,
+    "action_code": 1
   },
   "/MNQ:XCME{=h}": {
-    "action": "BUY",
-    "confidence": 0.85,
-    "reasoning": "The RSI is significantly oversold at 27.84, suggesting a potential reversal or bounce. The current price is below the 5-period SMA, indicating a short-term undervaluation. Despite the downward trend direction, the neutral news sentiment and lack of negative news headlines suggest limited downside risk. The low volume ratio indicates that the recent price movements may not be strongly supported by trading activity, which could lead to a reversal. Given the ATR, the market volatility is manageable, allowing for a favorable risk-reward setup.",
-    "price_target": 24950.0,
-    "stop_loss": 24750.0,
-    "risk_reward_ratio": 2.5,
+    "action": "SELL",
+    "confidence": 0.75,
+    "reasoning": "The current price is significantly above both the 5-period and 20-period SMAs, indicating a potential overextension. The RSI is above 60, suggesting the asset is nearing overbought conditions. The trend direction is down, which aligns with a selling strategy. Despite the neutral news sentiment, the technical indicators suggest a short-term correction is likely. The volume ratio above 1 indicates increased trading activity, which could support a downward move.",
+    "price_target": 25000.0,
+    "stop_loss": 25200.0,
+    "risk_reward_ratio": 2.0,
     "key_factors": [
-      "RSI oversold",
-      "Neutral news sentiment",
-      "Low volume ratio"
+      "Price above SMA",
+      "RSI nearing overbought",
+      "Downward trend direction",
+      "High volume ratio"
     ],
     "time_horizon": "1-4 hours",
     "symbol": "/MNQ:XCME{=h}",
-    "timestamp": "2025-10-03T03:35:12.544589",
-    "current_price": 24834.5,
-    "action_code": 3
+    "timestamp": "2025-10-06T05:47:46.153007",
+    "current_price": 25101.75,
+    "action_code": 1
   },
   "/RTY:XCME{=h}": {
     "action": "BUY",
     "confidence": 0.85,
-    "reasoning": "The RSI is extremely oversold at 20, indicating a potential reversal opportunity. The current price is above both the 5-period and 20-period SMA, suggesting a short-term bullish momentum despite the overall downtrend. The volume ratio is significantly high, which may confirm a potential reversal. News sentiment is neutral, not providing any negative bias. Given the oversold condition and volume confirmation, a short-term buy opportunity is present.",
-    "price_target": 2485.0,
-    "stop_loss": 2470.0,
-    "risk_reward_ratio": 2.5,
+    "reasoning": "The RSI is currently at 30.19, indicating an oversold condition which suggests a potential reversal. The current price is above both the 5-period and 20-period SMA, indicating a possible short-term bullish momentum despite the overall trend direction being down. The volume ratio is above 1, suggesting strong market interest at the current price level. News sentiment is neutral, which does not provide any negative bias against a buy decision. Given the oversold RSI and volume confirmation, a short-term buy position is recommended.",
+    "price_target": 2520.0,
+    "stop_loss": 2490.0,
+    "risk_reward_ratio": 2.0,
     "key_factors": [
       "RSI oversold",
       "Volume confirmation",
@@ -85,62 +86,63 @@
     ],
     "time_horizon": "1-4 hours",
     "symbol": "/RTY:XCME{=h}",
-    "timestamp": "2025-10-03T03:35:14.211297",
-    "current_price": 2477.3,
+    "timestamp": "2025-10-06T05:47:48.364051",
+    "current_price": 2501.7,
     "action_code": 3
   },
   "/QM:XNYM{=h}": {
     "action": "BUY",
     "confidence": 0.85,
-    "reasoning": "The current price of $63.55 is above both the 5-period and 20-period SMAs, indicating a bullish trend. The RSI is at 64.71, suggesting the asset is not yet overbought, allowing room for further upward movement. The trend direction is up, and despite the neutral news sentiment, there are no negative headlines impacting the market. The low volume ratio indicates potential for increased trading activity, which could drive prices higher. Given the technical indicators and the absence of negative news, a buy recommendation is supported.",
-    "price_target": 64.5,
-    "stop_loss": 63.0,
-    "risk_reward_ratio": 3.0,
+    "reasoning": "The RSI is significantly oversold at 20.19, indicating a potential reversal or bounce. Although the trend direction is down, the oversold condition suggests a short-term buying opportunity. The volume ratio is above 1, indicating strong interest and potential for a price move. News sentiment is neutral, which does not hinder a potential technical rebound. The current price is below both the 5-period and 20-period SMAs, suggesting a potential mean reversion trade.",
+    "price_target": 62.5,
+    "stop_loss": 61.5,
+    "risk_reward_ratio": 2.5,
     "key_factors": [
-      "Price above SMAs",
-      "RSI below overbought levels",
-      "Upward trend direction"
+      "RSI oversold",
+      "Volume confirmation",
+      "Mean reversion potential"
     ],
     "time_horizon": "1-4 hours",
     "symbol": "/QM:XNYM{=h}",
-    "timestamp": "2025-10-03T03:35:16.086257",
-    "current_price": 63.55,
+    "timestamp": "2025-10-06T05:47:50.034197",
+    "current_price": 61.85,
     "action_code": 3
   },
   "/QG:XNYM{=h}": {
     "action": "SELL",
     "confidence": 0.75,
-    "reasoning": "The RSI is above 70, indicating the asset is overbought, which suggests a potential price correction. The 5-period SMA is above the current price, indicating short-term bearish pressure. The ATR suggests moderate volatility, which could lead to price fluctuations. The news sentiment is neutral, providing no strong fundamental support for a bullish move. The volume ratio is low, indicating weak trading activity, which may not support a sustained upward trend.",
-    "price_target": 2.85,
-    "stop_loss": 2.9,
-    "risk_reward_ratio": 1.5,
+    "reasoning": "The current price is significantly above both the 5-period and 20-period SMAs, indicating potential overvaluation. The RSI is neutral, suggesting no strong momentum in either direction. The trend direction is down, which aligns with a selling strategy. The news sentiment is neutral, providing no positive catalyst to counteract the technical indicators. The volume ratio is below 1, indicating weaker trading activity, which supports a sell decision.",
+    "price_target": 3.3,
+    "stop_loss": 3.45,
+    "risk_reward_ratio": 2.0,
     "key_factors": [
-      "RSI overbought",
-      "Neutral news sentiment",
-      "Low volume ratio"
+      "Price above SMA",
+      "Downward trend direction",
+      "Neutral RSI",
+      "Neutral news sentiment"
     ],
     "time_horizon": "1-4 hours",
     "symbol": "/QG:XNYM{=h}",
-    "timestamp": "2025-10-03T03:35:17.894454",
-    "current_price": 2.865,
+    "timestamp": "2025-10-06T05:47:51.768905",
+    "current_price": 3.41,
     "action_code": 1
   },
   "/MCL:XNYM{=h}": {
     "action": "BUY",
-    "confidence": 0.85,
-    "reasoning": "The current price of $63.59 is above both the 5-period SMA ($62.27) and the 20-period SMA ($62.18), indicating a bullish trend. The RSI is at 63.84, suggesting the asset is not overbought yet, supporting further upward movement. The ATR of $0.34 indicates moderate volatility, which is manageable for a short-term trade. Despite the neutral news sentiment, the technical indicators align with a buy signal, particularly with the upward trend direction and positive momentum.",
-    "price_target": 64.5,
-    "stop_loss": 62.8,
-    "risk_reward_ratio": 2.5,
+    "confidence": 0.75,
+    "reasoning": "The RSI is significantly oversold at 21.94, indicating potential for a price rebound. Despite the downward trend and current price below both the 5-period and 20-period SMAs, the oversold condition suggests a short-term buying opportunity. The neutral news sentiment does not provide a strong directional bias, but the elevated volume ratio indicates increased market interest, which could support a price recovery. Risk management is crucial given the current volatility as indicated by the ATR.",
+    "price_target": 62.5,
+    "stop_loss": 61.5,
+    "risk_reward_ratio": 2.0,
     "key_factors": [
-      "Price above SMA",
-      "RSI below overbought levels",
-      "Upward trend direction"
+      "RSI oversold",
+      "Neutral news sentiment",
+      "High volume ratio"
     ],
     "time_horizon": "1-4 hours",
     "symbol": "/MCL:XNYM{=h}",
-    "timestamp": "2025-10-03T03:35:19.592230",
-    "current_price": 63.59,
+    "timestamp": "2025-10-06T05:47:53.463014",
+    "current_price": 61.87,
     "action_code": 3
   }
 }

@@ -12208,5 +12208,45 @@
     "market_signal": "Down",
     "sentiment_label": "negative",
     "sentiment_score": 0.9823015928268433
+  },
+  {
+    "published_at": "2025-10-06",
+    "text": "What to Expect From Hilton's Next Quarterly Earnings Report. Hilton is all set to release its fiscal third-quarter earnings later this month, and analysts project a single-digit earnings growth.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "Barchart \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/expect-hiltons-next-quarterly-earnings-121153239.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9987809062004089
+  },
+  {
+    "published_at": "2025-10-06",
+    "text": "Wall St eyes Washington standoff with stocks near records. NEW YORK (Reuters) -The U.S. government shutdown tops investors' agenda next week as markets head into the seasonally strong fourth quarter, with equities near record highs bracing for an earnings-season test later this month.  A deep partisan rift in Washington led to a federal government shutdown that risks delaying crucial economic data and could potentially muddy the Federal Reserve's policy-easing outlook.  Few on Wall Street expect the Washington impasse to derail a rally that has lifted the S&P 500 by 14% to repeated record highs, but with little in the way of major data or earnings, the Capitol Hill drama is set to dominate investor focus.",
+    "instrument": "S&P 500",
+    "source": "Reuters \u2022 2d ago",
+    "url": "https://finance.yahoo.com/news/wall-st-eyes-washington-standoff-100249784.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.9999556541442871
+  },
+  {
+    "published_at": "2025-10-06",
+    "text": "Carvana Whizzes Through Green Light From Jefferies Upgrade. Car vending machines are all the rage this year, with shares in the firm behind the novel notion, Carvana, soaring this year.",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "The Daily Upside \u2022 3d ago",
+    "url": "https://finance.yahoo.com/news/carvana-whizzes-green-light-jefferies-103000614.html",
+    "market_signal": "Down",
+    "sentiment_label": "negative",
+    "sentiment_score": 0.8779866099357605
+  },
+  {
+    "published_at": "2025-10-06",
+    "text": "5 Must-Read Analyst Questions From Costco\u2019s Q3 Earnings Call. Costco\u2019s third quarter saw a negative market reaction, with shares declining following results that otherwise met most Wall Street expectations. Management emphasized that growth in membership upgrades, expansion of executive member benefits, and new store openings were key factors driving the company\u2019s performance. CEO Ron Vachris pointed to the 1% lift in U.S. sales from extended store hours and a meaningful increase in upgrades to executive membership. CFO Gary Millerchip highlighted that hig",
+    "instrument": "NASDAQ, S&P 500",
+    "source": "StockStory \u2022 3d ago",
+    "url": "https://finance.yahoo.com/news/5-must-read-analyst-questions-053052018.html",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9998693466186523
   }
 ]

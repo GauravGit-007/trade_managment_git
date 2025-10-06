@@ -1,14 +1,14 @@
 {
-  "timestamp": "2025-10-03T04:36:06.783426",
+  "timestamp": "2025-10-06T05:48:45.543845",
   "monitoring_period_hours": 6,
   "performance_data": null,
   "alerts": [
     {
       "type": "WARNING",
       "message": "No recent performance data available",
-      "timestamp": "2025-10-03T04:36:06.783426"
+      "timestamp": "2025-10-06T05:48:45.543845"
     }
   ],
   "symbol_breakdown": {},
-  "total_decisions": 16
+  "total_decisions": 8
 }
