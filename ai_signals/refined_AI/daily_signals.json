@@ -1,0 +1,194 @@
+{
+  "/ES:XCME{=h}": {
+    "status": "SKIPPED",
+    "reason": "Data not fresh - user chose to skip",
+    "freshness_report": {
+      "symbol": "/ES:XCME{=h}",
+      "historical_data": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:00:00+00:00",
+        "hours_old": 169.84357834555556
+      },
+      "news_data": {
+        "available": false,
+        "latest_timestamp": null,
+        "hours_old": null
+      },
+      "lstm_predictions": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:57:41Z",
+        "hours_old": 168.88218945666665
+      },
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
+    }
+  },
+  "/NQ:XCME{=h}": {
+    "status": "SKIPPED",
+    "reason": "Data not fresh - user chose to skip",
+    "freshness_report": {
+      "symbol": "/NQ:XCME{=h}",
+      "historical_data": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:00:00+00:00",
+        "hours_old": 169.84358943388887
+      },
+      "news_data": {
+        "available": false,
+        "latest_timestamp": null,
+        "hours_old": null
+      },
+      "lstm_predictions": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:57:41Z",
+        "hours_old": 168.882200545
+      },
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
+    }
+  },
+  "/MES:XCME{=h}": {
+    "status": "SKIPPED",
+    "reason": "Data not fresh - user chose to skip",
+    "freshness_report": {
+      "symbol": "/MES:XCME{=h}",
+      "historical_data": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:00:00+00:00",
+        "hours_old": 169.8436001061111
+      },
+      "news_data": {
+        "available": false,
+        "latest_timestamp": null,
+        "hours_old": null
+      },
+      "lstm_predictions": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:57:41Z",
+        "hours_old": 168.88221121722222
+      },
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
+    }
+  },
+  "/MNQ:XCME{=h}": {
+    "status": "SKIPPED",
+    "reason": "Data not fresh - user chose to skip",
+    "freshness_report": {
+      "symbol": "/MNQ:XCME{=h}",
+      "historical_data": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:00:00+00:00",
+        "hours_old": 169.8436070536111
+      },
+      "news_data": {
+        "available": false,
+        "latest_timestamp": null,
+        "hours_old": null
+      },
+      "lstm_predictions": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:57:41Z",
+        "hours_old": 168.88221816472222
+      },
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
+    }
+  },
+  "/RTY:XCME{=h}": {
+    "status": "SKIPPED",
+    "reason": "Data not fresh - user chose to skip",
+    "freshness_report": {
+      "symbol": "/RTY:XCME{=h}",
+      "historical_data": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:00:00+00:00",
+        "hours_old": 169.84361825444444
+      },
+      "news_data": {
+        "available": false,
+        "latest_timestamp": null,
+        "hours_old": null
+      },
+      "lstm_predictions": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:57:41Z",
+        "hours_old": 168.88222936555556
+      },
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
+    }
+  },
+  "/QM:XNYM{=h}": {
+    "status": "SKIPPED",
+    "reason": "Data not fresh - user chose to skip",
+    "freshness_report": {
+      "symbol": "/QM:XNYM{=h}",
+      "historical_data": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:00:00+00:00",
+        "hours_old": 169.84362768944445
+      },
+      "news_data": {
+        "available": false,
+        "latest_timestamp": null,
+        "hours_old": null
+      },
+      "lstm_predictions": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:57:41Z",
+        "hours_old": 168.88223880055554
+      },
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
+    }
+  },
+  "/QG:XNYM{=h}": {
+    "status": "SKIPPED",
+    "reason": "Data not fresh - user chose to skip",
+    "freshness_report": {
+      "symbol": "/QG:XNYM{=h}",
+      "historical_data": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:00:00+00:00",
+        "hours_old": 169.84363638416667
+      },
+      "news_data": {
+        "available": false,
+        "latest_timestamp": null,
+        "hours_old": null
+      },
+      "lstm_predictions": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:57:41Z",
+        "hours_old": 168.88224749527777
+      },
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
+    }
+  },
+  "/MCL:XNYM{=h}": {
+    "status": "SKIPPED",
+    "reason": "Data not fresh - user chose to skip",
+    "freshness_report": {
+      "symbol": "/MCL:XNYM{=h}",
+      "historical_data": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:00:00+00:00",
+        "hours_old": 169.8436440675
+      },
+      "news_data": {
+        "available": false,
+        "latest_timestamp": null,
+        "hours_old": null
+      },
+      "lstm_predictions": {
+        "available": true,
+        "latest_timestamp": "2025-10-09T04:57:41Z",
+        "hours_old": 168.8822551786111
+      },
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
+    }
+  }
+}

@@ -33,8 +33,11 @@ now shortcut for testing                     (automated steps)
 1 .   run-->      python automated workflow.py  (include all tasks of step 1 and one models\news_model.py task of step 2 aswell) may not show anything for 10 mins but it works
 2.    run-->      python models\lstm.py
 3.    run-->      python services\monitor_actuals.py
+ 
+ these three satisfy all the basic requirements before running
 
-then run your learning approach these three satisfy all the basic requirements before running
+
+then run your learning approach RL , SL or AI SIGNALS
 
 like for supervised
 4.   run the whole line-->    python supervised\sl_workflow.py --action full_pipeline --symbols "/ES:XCME{=h}" "/NQ:XCME{=h}" "/MES:XCME{=h}" "/RTY:XCME{=h}" "/QM:XNYM{=h}" "/QG:XNYM{=h}" "/MCL:XNYM{=h}" "BTC/USD:CXTALP{=h}" "ETH/USD:CXTALP{=h}"
@@ -49,3 +52,5 @@ like for supervised
 
 1.   when running any sl or rl decision_loop.py file it will also create a trade history file in the root where you can check the trade records
       and see what action is the model taking,and what price is it trading on currenly,and this file will auto update itself each time you run the decision_loop
+
+2.check ai_signals\PRACTICAL_GUIDE.md  to understand the ai signals workflow and follow it through step by step

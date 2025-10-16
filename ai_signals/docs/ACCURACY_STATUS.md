@@ -125,3 +125,5 @@ python accuracy_calculator.py --hours 24
 4. **Continue monitoring** for ongoing performance tracking
 
 **Your AI signals system is ready to achieve >70% accuracy as soon as the data is updated!** 🎉
+
+

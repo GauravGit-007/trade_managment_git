@@ -1,0 +1,82 @@
+[
+  {
+    "published_at": "2025-10-16",
+    "text": "S&P 500 Market Update: Index shows resilience amid market conditions. S&P 500 futures maintaining stability with balanced market sentiment and technical indicators showing neutral to positive bias.",
+    "instrument": "/ES:XCME{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/0",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.999998927116394
+  },
+  {
+    "published_at": "2025-10-16",
+    "text": "NASDAQ-100 Market Analysis: Tech sector holding steady. NASDAQ-100 futures showing stability with technology sector maintaining current levels amid mixed market signals.",
+    "instrument": "/NQ:XCME{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/1",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999701976776123
+  },
+  {
+    "published_at": "2025-10-16",
+    "text": "Micro S&P 500 Update: Small contract following main index trend. Micro S&P 500 futures tracking the main S&P 500 index with similar market dynamics and sentiment patterns.",
+    "instrument": "/MES:XCME{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/2",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9999996423721313
+  },
+  {
+    "published_at": "2025-10-16",
+    "text": "Micro NASDAQ-100 Market Update: Tech sector micro contract stable. Micro NASDAQ-100 futures maintaining stability in line with the main NASDAQ-100 index performance.",
+    "instrument": "/MNQ:XCME{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/3",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9528667330741882
+  },
+  {
+    "published_at": "2025-10-16",
+    "text": "Russell 2000 Market Update: Small caps showing mixed signals. Russell 2000 futures displaying mixed market sentiment with small-cap stocks showing varied performance patterns.",
+    "instrument": "/RTY:XCME{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/4",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9996486902236938
+  },
+  {
+    "published_at": "2025-10-16",
+    "text": "Crude Oil Market Update: Energy sector maintaining stability. Crude oil futures showing stable price action with balanced supply and demand factors influencing market direction.",
+    "instrument": "/QM:XNYM{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/5",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999346733093262
+  },
+  {
+    "published_at": "2025-10-16",
+    "text": "Natural Gas Market Update: Energy commodity holding steady. Natural gas futures maintaining current levels with weather and storage factors providing market stability.",
+    "instrument": "/QG:XNYM{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/6",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999998807907104
+  },
+  {
+    "published_at": "2025-10-16",
+    "text": "Micro Crude Oil Update: Small energy contract following oil trend. Micro crude oil futures tracking the main crude oil contract with similar energy market dynamics.",
+    "instrument": "/MCL:XNYM{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/7",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9999972581863403
+  }
+]

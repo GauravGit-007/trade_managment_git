@@ -4,6 +4,8 @@ import asyncio
 import websockets
 import json
 import sqlite3
+import argparse
+import time
 import uuid
 from datetime import datetime, timezone, timedelta
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -77,36 +79,65 @@ def get_last_24_hours_timestamps():
     return int(start_time.timestamp()) * 1000
 
 # --- MODIFICATION 2: Changed table name for clarity ---
-def append_to_db(row):
-    if all((isinstance(x, float) and math.isnan(x)) or (isinstance(x, str) and x.lower() == "nan") for x in row):
-        print(f" Skipping row: all values are NaN: {row}")
-        return
+def ensure_schema(cursor):
+    table_name = "historical_data_1h"
+    cursor.execute(f'''
+        CREATE TABLE IF NOT EXISTS {table_name} (
+            id TEXT PRIMARY KEY,
+            symbol TEXT,
+            open REAL,
+            close REAL,
+            high REAL,
+            low REAL,
+            volume INTEGER,
+            timestamp TEXT
+        )
+    ''')
+    # Unique index for idempotent upserts per symbol/timestamp
+    cursor.execute(f"""
+        CREATE UNIQUE INDEX IF NOT EXISTS idx_{table_name}_symbol_time
+        ON {table_name}(symbol, timestamp)
+    """)
+    # Query speed indexes
+    cursor.execute(f"CREATE INDEX IF NOT EXISTS idx_{table_name}_symbol ON {table_name}(symbol)")
+    cursor.execute(f"CREATE INDEX IF NOT EXISTS idx_{table_name}_timestamp ON {table_name}(timestamp)")
 
-    conn, cursor = TradeDatabase.sql_connect()
-    try:
-        # It's good practice to store minute-data in a separate table
-        table_name = "historical_data_1h"
-        cursor.execute(f'''
-            CREATE TABLE IF NOT EXISTS {table_name} (
-                id TEXT PRIMARY KEY,
-                symbol TEXT,
-                open REAL,
-                close REAL,
-                high REAL,
-                low REAL,
-                volume INTEGER,
-                timestamp TEXT
-            )
-        ''')
 
-        row_with_uuid = [str(uuid.uuid4())] + row
-        cursor.execute(f'''
-            INSERT OR IGNORE INTO {table_name} (id, symbol, open, close, high, low, volume, timestamp)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-        ''', row_with_uuid)
-        conn.commit()
-    finally:
-        TradeDatabase.close_connection(conn)
+def batch_upsert_candles(cursor, rows):
+    """Upsert many candles using the unique (symbol,timestamp) index.
+    rows is a list of [symbol, open, close, high, low, volume, timestamp]
+    """
+    if not rows:
+        return 0
+    table_name = "historical_data_1h"
+    # Build tuples for executemany; generate UUIDs per row
+    payload = [(str(uuid.uuid4()), r[0], r[1], r[2], r[3], r[4], r[5], r[6]) for r in rows if not (
+        all((isinstance(x, float) and math.isnan(x)) or (isinstance(x, str) and str(x).lower() == "nan") for x in r)
+    )]
+    # Use INSERT OR REPLACE to deduplicate by unique index (symbol,timestamp)
+    cursor.executemany(
+        f"""
+        INSERT OR REPLACE INTO {table_name}
+        (id, symbol, open, close, high, low, volume, timestamp)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        """,
+        payload,
+    )
+    return len(payload)
+
+
+def save_with_retry(cursor, rows, retries: int = 5, delay_sec: float = 0.5) -> int:
+    """Retry wrapper around batch_upsert_candles to handle 'database is locked'."""
+    attempt = 0
+    while True:
+        try:
+            return batch_upsert_candles(cursor, rows)
+        except sqlite3.OperationalError as e:
+            if "database is locked" in str(e).lower() and attempt < retries:
+                time.sleep(delay_sec * (attempt + 1))
+                attempt += 1
+                continue
+            raise
 
 def parse_flat_candles(flat_data: list):
     chunk_size = 7
@@ -126,7 +157,7 @@ def data_exists(symbol: str, date: str) -> bool:
 def get_yesterday_date() -> str:
     return (datetime.now(timezone.utc) - timedelta(days=1)).strftime("%Y-%m-%d")
 
-async def connect_to_dxlink(url: str, token: str, symbol: str, start_timestamp: int):
+async def connect_to_dxlink(url: str, token: str, symbol: str, start_timestamp: int, cursor=None, commit_interval: int = 500):
     async with websockets.connect(url) as ws:
         print("[OK] Connected to WebSocket")
 
@@ -155,6 +186,8 @@ async def connect_to_dxlink(url: str, token: str, symbol: str, start_timestamp: 
         print(f"[OK] Sent FEED_SUBSCRIPTION for {symbol} (1-hour candles) from {datetime.fromtimestamp(start_timestamp / 1000, tz=timezone.utc)}")
 
         try:
+            buffer = []
+            total_saved = 0
             while True:
                 response = await ws.recv()
                 data = json.loads(response)
@@ -164,11 +197,18 @@ async def connect_to_dxlink(url: str, token: str, symbol: str, start_timestamp: 
                     feed_content = data["data"][1]
 
                     if feed_type == "Candle" and isinstance(feed_content, list):
-                        candle_count = 0
                         for candle in parse_flat_candles(feed_content):
-                            append_to_db(candle)
-                            candle_count += 1
-                        print(f"[OK] {candle_count} 1-hour candle(s) saved to DB for {symbol}.")
+                            # candle = [symbol, open, close, high, low, volume, timestamp]
+                            buffer.append(candle)
+                            if cursor is not None and len(buffer) >= commit_interval:
+                                saved = save_with_retry(cursor, buffer)
+                                buffer.clear()
+                                total_saved += saved
+                        if cursor is not None and buffer:
+                            saved = save_with_retry(cursor, buffer)
+                            total_saved += saved
+                            buffer.clear()
+                        print(f"[OK] {total_saved} 1-hour candle(s) saved to DB for {symbol}.")
         except websockets.ConnectionClosed:
             print("[OK] Connection closed.")
 
@@ -225,23 +265,38 @@ if __name__ == "__main__":
                     print(f"⚠️ Error fetching data for {symbol}: {e}")
 """
 
-if __name__ == "__main__":
-    symbols = [
+def parse_args():
+    parser = argparse.ArgumentParser(description="Fetch 1-hour historical candles and store in SQLite")
+    parser.add_argument("--symbols", nargs="*", default=[
         "/NQ:XCME", "/ES:XCME", "/RTY:XCME", "/QG:XNYM", "/QM:XNYM",
-        "BTC/USD:CXTALP", "ETH/USD:CXTALP", "/MES:XCME", "/MNQ:XCME", "/MCL:XNYM"
-    ]
+        "/MES:XCME", "/MNQ:XCME", "/MCL:XNYM"
+    ], help="Symbols to fetch (root family without {=1h})")
+    parser.add_argument("--hours", type=int, default=24, help="How many hours back to fetch")
+    parser.add_argument("--commit-interval", type=int, default=500, help="Batch size for DB commits")
+    return parser.parse_args()
 
-    # Timestamp exactly 24 hours ago
-    start_timestamp = get_last_24_hours_timestamps()
+
+if __name__ == "__main__":
+    args = parse_args()
+    # Timestamp N hours ago
+    start_time = datetime.now(timezone.utc) - timedelta(hours=args.hours)
+    start_timestamp = int(start_time.timestamp()) * 1000
 
     session_token = login_to_tastyworks(email, password)
     if session_token:
         token, dxlink_url = get_api_quote_token(session_token)
         if token and dxlink_url:
-            print("[OK] Token acquired. Fetching last 24 hourly candles.")
-            for symbol in symbols:
-                print(f"\n [OK] Fetching 1-hour candles for symbol: {symbol}")
-                try:
-                    asyncio.run(connect_to_dxlink(dxlink_url, token, symbol, start_timestamp))
-                except Exception as e:
-                    print(f"[X] Error fetching data for {symbol}: {e}")
+            print(f"[OK] Token acquired. Fetching last {args.hours} hourly candles.")
+            conn, cursor = TradeDatabase.sql_connect()
+            try:
+                ensure_schema(cursor)
+                for symbol in args.symbols:
+                    print(f"\n [OK] Fetching 1-hour candles for symbol: {symbol}")
+                    try:
+                        asyncio.run(connect_to_dxlink(dxlink_url, token, symbol, start_timestamp, cursor, args.commit_interval))
+                        conn.commit()
+                    except Exception as e:
+                        print(f"[X] Error fetching data for {symbol}: {e}")
+                conn.commit()
+            finally:
+                TradeDatabase.close_connection(conn)

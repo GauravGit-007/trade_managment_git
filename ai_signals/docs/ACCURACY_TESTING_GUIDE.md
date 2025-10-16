@@ -331,3 +331,6 @@ cd ai_signals && python accuracy_calculator.py --hours 48
 ```
 
 **Your AI signals system is designed to achieve >70% accuracy with real, authentic calculations!** 🎯
+
+
+
