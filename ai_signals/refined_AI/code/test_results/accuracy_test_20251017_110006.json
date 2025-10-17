@@ -1,0 +1,607 @@
+{
+  "analysis_metadata": {
+    "timestamp": "2025-10-17T11:00:06.081732",
+    "days_back": 7,
+    "symbol_filter": "/ES:XCME{=h}",
+    "interactive_mode": false,
+    "total_decisions_found": 68,
+    "valid_decisions_analyzed": 0,
+    "skipped_decisions": 68
+  },
+  "overall_statistics": {
+    "overall_accuracy_score": 0,
+    "overall_directional_score": 0,
+    "overall_final_accuracy": 0,
+    "best_accuracy": 0,
+    "worst_accuracy": 0,
+    "validity_penalty_applied": 0,
+    "total_decisions": 68,
+    "valid_decisions": 0,
+    "skipped_decisions": 68,
+    "analysis_timestamp": "2025-10-17T11:00:06.081732"
+  },
+  "detailed_results": [
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_time": "2025-10-16T11:02:03.485889",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 23.967382149166667
+    },
+    {
+      "symbol": "/MCL:XNYM{=h}",
+      "decision_time": "2025-10-16T09:35:11.511422",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 25.415152834444445
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_time": "2025-10-16T09:35:10.159071",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 25.415528487499998
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "decision_time": "2025-10-16T09:35:08.649237",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 25.415947885833333
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_time": "2025-10-16T09:35:06.801923",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 25.416461028611113
+    },
+    {
+      "symbol": "/MNQ:XCME{=h}",
+      "decision_time": "2025-10-16T09:35:04.699194",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 25.417045119999997
+    },
+    {
+      "symbol": "/MES:XCME{=h}",
+      "decision_time": "2025-10-16T09:35:03.119148",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 25.417484021666667
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_time": "2025-10-16T09:35:01.480738",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 25.417940802222223
+    },
+    {
+      "symbol": "/ES:XCME{=h}",
+      "decision_time": "2025-10-16T09:34:59.214067",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 25.418570433055553
+    },
+    {
+      "symbol": "/MCL:XNYM{=h}",
+      "decision_time": "2025-10-16T09:33:11.306125",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 25.44854486138889
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_time": "2025-10-16T09:33:09.520697",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 25.449040813611113
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "decision_time": "2025-10-16T09:33:08.234418",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 25.44939811333333
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_time": "2025-10-16T09:33:00.725010",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 25.451484471666667
+    },
+    {
+      "symbol": "/MES:XCME{=h}",
+      "decision_time": "2025-10-16T09:32:50.819776",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 25.454235925555558
+    },
+    {
+      "symbol": "/MCL:XNYM{=h}",
+      "decision_time": "2025-10-16T08:43:05.828109",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.2834002775
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_time": "2025-10-16T08:43:04.400695",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.28379678138889
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "decision_time": "2025-10-16T08:43:02.832676",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.28423267638889
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_time": "2025-10-16T08:43:01.293057",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.284660348333333
+    },
+    {
+      "symbol": "/MNQ:XCME{=h}",
+      "decision_time": "2025-10-16T08:42:59.381386",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.285191710555555
+    },
+    {
+      "symbol": "/MES:XCME{=h}",
+      "decision_time": "2025-10-16T08:42:57.765658",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.28564052388889
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_time": "2025-10-16T08:42:56.201927",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.28607489361111
+    },
+    {
+      "symbol": "/ES:XCME{=h}",
+      "decision_time": "2025-10-16T08:42:54.583168",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.286524548888888
+    },
+    {
+      "symbol": "/MCL:XNYM{=h}",
+      "decision_time": "2025-10-16T08:37:08.019649",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.382792193055554
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_time": "2025-10-16T08:37:06.438517",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.38323180527778
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "decision_time": "2025-10-16T08:37:04.950438",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.383645160555552
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_time": "2025-10-16T08:37:03.601426",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.384019886111112
+    },
+    {
+      "symbol": "/MNQ:XCME{=h}",
+      "decision_time": "2025-10-16T08:37:02.102997",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.38443611638889
+    },
+    {
+      "symbol": "/MES:XCME{=h}",
+      "decision_time": "2025-10-16T08:37:00.818408",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.384792946666668
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_time": "2025-10-16T08:36:59.286484",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.38521848111111
+    },
+    {
+      "symbol": "/ES:XCME{=h}",
+      "decision_time": "2025-10-16T08:36:57.922418",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.385597695
+    },
+    {
+      "symbol": "/MCL:XNYM{=h}",
+      "decision_time": "2025-10-16T08:34:44.179646",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.422748465
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_time": "2025-10-16T08:34:42.579528",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.423192942222222
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "decision_time": "2025-10-16T08:34:41.146517",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.423591000833333
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_time": "2025-10-16T08:34:39.689304",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.423995782222224
+    },
+    {
+      "symbol": "/MNQ:XCME{=h}",
+      "decision_time": "2025-10-16T08:34:38.246950",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.424396715
+    },
+    {
+      "symbol": "/MES:XCME{=h}",
+      "decision_time": "2025-10-16T08:34:36.559233",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.424865525277777
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_time": "2025-10-16T08:34:35.123938",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.425264218333336
+    },
+    {
+      "symbol": "/ES:XCME{=h}",
+      "decision_time": "2025-10-16T08:34:33.709535",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.425657108055553
+    },
+    {
+      "symbol": "/MCL:XNYM{=h}",
+      "decision_time": "2025-10-16T08:34:09.420204",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.432404144444444
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_time": "2025-10-16T08:34:07.540111",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.4329263925
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "decision_time": "2025-10-16T08:34:05.657245",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.433449410833333
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_time": "2025-10-16T08:34:04.134158",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.43387289111111
+    },
+    {
+      "symbol": "/MNQ:XCME{=h}",
+      "decision_time": "2025-10-16T08:34:02.658564",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.434282778333333
+    },
+    {
+      "symbol": "/MES:XCME{=h}",
+      "decision_time": "2025-10-16T08:34:01.070825",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.434723816944445
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_time": "2025-10-16T08:33:59.283292",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.435220353888887
+    },
+    {
+      "symbol": "/ES:XCME{=h}",
+      "decision_time": "2025-10-16T08:33:57.457666",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.435727472222222
+    },
+    {
+      "symbol": "/MCL:XNYM{=h}",
+      "decision_time": "2025-10-16T08:17:43.444978",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.706286552222224
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "decision_time": "2025-10-16T08:17:41.814151",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.706739840833333
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_time": "2025-10-16T08:17:40.179948",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.707193786111112
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_time": "2025-10-16T08:17:38.727319",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.707597294166668
+    },
+    {
+      "symbol": "/ES:XCME{=h}",
+      "decision_time": "2025-10-16T08:17:37.309305",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.707991186944444
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_time": "2025-10-16T08:13:05.658112",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.783449851666667
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_time": "2025-10-16T08:13:04.252543",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.783840570555558
+    },
+    {
+      "symbol": "/ES:XCME{=h}",
+      "decision_time": "2025-10-16T08:13:02.901919",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 26.78421574388889
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_time": "2025-10-16T07:43:16.539589",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.280427502222224
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_time": "2025-10-16T07:43:15.256143",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.280784015
+    },
+    {
+      "symbol": "/ES:XCME{=h}",
+      "decision_time": "2025-10-16T07:43:13.844646",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.28117638166667
+    },
+    {
+      "symbol": "/MCL:XNYM{=h}",
+      "decision_time": "2025-10-16T07:42:12.415773",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.2982399575
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_time": "2025-10-16T07:42:09.363017",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.299087945277776
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "decision_time": "2025-10-16T07:42:00.223225",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.301626776388886
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_time": "2025-10-16T07:41:56.548885",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.302647426388887
+    },
+    {
+      "symbol": "/MNQ:XCME{=h}",
+      "decision_time": "2025-10-16T07:41:55.116291",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.303045648055555
+    },
+    {
+      "symbol": "/MES:XCME{=h}",
+      "decision_time": "2025-10-16T07:41:50.653768",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.30428523777778
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_time": "2025-10-16T07:41:37.011972",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.308074625555555
+    },
+    {
+      "symbol": "/ES:XCME{=h}",
+      "decision_time": "2025-10-16T07:41:35.456655",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.308506658055553
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_time": "2025-10-16T07:26:03.157719",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.56747858472222
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_time": "2025-10-16T07:26:01.660074",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.567894905000003
+    },
+    {
+      "symbol": "/ES:XCME{=h}",
+      "decision_time": "2025-10-16T07:26:00.216713",
+      "status": "SKIPPED",
+      "reason": "Outside 12-hour criteria - non-interactive mode",
+      "hours_old": 27.568295838611114
+    }
+  ],
+  "symbol_summary": {
+    "/QG:XNYM{=h}": {
+      "total_decisions": 8,
+      "analyzed_decisions": 0,
+      "skipped_decisions": 8,
+      "accuracy_scores": [],
+      "directional_scores": [],
+      "final_scores": [],
+      "avg_accuracy_score": 0,
+      "avg_directional_score": 0,
+      "avg_final_score": 0,
+      "best_accuracy": 0,
+      "worst_accuracy": 0
+    },
+    "/MCL:XNYM{=h}": {
+      "total_decisions": 8,
+      "analyzed_decisions": 0,
+      "skipped_decisions": 8,
+      "accuracy_scores": [],
+      "directional_scores": [],
+      "final_scores": [],
+      "avg_accuracy_score": 0,
+      "avg_directional_score": 0,
+      "avg_final_score": 0,
+      "best_accuracy": 0,
+      "worst_accuracy": 0
+    },
+    "/QM:XNYM{=h}": {
+      "total_decisions": 8,
+      "analyzed_decisions": 0,
+      "skipped_decisions": 8,
+      "accuracy_scores": [],
+      "directional_scores": [],
+      "final_scores": [],
+      "avg_accuracy_score": 0,
+      "avg_directional_score": 0,
+      "avg_final_score": 0,
+      "best_accuracy": 0,
+      "worst_accuracy": 0
+    },
+    "/RTY:XCME{=h}": {
+      "total_decisions": 11,
+      "analyzed_decisions": 0,
+      "skipped_decisions": 11,
+      "accuracy_scores": [],
+      "directional_scores": [],
+      "final_scores": [],
+      "avg_accuracy_score": 0,
+      "avg_directional_score": 0,
+      "avg_final_score": 0,
+      "best_accuracy": 0,
+      "worst_accuracy": 0
+    },
+    "/MNQ:XCME{=h}": {
+      "total_decisions": 6,
+      "analyzed_decisions": 0,
+      "skipped_decisions": 6,
+      "accuracy_scores": [],
+      "directional_scores": [],
+      "final_scores": [],
+      "avg_accuracy_score": 0,
+      "avg_directional_score": 0,
+      "avg_final_score": 0,
+      "best_accuracy": 0,
+      "worst_accuracy": 0
+    },
+    "/MES:XCME{=h}": {
+      "total_decisions": 7,
+      "analyzed_decisions": 0,
+      "skipped_decisions": 7,
+      "accuracy_scores": [],
+      "directional_scores": [],
+      "final_scores": [],
+      "avg_accuracy_score": 0,
+      "avg_directional_score": 0,
+      "avg_final_score": 0,
+      "best_accuracy": 0,
+      "worst_accuracy": 0
+    },
+    "/NQ:XCME{=h}": {
+      "total_decisions": 10,
+      "analyzed_decisions": 0,
+      "skipped_decisions": 10,
+      "accuracy_scores": [],
+      "directional_scores": [],
+      "final_scores": [],
+      "avg_accuracy_score": 0,
+      "avg_directional_score": 0,
+      "avg_final_score": 0,
+      "best_accuracy": 0,
+      "worst_accuracy": 0
+    },
+    "/ES:XCME{=h}": {
+      "total_decisions": 10,
+      "analyzed_decisions": 0,
+      "skipped_decisions": 10,
+      "accuracy_scores": [],
+      "directional_scores": [],
+      "final_scores": [],
+      "avg_accuracy_score": 0,
+      "avg_directional_score": 0,
+      "avg_final_score": 0,
+      "best_accuracy": 0,
+      "worst_accuracy": 0
+    }
+  }
+}

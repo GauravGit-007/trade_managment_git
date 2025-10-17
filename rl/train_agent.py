@@ -171,7 +171,7 @@ def main():
     single_symbol = os.environ.get("RL_SYMBOL")
     #timesteps = int(os.environ.get("RL_TIMESTEPS", "50000"))
     #just quickly testing with 500 timesteps
-    timesteps = int(os.environ.get("RL_TIMESTEPS", "500000"))
+    timesteps = int(os.environ.get("RL_TIMESTEPS", "50000000"))
     run_symbols = [single_symbol] if single_symbol else SYMBOLS
 
     for symbol in run_symbols:

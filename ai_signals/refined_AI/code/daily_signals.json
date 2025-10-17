@@ -1,188 +1,230 @@
 {
   "/ES:XCME{=h}": {
-    "signal": "HOLD",
-    "confidence_score": 0.75,
-    "predicted_price": 6576.82,
-    "reasoning": "The current price is slightly up with a positive news sentiment, but the LSTM predicts a decrease in price. RSI is moderately high, indicating potential overbought conditions. Volume is below average, suggesting low market activity. These mixed signals suggest holding is prudent.",
-    "data_sources_used": "historical_data,news_sentiment,lstm_predictions,market_volatility",
+    "signal": "SELL",
+    "confidence_score": 0.9,
+    "predicted_price": 6534.23,
+    "reasoning": "The RSI is extremely high at 87.3, indicating overbought conditions. The LSTM model predicts a significant price drop of 3.04%. The volume ratio is low at 0.13x average, suggesting weak buying interest. Despite neutral news sentiment, technical indicators and predictive models suggest a downward trend.",
+    "data_sources_used": "historical_data,lstm_predictions,market_volatility",
     "data_freshness": {
       "symbol": "/ES:XCME{=h}",
       "historical_data": {
         "available": true,
-        "latest_timestamp": "2025-10-16T09:00:00+00:00",
-        "hours_old": 0.5823479672222223
+        "latest_timestamp": "2025-10-17T09:00:00+00:00",
+        "hours_old": 0.9659120338888889
       },
       "news_data": {
         "available": true,
         "latest_timestamp": "2025-10-16T08:33:32.894001+00:00",
-        "hours_old": 1.0232107447222223
+        "hours_old": 25.40677481138889
+      },
+      "news_data_website": {
+        "available": false,
+        "latest_timestamp": null,
+        "hours_old": null,
+        "latest_url": null
       },
       "lstm_predictions": {
         "available": true,
-        "latest_timestamp": "2025-10-16T07:51:00Z",
-        "hours_old": 1.7323479672222222
+        "latest_timestamp": "2025-10-17T09:57:31Z",
+        "hours_old": 0.007300922777777778
       },
-      "all_fresh": true,
-      "recommendation": "PROCEED"
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
     }
   },
   "/NQ:XCME{=h}": {
-    "signal": "HOLD",
-    "confidence_score": 0.75,
-    "predicted_price": 24366.38,
-    "reasoning": "The RSI indicates a neutral position at 60.0, suggesting neither overbought nor oversold conditions. The LSTM prediction indicates a potential price decrease of 2.62%, which contrasts with the positive news sentiment. The low volume ratio suggests limited market activity, reducing confidence in a strong directional move. Given mixed signals from technical indicators, predictions, and sentiment, holding is advisable.",
-    "data_sources_used": "historical_data,news_sentiment,lstm_predictions",
+    "signal": "SELL",
+    "confidence_score": 0.8,
+    "predicted_price": 24278.92,
+    "reasoning": "The RSI indicates overbought conditions, suggesting a potential price correction. LSTM predictions also forecast a decrease in price. Despite neutral news sentiment, the low volume ratio indicates weak market interest, supporting a sell signal.",
+    "data_sources_used": "historical_data,lstm_predictions,market_volatility",
     "data_freshness": {
       "symbol": "/NQ:XCME{=h}",
       "historical_data": {
         "available": true,
-        "latest_timestamp": "2025-10-16T09:00:00+00:00",
-        "hours_old": 0.5831164125
+        "latest_timestamp": "2025-10-17T09:00:00+00:00",
+        "hours_old": 0.9659120338888889
       },
       "news_data": {
         "available": true,
         "latest_timestamp": "2025-10-16T08:33:32.894001+00:00",
-        "hours_old": 1.02397919
+        "hours_old": 25.40677481138889
+      },
+      "news_data_website": {
+        "available": false,
+        "latest_timestamp": null,
+        "hours_old": null,
+        "latest_url": null
       },
       "lstm_predictions": {
         "available": true,
-        "latest_timestamp": "2025-10-16T07:51:00Z",
-        "hours_old": 1.7331164124999998
+        "latest_timestamp": "2025-10-17T09:57:31Z",
+        "hours_old": 0.007300922777777778
       },
-      "all_fresh": true,
-      "recommendation": "PROCEED"
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
     }
   },
   "/MES:XCME{=h}": {
-    "signal": "HOLD",
-    "confidence_score": 0.75,
-    "predicted_price": 6576.42,
-    "reasoning": "The current price is slightly above the LSTM predicted price, indicating a potential downward trend. However, the RSI is neutral, and the news sentiment is positive, suggesting mixed signals. The low volume ratio indicates low market activity, which may result in less volatility. Given these factors, holding is advisable until clearer signals emerge.",
-    "data_sources_used": "historical_data,news_sentiment,lstm_predictions",
+    "signal": "SELL",
+    "confidence_score": 0.9,
+    "predicted_price": 6533.87,
+    "reasoning": "The RSI indicates overbought conditions at 87.1, suggesting a potential price correction. The LSTM model predicts a price decrease to 6533.87, aligning with the overbought signal. Volume is low at 0.14x average, indicating weak market participation. News sentiment is neutral, providing no counterbalance to technical indicators and predictions. Overall, the data suggests a likely price decline.",
+    "data_sources_used": "historical_data,lstm_predictions,news_sentiment",
     "data_freshness": {
       "symbol": "/MES:XCME{=h}",
       "historical_data": {
         "available": true,
-        "latest_timestamp": "2025-10-16T09:00:00+00:00",
-        "hours_old": 0.5837464052777778
+        "latest_timestamp": "2025-10-17T09:00:00+00:00",
+        "hours_old": 0.9659259897222222
       },
       "news_data": {
         "available": true,
         "latest_timestamp": "2025-10-16T08:33:32.894001+00:00",
-        "hours_old": 1.0246091827777777
+        "hours_old": 25.40678876722222
+      },
+      "news_data_website": {
+        "available": false,
+        "latest_timestamp": null,
+        "hours_old": null,
+        "latest_url": null
       },
       "lstm_predictions": {
         "available": true,
-        "latest_timestamp": "2025-10-16T07:51:00Z",
-        "hours_old": 1.7337464052777778
+        "latest_timestamp": "2025-10-17T09:57:31Z",
+        "hours_old": 0.007314878611111112
       },
-      "all_fresh": true,
-      "recommendation": "PROCEED"
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
     }
   },
   "/MNQ:XCME{=h}": {
-    "signal": "HOLD",
-    "confidence_score": 0.7,
-    "predicted_price": 24369.1,
-    "reasoning": "The current RSI is neutral at 52.1, indicating no strong momentum in either direction. The LSTM model predicts a decrease in price, suggesting caution. However, the news sentiment is positive with a high score of 0.98, which could counteract the predicted price drop. The volume ratio is low, indicating reduced market activity, which may lead to less volatility. Given these mixed signals, a HOLD position is recommended to wait for clearer market direction.",
-    "data_sources_used": "historical_data,news_sentiment,lstm_predictions",
+    "signal": "SELL",
+    "confidence_score": 0.8,
+    "predicted_price": 24283.09,
+    "reasoning": "The RSI indicates overbought conditions, suggesting a potential price correction. LSTM predictions support a downward trend. Low volume ratio implies weak buying interest, and neutral news sentiment does not provide a positive catalyst.",
+    "data_sources_used": "historical_data,lstm_predictions,news_sentiment",
     "data_freshness": {
       "symbol": "/MNQ:XCME{=h}",
       "historical_data": {
         "available": true,
-        "latest_timestamp": "2025-10-16T09:00:00+00:00",
-        "hours_old": 0.5841997633333333
+        "latest_timestamp": "2025-10-17T09:00:00+00:00",
+        "hours_old": 0.9659484405555555
       },
       "news_data": {
         "available": true,
         "latest_timestamp": "2025-10-16T08:33:32.894001+00:00",
-        "hours_old": 1.0250625408333334
+        "hours_old": 25.406811218055555
+      },
+      "news_data_website": {
+        "available": false,
+        "latest_timestamp": null,
+        "hours_old": null,
+        "latest_url": null
       },
       "lstm_predictions": {
         "available": true,
-        "latest_timestamp": "2025-10-16T07:51:00Z",
-        "hours_old": 1.7341997633333333
+        "latest_timestamp": "2025-10-17T09:57:31Z",
+        "hours_old": 0.007337329444444445
       },
-      "all_fresh": true,
-      "recommendation": "PROCEED"
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
     }
   },
   "/RTY:XCME{=h}": {
     "signal": "SELL",
-    "confidence_score": 0.8,
-    "predicted_price": 2460.04,
-    "reasoning": "The LSTM model predicts a significant price drop of -2.99%, indicating bearish sentiment. The RSI is neutral at 50.5, but the low volume ratio suggests weak market interest. News sentiment is flat, providing no positive catalysts. Combining these factors suggests a SELL signal.",
-    "data_sources_used": "historical_data,news_sentiment,lstm_predictions",
+    "confidence_score": 0.9,
+    "predicted_price": 2412.2,
+    "reasoning": "The RSI indicates overbought conditions, suggesting a potential price correction. LSTM predicts a significant price drop, and the volume ratio is low, indicating weak market participation. Neutral news sentiment does not counteract these signals.",
+    "data_sources_used": "historical_data,lstm_predictions,volume_data",
     "data_freshness": {
       "symbol": "/RTY:XCME{=h}",
       "historical_data": {
         "available": true,
-        "latest_timestamp": "2025-10-16T09:00:00+00:00",
-        "hours_old": 0.5846393602777777
+        "latest_timestamp": "2025-10-17T09:00:00+00:00",
+        "hours_old": 0.9659507877777779
       },
       "news_data": {
         "available": true,
         "latest_timestamp": "2025-10-16T08:33:32.894001+00:00",
-        "hours_old": 1.0255021377777778
+        "hours_old": 25.40681356527778
+      },
+      "news_data_website": {
+        "available": false,
+        "latest_timestamp": null,
+        "hours_old": null,
+        "latest_url": null
       },
       "lstm_predictions": {
         "available": true,
-        "latest_timestamp": "2025-10-16T07:51:00Z",
-        "hours_old": 1.7346393602777779
+        "latest_timestamp": "2025-10-17T09:57:31Z",
+        "hours_old": 0.007339676666666667
       },
-      "all_fresh": true,
-      "recommendation": "PROCEED"
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
     }
   },
   "/QM:XNYM{=h}": {
     "signal": "BUY",
-    "confidence_score": 0.85,
-    "predicted_price": 60.68,
-    "reasoning": "The LSTM model predicts a price increase of 3.32%, supported by positive news sentiment with a score of 1.00. The RSI is neutral at 50.0, indicating no overbought or oversold conditions, and the volume ratio is slightly below average, suggesting moderate market activity. Overall, the data suggests a favorable environment for buying.",
+    "confidence_score": 0.8,
+    "predicted_price": 59.27,
+    "reasoning": "The RSI is at 85.2, indicating overbought conditions, suggesting a potential price correction. Despite the LSTM prediction of a slight increase, the volume ratio is below average, indicating weak trading activity. News sentiment is neutral, providing no positive reinforcement for upward movement.",
     "data_sources_used": "historical_data,news_sentiment,lstm_predictions",
     "data_freshness": {
       "symbol": "/QM:XNYM{=h}",
       "historical_data": {
         "available": true,
-        "latest_timestamp": "2025-10-16T09:00:00+00:00",
-        "hours_old": 0.5852247016666667
+        "latest_timestamp": "2025-10-17T09:00:00+00:00",
+        "hours_old": 0.9659670388888888
       },
       "news_data": {
         "available": true,
         "latest_timestamp": "2025-10-16T08:33:32.894001+00:00",
-        "hours_old": 1.0260874791666668
+        "hours_old": 25.40682981638889
+      },
+      "news_data_website": {
+        "available": true,
+        "latest_timestamp": "2025-10-17T09:57:57.283322+00:00",
+        "hours_old": 0.0,
+        "latest_url": "https://finance.yahoo.com/commodities"
       },
       "lstm_predictions": {
         "available": true,
-        "latest_timestamp": "2025-10-16T07:51:00Z",
-        "hours_old": 1.7352247016666666
+        "latest_timestamp": "2025-10-17T09:57:31Z",
+        "hours_old": 0.007355927777777778
       },
-      "all_fresh": true,
-      "recommendation": "PROCEED"
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
     }
   },
   "/QG:XNYM{=h}": {
-    "signal": "BUY",
-    "confidence_score": 0.8,
-    "predicted_price": 3.11,
-    "reasoning": "The LSTM model predicts a price increase to $3.11, indicating potential upward movement. The RSI of 32.3 suggests the asset is nearing oversold conditions, which may lead to a price rebound. Despite the recent price drop, the positive news sentiment supports a bullish outlook. Volume is below average, indicating low volatility, which may reduce risk.",
+    "signal": "SELL",
+    "confidence_score": 0.75,
+    "predicted_price": 2.99,
+    "reasoning": "The current RSI of 75.0 suggests the asset is overbought, indicating potential for a price correction. Despite positive news sentiment, the LSTM model predicts a slight decrease in price. Additionally, the volume ratio is low, suggesting weak trading activity. These factors combined suggest holding rather than buying or selling.",
     "data_sources_used": "historical_data,news_sentiment,lstm_predictions",
     "data_freshness": {
       "symbol": "/QG:XNYM{=h}",
       "historical_data": {
         "available": true,
-        "latest_timestamp": "2025-10-16T09:00:00+00:00",
-        "hours_old": 0.5857358991666667
+        "latest_timestamp": "2025-10-17T09:00:00+00:00",
+        "hours_old": 0.96596937
       },
       "news_data": {
         "available": true,
-        "latest_timestamp": "2025-10-16T08:33:32.894001+00:00",
-        "hours_old": 1.0265986766666666
+        "latest_timestamp": "2025-10-17T09:33:04.070257+00:00",
+        "hours_old": 0.4148387430555555
+      },
+      "news_data_website": {
+        "available": true,
+        "latest_timestamp": "2025-10-17T09:57:57.283322+00:00",
+        "hours_old": 0.0,
+        "latest_url": "https://finance.yahoo.com/commodities"
       },
       "lstm_predictions": {
         "available": true,
-        "latest_timestamp": "2025-10-16T07:51:00Z",
-        "hours_old": 1.7357358991666665
+        "latest_timestamp": "2025-10-17T09:57:31Z",
+        "hours_old": 0.007358258888888889
       },
       "all_fresh": true,
       "recommendation": "PROCEED"
@@ -190,29 +232,35 @@
   },
   "/MCL:XNYM{=h}": {
     "signal": "BUY",
-    "confidence_score": 0.85,
-    "predicted_price": 60.67,
-    "reasoning": "The current price is showing a slight increase, supported by a neutral RSI and low volume ratio, indicating potential for upward movement. The LSTM model predicts a significant price increase, and news sentiment is strongly positive. These factors suggest a favorable buying opportunity.",
+    "confidence_score": 0.8,
+    "predicted_price": 59.21,
+    "reasoning": "The RSI is significantly overbought at 85.7, indicating potential price correction. Despite the LSTM prediction of a slight increase, the low volume ratio suggests weak market participation. Neutral news sentiment does not provide strong support for upward movement.",
     "data_sources_used": "historical_data,news_sentiment,lstm_predictions",
     "data_freshness": {
       "symbol": "/MCL:XNYM{=h}",
       "historical_data": {
         "available": true,
-        "latest_timestamp": "2025-10-16T09:00:00+00:00",
-        "hours_old": 0.5861571336111111
+        "latest_timestamp": "2025-10-17T09:00:00+00:00",
+        "hours_old": 0.9659810986111111
       },
       "news_data": {
         "available": true,
         "latest_timestamp": "2025-10-16T08:33:32.894001+00:00",
-        "hours_old": 1.0270199111111111
+        "hours_old": 25.40684387611111
+      },
+      "news_data_website": {
+        "available": true,
+        "latest_timestamp": "2025-10-17T09:57:57.283322+00:00",
+        "hours_old": 0.0,
+        "latest_url": "https://finance.yahoo.com/commodities"
       },
       "lstm_predictions": {
         "available": true,
-        "latest_timestamp": "2025-10-16T07:51:00Z",
-        "hours_old": 1.7361571336111112
+        "latest_timestamp": "2025-10-17T09:57:31Z",
+        "hours_old": 0.0073699875
       },
-      "all_fresh": true,
-      "recommendation": "PROCEED"
+      "all_fresh": false,
+      "recommendation": "UPDATE_DATA"
     }
   }
 }

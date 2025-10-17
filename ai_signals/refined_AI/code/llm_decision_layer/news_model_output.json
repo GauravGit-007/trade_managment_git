@@ -78,5 +78,15 @@
     "market_signal": "Flat",
     "sentiment_label": "neutral",
     "sentiment_score": 0.9999972581863403
+  },
+  {
+    "published_at": "2025-10-17",
+    "text": "Natural Gas Market Update: Prices holding steady. Natural gas futures maintaining stability with balanced supply and demand conditions.",
+    "instrument": "/QG:XNYM{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/commodities",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999918937683105
   }
 ]

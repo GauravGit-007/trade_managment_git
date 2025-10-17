@@ -53,40 +53,49 @@ def run_news_scrape(run_sentiment: bool = True, quiet: bool = False) -> bool:
 
 def run_historical_update(quiet: bool = False) -> bool:
     try:
-        # The models/lstm.py now depends on historical_data_1h being present.
-        # Historical fetcher resides in models/lstm.py (websocket pull utility embedded)
         if not quiet:
             print("\n📈 Updating historical 1h candles (last 24h)...")
-        # Use the entrypoint in models/lstm.py that fetches last 24h 1h candles
-        import importlib.util
-        lstm_path = os.path.join(ROOT_DIR, "models", "lstm.py")
-        spec = importlib.util.spec_from_file_location("lstm_mod", lstm_path)
-        lstm_mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(lstm_mod)  # type: ignore
 
-        # Reuse its main block that fetches last 24h 1h candles
-        start_ts = lstm_mod.get_last_24_hours_timestamps()
+        # Use services.historical_data for fetching and DB upserts
+        import services.historical_data as hd
+        from db.database import TradeDatabase
+        import asyncio
+
+        start_ts = hd.get_last_24_hours_timestamps()
         email = os.getenv('email')
         password = os.getenv('password')
-        session_token = lstm_mod.login_to_tastyworks(email, password)
-        if session_token:
-            token_dx = lstm_mod.get_api_quote_token(session_token)
-            if token_dx:
-                token, dxlink_url = token_dx
+        session_token = hd.login_to_tastyworks(email, password)
+        if not session_token:
+            raise RuntimeError("Login to Tastyworks failed; check credentials in environment.")
+
+        token_dx = hd.get_api_quote_token(session_token)
+        if not token_dx:
+            raise RuntimeError("Failed to get API quote token.")
+
+        token, dxlink_url = token_dx
+        if not quiet:
+            print("[OK] Token acquired. Fetching last 24 hourly candles.")
+
+        symbols = [
+            "/NQ:XCME", "/ES:XCME", "/RTY:XCME", "/QG:XNYM", "/QM:XNYM",
+            "BTC/USD:CXTALP", "ETH/USD:CXTALP", "/MES:XCME", "/MNQ:XCME", "/MCL:XNYM"
+        ]
+
+        conn, cursor = TradeDatabase.sql_connect()
+        try:
+            hd.ensure_schema(cursor)
+            for sym in symbols:
                 if not quiet:
-                    print("[OK] Token acquired. Fetching last 24 hourly candles.")
-                symbols = [
-                    "/NQ:XCME", "/ES:XCME", "/RTY:XCME", "/QG:XNYM", "/QM:XNYM",
-                    "BTC/USD:CXTALP", "ETH/USD:CXTALP", "/MES:XCME", "/MNQ:XCME", "/MCL:XNYM"
-                ]
-                import asyncio
-                for sym in symbols:
-                    if not quiet:
-                        print(f"  → {sym}")
-                    try:
-                        asyncio.run(lstm_mod.connect_to_dxlink(dxlink_url, token, sym, start_ts))
-                    except Exception as e:
-                        print(f"   ⚠️  {sym}: {e}")
+                    print(f"  → {sym}")
+                try:
+                    asyncio.run(hd.connect_to_dxlink(dxlink_url, token, sym, start_ts, cursor))
+                    conn.commit()
+                except Exception as e:
+                    print(f"   ⚠️  {sym}: {e}")
+            conn.commit()
+        finally:
+            TradeDatabase.close_connection(conn)
+
         return True
     except Exception as e:
         print(f"❌ Historical update failed: {e}")

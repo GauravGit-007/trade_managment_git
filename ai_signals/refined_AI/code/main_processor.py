@@ -22,6 +22,7 @@ grandparent_dir = os.path.dirname(parent_dir)
 root_dir = os.path.dirname(grandparent_dir)
 sys.path.append(root_dir)
 from db.database import TradeDatabase
+import importlib
 
 # Configure encoding
 sys.stdout.reconfigure(encoding='utf-8')
@@ -53,6 +54,161 @@ class RefinedAIProcessor:
         self.interactive_mode = interactive_mode
         self.db = TradeDatabase()
         self.create_smart_ai_decisions_table()
+        # Prefetched website news cache: { symbol: {latest_timestamp, hours_old, latest_url, available} }
+        self.prefetched_news_map = {}
+
+    def _format_hours(self, value):
+        try:
+            if value is None:
+                return "-"
+            return f"{float(value):.1f}h"
+        except Exception:
+            return "-"
+
+    def _print_freshness_table(self, freshness_by_symbol: dict):
+        """Render an interactive-style table with symbols as columns and 3 param rows."""
+        symbols = self.symbols
+        headers = ["param"] + symbols
+        rows = []
+        # Row 1: Historical hours old
+        hist_row = ["Historical (h)"]
+        for s in symbols:
+            h = (freshness_by_symbol.get(s, {})
+                 .get('historical_data', {})
+                 .get('hours_old'))
+            hist_row.append(self._format_hours(h))
+        rows.append(hist_row)
+
+        # Row 2: News (DB) hours old
+        news_row = ["News DB (h)"]
+        for s in symbols:
+            h = (freshness_by_symbol.get(s, {})
+                 .get('news_data', {})
+                 .get('hours_old'))
+            news_row.append(self._format_hours(h))
+        rows.append(news_row)
+
+        # Row 3: LSTM hours old
+        lstm_row = ["LSTM (h)"]
+        for s in symbols:
+            h = (freshness_by_symbol.get(s, {})
+                 .get('lstm_predictions', {})
+                 .get('hours_old'))
+            lstm_row.append(self._format_hours(h))
+        rows.append(lstm_row)
+
+        # Print table
+        print("\n🧭 Data Freshness Overview (hours old)")
+        # Compute column widths
+        col_widths = [max(len(str(r[i])) for r in ([headers] + rows)) for i in range(len(headers))]
+        # Header
+        header_line = " | ".join(str(headers[i]).ljust(col_widths[i]) for i in range(len(headers)))
+        print(header_line)
+        print("-" * len(header_line))
+        # Rows
+        for r in rows:
+            print(" | ".join(str(r[i]).ljust(col_widths[i]) for i in range(len(headers))))
+
+    def prefetch_website_news(self):
+        """Fetch website news once and compute latest article per symbol family."""
+        try:
+            news_service = importlib.import_module('services.news_service')
+            articles = news_service.get_data()  # single scrape
+        except Exception as e:
+            # If scraping fails, leave map empty
+            self.prefetched_news_map = {}
+            return
+
+        from datetime import timezone
+        current_time = datetime.now(timezone.utc)
+
+        result = {}
+        for symbol in self.symbols:
+            related = set(self.get_related_instruments(symbol))
+            latest_ts = None
+            latest_url = None
+            for a in articles:
+                inst = (a.get('instrument') or '').split(',')
+                inst = {s.strip() for s in inst if s.strip()}
+                if related & inst:
+                    try:
+                        ts = datetime.fromisoformat(a.get('published_at'))
+                    except Exception:
+                        continue
+                    if latest_ts is None or ts > latest_ts:
+                        latest_ts = ts
+                        latest_url = a.get('url')
+            if latest_ts is not None:
+                hours_old = (current_time - latest_ts).total_seconds() / 3600
+                result[symbol] = {
+                    'available': True,
+                    'latest_timestamp': latest_ts.isoformat(),
+                    'hours_old': hours_old,
+                    'latest_url': latest_url
+                }
+            else:
+                result[symbol] = {
+                    'available': False,
+                    'latest_timestamp': None,
+                    'hours_old': None,
+                    'latest_url': None
+                }
+
+        self.prefetched_news_map = result
+
+    def prompt_global_selection(self, freshness_by_symbol: dict) -> tuple[set, str]:
+        """Ask user to proceed for all or select individual symbols based on freshness."""
+        if not self.interactive_mode:
+            # In non-interactive mode, default to only those with all_fresh
+            return ({s for s, r in freshness_by_symbol.items() if r.get('all_fresh')}, 'fresh')
+
+        # Show table first
+        self._print_freshness_table(freshness_by_symbol)
+        print("\n🗞️ Website freshness (latest article age and URL):")
+        for s in self.symbols:
+            web = freshness_by_symbol.get(s, {}).get('news_data_website', {})
+            if web.get('available'):
+                url_msg = f" | URL: {web.get('latest_url')}" if web.get('latest_url') else ""
+                print(f"  {s}: {web.get('hours_old'):.1f}h{url_msg}")
+            else:
+                print(f"  {s}: -")
+
+        print("\nProceed with generating signals:")
+        print("  - Type 'all' to process all symbols (no further prompts)")
+        print("  - Type comma-separated symbols to process subset; you will confirm each (y/n)")
+        print("  - Press Enter to process only symbols with fresh data")
+
+        try:
+            choice = input("Your choice: ").strip()
+        except Exception:
+            choice = ""
+
+        if choice.lower() == 'all':
+            return (set(self.symbols), 'all')
+        if not choice:
+            return ({s for s, r in freshness_by_symbol.items() if r.get('all_fresh')}, 'fresh')
+
+        selected = [x.strip() for x in choice.split(',') if x.strip()]
+        valid = [s for s in selected if s in self.symbols]
+        if not valid:
+            print("No valid symbols provided; defaulting to only fresh symbols.")
+            return ({s for s, r in freshness_by_symbol.items() if r.get('all_fresh')}, 'fresh')
+
+        # Confirm each selected symbol
+        confirmed = set()
+        for s in valid:
+            while True:
+                try:
+                    ans = input(f"Process {s}? (y/n): ").strip().lower()
+                except Exception:
+                    ans = 'n'
+                if ans in ('y', 'yes'):
+                    confirmed.add(s)
+                    break
+                if ans in ('n', 'no'):
+                    break
+                print("Please answer y or n.")
+        return (confirmed, 'subset')
 
     def get_related_instruments(self, symbol):
         """Return a list of related instrument codes considered the same news family."""
@@ -149,6 +305,7 @@ class RefinedAIProcessor:
             'symbol': symbol,
             'historical_data': {'available': False, 'latest_timestamp': None, 'hours_old': None},
             'news_data': {'available': False, 'latest_timestamp': None, 'hours_old': None},
+            'news_data_website': {'available': False, 'latest_timestamp': None, 'hours_old': None, 'latest_url': None},
             'lstm_predictions': {'available': False, 'latest_timestamp': None, 'hours_old': None},
             'all_fresh': False,
             'recommendation': 'UPDATE_DATA'
@@ -221,6 +378,11 @@ class RefinedAIProcessor:
                         }
             except Exception as e:
                 print(f"Error checking news data freshness for {symbol}: {e}")
+            
+            # Live website check via prefetched cache (no per-symbol scraping)
+            web_info = self.prefetched_news_map.get(symbol)
+            if web_info and web_info.get('available'):
+                freshness_report['news_data_website'] = dict(web_info)
             
             try:
                 # Get latest LSTM predictions
@@ -297,8 +459,22 @@ class RefinedAIProcessor:
         news_data = freshness_report['news_data']
         if news_data['available']:
             print(f"  📰 News Data: {news_data['hours_old']:.1f} hours old")
+            try:
+                if news_data['hours_old'] is not None and news_data['hours_old'] > 2:
+                    ts = news_data.get('latest_timestamp') or 'unknown'
+                    print(f"  ⚠️  No new news for this symbol since {ts} (≈{news_data['hours_old']:.1f}h old)")
+            except Exception:
+                pass
         else:
             print(f"  📰 News Data: NOT AVAILABLE")
+
+        # Live website status (URL-based)
+        news_web = freshness_report.get('news_data_website', {})
+        if news_web.get('available'):
+            url_msg = f" | URL: {news_web.get('latest_url')}" if news_web.get('latest_url') else ""
+            print(f"  🌐 Website Latest News: {news_web.get('hours_old'):.1f} hours old{url_msg}")
+        else:
+            print(f"  🌐 Website Latest News: NOT FOUND for related instruments")
         
         lstm_data = freshness_report['lstm_predictions']
         if lstm_data['available']:
@@ -557,8 +733,8 @@ Respond ONLY with JSON in this format:
         return (ti.get('sma_5', 0) <= ti.get('sma_20', 0)) or (ti.get('rsi', 50) <= 48)
 
     def _apply_alignment_gate(self, signal_data: dict, news_data: dict, lstm_predictions: list, technical_indicators: dict) -> dict:
-        """Override AI signal to HOLD unless LSTM + News + TA align beyond small thresholds.
-        This reduces false positives and typically improves realized accuracy.
+        """Convert AI signal to 5-level system: STRONG_SELL, SELL, HOLD, BUY, STRONG_BUY
+        based on alignment strength and confidence levels.
         """
         current_price = technical_indicators.get('current_price', 0.0) or 0.0
         # LSTM average change
@@ -573,24 +749,47 @@ Respond ONLY with JSON in this format:
         news_bias = self._normalize_news_bias(news_data.get('signal'))
         trend_up = self._is_trend_up(technical_indicators)
         trend_down = self._is_trend_down(technical_indicators)
-
-        proposed = (signal_data.get('signal') or 'HOLD').strip().upper()
         conf = float(signal_data.get('confidence_score', 0.5))
+        rsi = technical_indicators.get('rsi', 50)
 
-        # Thresholds tuned to reduce noise flips
-        up_ok = (lstm_change_pct >= 0.5) and (news_bias == 'UP') and trend_up
-        down_ok = (lstm_change_pct <= -0.5) and (news_bias == 'DOWN') and trend_down
+        # Calculate alignment strength
+        alignment_score = 0
+        if lstm_change_pct > 0 and news_bias == 'UP' and trend_up:
+            alignment_score += 3
+        elif lstm_change_pct < 0 and news_bias == 'DOWN' and trend_down:
+            alignment_score += 3
+        elif (lstm_change_pct > 0 and news_bias == 'UP') or (lstm_change_pct > 0 and trend_up) or (news_bias == 'UP' and trend_up):
+            alignment_score += 2
+        elif (lstm_change_pct < 0 and news_bias == 'DOWN') or (lstm_change_pct < 0 and trend_down) or (news_bias == 'DOWN' and trend_down):
+            alignment_score += 2
+        elif lstm_change_pct > 0 or news_bias == 'UP' or trend_up:
+            alignment_score += 1
+        elif lstm_change_pct < 0 or news_bias == 'DOWN' or trend_down:
+            alignment_score += 1
 
-        if proposed == 'BUY' and not up_ok:
+        # Determine 5-level signal based on alignment and confidence
+        if alignment_score >= 3 and conf >= 0.8:
+            if lstm_change_pct > 0:
+                signal_data['signal'] = 'STRONG_BUY'
+            else:
+                signal_data['signal'] = 'STRONG_SELL'
+        elif alignment_score >= 2 and conf >= 0.6:
+            if lstm_change_pct > 0:
+                signal_data['signal'] = 'BUY'
+            else:
+                signal_data['signal'] = 'SELL'
+        elif alignment_score >= 1 and conf >= 0.4:
+            if lstm_change_pct > 0:
+                signal_data['signal'] = 'BUY'
+            elif lstm_change_pct < 0:
+                signal_data['signal'] = 'SELL'
+            else:
+                signal_data['signal'] = 'HOLD'
+        else:
             signal_data['signal'] = 'HOLD'
-            signal_data['confidence_score'] = min(conf, 0.6)
+            signal_data['confidence_score'] = min(conf, 0.5)
             signal_data['reasoning'] = (signal_data.get('reasoning', '') + 
-                " | Gated to HOLD due to insufficient alignment (LSTM/News/TA)").strip()
-        elif proposed == 'SELL' and not down_ok:
-            signal_data['signal'] = 'HOLD'
-            signal_data['confidence_score'] = min(conf, 0.6)
-            signal_data['reasoning'] = (signal_data.get('reasoning', '') + 
-                " | Gated to HOLD due to insufficient alignment (LSTM/News/TA)").strip()
+                f" | Gated to HOLD due to weak alignment (score: {alignment_score}, conf: {conf:.2f})").strip()
 
         return signal_data
     
@@ -639,17 +838,43 @@ Respond ONLY with JSON in this format:
         print("🚀 Starting Refined AI Signal Generation...")
         print(f"Processing {len(self.symbols)} symbols: {', '.join(self.symbols)}")
         
+        # 1) Prefetch website news once for all symbols
+        self.prefetch_website_news()
+
+        # 2) Build per-symbol freshness reports first
+        freshness_by_symbol = {}
+        for symbol in self.symbols:
+            try:
+                freshness_by_symbol[symbol] = self.check_data_freshness(symbol)
+            except Exception as e:
+                freshness_by_symbol[symbol] = {'error': str(e)}
+
+        # 3) Ask user: process all, subset, or only fresh
+        selected_symbols, selection_mode = self.prompt_global_selection(freshness_by_symbol)
+        if not selected_symbols:
+            print("No symbols selected; exiting.")
+            return {}
+
         results = {}
         skipped_symbols = []
         
         for symbol in self.symbols:
+            if symbol not in selected_symbols:
+                skipped_symbols.append(symbol)
+                results[symbol] = {
+                    "status": "SKIPPED",
+                    "reason": "Not selected",
+                }
+                continue
+
             print(f"\n📊 Processing {symbol}...")
             
             try:
-                # Check data freshness first
-                freshness_report = self.check_data_freshness(symbol)
+                # Reuse precomputed freshness
+                freshness_report = freshness_by_symbol.get(symbol) or self.check_data_freshness(symbol)
                 
-                if not freshness_report['all_fresh']:
+                # If 'all' mode was chosen, do not prompt per-symbol
+                if selection_mode != 'all' and not freshness_report['all_fresh']:
                     print(f"⚠️  Data not fresh for {symbol}")
                     
                     # Prompt user for continuation

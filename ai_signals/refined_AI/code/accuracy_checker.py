@@ -155,7 +155,7 @@ class RefinedAIAccuracyChecker:
         }
     
     def calculate_signal_accuracy(self, signal, actual_prices):
-        """Calculate signal accuracy (BUY/SELL/HOLD)"""
+        """Calculate signal accuracy for 5-level system: STRONG_SELL, SELL, HOLD, BUY, STRONG_BUY"""
         if not actual_prices or len(actual_prices) < 2:
             return {
                 'has_data': False,
@@ -166,20 +166,32 @@ class RefinedAIAccuracyChecker:
         final_price = actual_prices[-1]['price']
         price_change = (final_price - initial_price) / initial_price * 100
         
-        # Determine if signal was correct
+        # Determine if signal was correct based on 5-level system
         signal_correct = False
-        if signal == "BUY" and price_change > 0.5:  # At least 0.5% gain
-            signal_correct = True
-        elif signal == "SELL" and price_change < -0.5:  # At least 0.5% loss
-            signal_correct = True
-        elif signal == "HOLD" and abs(price_change) <= 0.5:  # Within 0.5% range
-            signal_correct = True
+        signal_strength = "WEAK"
+        
+        if signal == "STRONG_BUY":
+            signal_correct = price_change > 1.0  # At least 1% gain for strong buy
+            signal_strength = "STRONG" if signal_correct else "WEAK"
+        elif signal == "BUY":
+            signal_correct = price_change > 0.5  # At least 0.5% gain for buy
+            signal_strength = "MODERATE" if signal_correct else "WEAK"
+        elif signal == "HOLD":
+            signal_correct = abs(price_change) <= 0.5  # Within 0.5% range for hold
+            signal_strength = "NEUTRAL"
+        elif signal == "SELL":
+            signal_correct = price_change < -0.5  # At least 0.5% loss for sell
+            signal_strength = "MODERATE" if signal_correct else "WEAK"
+        elif signal == "STRONG_SELL":
+            signal_correct = price_change < -1.0  # At least 1% loss for strong sell
+            signal_strength = "STRONG" if signal_correct else "WEAK"
         
         return {
             'has_data': True,
             'signal_correct': signal_correct,
             'actual_price_change': price_change,
             'signal': signal,
+            'signal_strength': signal_strength,
             'hours_of_data': len(actual_prices)
         }
     
@@ -248,7 +260,7 @@ class RefinedAIAccuracyChecker:
             print(f"   📊 Direction Correct: {price_accuracy['direction_correct']}")
         
         if signal_accuracy['has_data']:
-            print(f"   🎯 Signal Accuracy: {signal_accuracy['signal_correct']} (actual change: {signal_accuracy['actual_price_change']:+.2f}%)")
+            print(f"   🎯 Signal Accuracy: {signal_accuracy['signal_correct']} (actual change: {signal_accuracy['actual_price_change']:+.2f}%, strength: {signal_accuracy.get('signal_strength', 'N/A')})")
         
         return {
             'symbol': symbol,

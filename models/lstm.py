@@ -5,7 +5,7 @@ from datetime import datetime, timezone, timedelta
 
 import numpy as np
 import pandas as pd
-import pandas_ta as ta
+# import pandas_ta as ta  # Commented out due to compatibility issues
 
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, r2_score
@@ -92,22 +92,48 @@ def process_candles_with_ta(df: pd.DataFrame) -> pd.DataFrame:
         # Fill missing volume with 0
         sub_df["volume"] = sub_df["volume"].fillna(0)
 
-        sub_df["rsi_14"] = ta.rsi(sub_df["close"], length=14)
-        sub_df["ema_21"] = ta.ema(sub_df["close"], length=21)
-        sub_df["ema_50"] = ta.ema(sub_df["close"], length=50)
+        # RSI
+        delta = sub_df['close'].diff()
+        gain = (delta.where(delta > 0, 0)).rolling(window=14).mean()
+        loss = (-delta.where(delta < 0, 0)).rolling(window=14).mean()
+        rs = gain / loss
+        sub_df["rsi_14"] = 100 - (100 / (1 + rs))
+        
+        # EMAs
+        sub_df["ema_21"] = sub_df["close"].ewm(span=21).mean()
+        sub_df["ema_50"] = sub_df["close"].ewm(span=21).mean()
 
-        macd = ta.macd(sub_df["close"], fast=12, slow=26, signal=9)
-        if macd is not None:
-            sub_df = sub_df.join(macd)
+        # MACD
+        ema_12 = sub_df["close"].ewm(span=12).mean()
+        ema_26 = sub_df["close"].ewm(span=26).mean()
+        sub_df["MACD_12_26_9"] = ema_12 - ema_26
+        sub_df["MACDs_12_26_9"] = sub_df["MACD_12_26_9"].ewm(span=9).mean()
+        sub_df["MACDh_12_26_9"] = sub_df["MACD_12_26_9"] - sub_df["MACDs_12_26_9"]
 
-        bbands = ta.bbands(sub_df["close"], length=20, std=2)
-        if bbands is not None:
-            sub_df = sub_df.join(bbands)
+        # Bollinger Bands
+        bb_period = 20
+        bb_std = 2.0
+        bb_middle = sub_df["close"].rolling(window=bb_period).mean()
+        bb_std_val = sub_df["close"].rolling(window=bb_period).std()
+        sub_df["BBL_20_2.0"] = bb_middle - (bb_std_val * bb_std)
+        sub_df["BBM_20_2.0"] = bb_middle
+        sub_df["BBU_20_2.0"] = bb_middle + (bb_std_val * bb_std)
+        sub_df["BBB_20_2.0"] = (sub_df["close"] - sub_df["BBL_20_2.0"]) / (sub_df["BBU_20_2.0"] - sub_df["BBL_20_2.0"])
+        sub_df["BBP_20_2.0"] = (sub_df["close"] - sub_df["BBL_20_2.0"]) / (sub_df["BBU_20_2.0"] - sub_df["BBL_20_2.0"])
 
-        sub_df["atr_14"] = ta.atr(high=sub_df["high"], low=sub_df["low"], close=sub_df["close"], length=14)
-        stoch = ta.stoch(high=sub_df["high"], low=sub_df["low"], close=sub_df["close"], k=14, d=3)
-        if stoch is not None:
-            sub_df = sub_df.join(stoch)
+        # ATR
+        high_low = sub_df["high"] - sub_df["low"]
+        high_close = np.abs(sub_df["high"] - sub_df["close"].shift())
+        low_close = np.abs(sub_df["low"] - sub_df["close"].shift())
+        ranges = pd.concat([high_low, high_close, low_close], axis=1)
+        true_range = np.max(ranges, axis=1)
+        sub_df["atr_14"] = true_range.rolling(14).mean()
+        
+        # Stochastic (simplified)
+        low_14 = sub_df["low"].rolling(window=14).min()
+        high_14 = sub_df["high"].rolling(window=14).max()
+        sub_df["STOCHk_14_3_3"] = 100 * ((sub_df["close"] - low_14) / (high_14 - low_14))
+        sub_df["STOCHd_14_3_3"] = sub_df["STOCHk_14_3_3"].rolling(window=3).mean()
 
         print(f"[DEBUG] Rows before dropna for {symbol}: {len(sub_df)}")  # <--- debug
         sub_df = sub_df.dropna()
@@ -220,27 +246,48 @@ def process_candles_with_ta(df: pd.DataFrame) -> pd.DataFrame:
         # Fill missing volume with 0
         sub_df["volume"] = sub_df["volume"].fillna(0)
 
-        sub_df["rsi_14"] = ta.rsi(sub_df["close"], length=14)
-        sub_df["ema_21"] = ta.ema(sub_df["close"], length=21)
-        sub_df["ema_50"] = ta.ema(sub_df["close"], length=50)
+        # RSI
+        delta = sub_df['close'].diff()
+        gain = (delta.where(delta > 0, 0)).rolling(window=14).mean()
+        loss = (-delta.where(delta < 0, 0)).rolling(window=14).mean()
+        rs = gain / loss
+        sub_df["rsi_14"] = 100 - (100 / (1 + rs))
+        
+        # EMAs
+        sub_df["ema_21"] = sub_df["close"].ewm(span=21).mean()
+        sub_df["ema_50"] = sub_df["close"].ewm(span=50).mean()
 
-        macd = ta.macd(sub_df["close"], fast=12, slow=26, signal=9)
-        if macd is not None:
-            sub_df = sub_df.join(macd)
+        # MACD
+        ema_12 = sub_df["close"].ewm(span=12).mean()
+        ema_26 = sub_df["close"].ewm(span=26).mean()
+        sub_df["MACD_12_26_9"] = ema_12 - ema_26
+        sub_df["MACDs_12_26_9"] = sub_df["MACD_12_26_9"].ewm(span=9).mean()
+        sub_df["MACDh_12_26_9"] = sub_df["MACD_12_26_9"] - sub_df["MACDs_12_26_9"]
 
-        bbands = ta.bbands(sub_df["close"], length=20, std=2)
-        if bbands is not None:
-            sub_df = sub_df.join(bbands)
+        # Bollinger Bands
+        bb_period = 20
+        bb_std = 2.0
+        bb_middle = sub_df["close"].rolling(window=bb_period).mean()
+        bb_std_val = sub_df["close"].rolling(window=bb_period).std()
+        sub_df["BBL_20_2.0"] = bb_middle - (bb_std_val * bb_std)
+        sub_df["BBM_20_2.0"] = bb_middle
+        sub_df["BBU_20_2.0"] = bb_middle + (bb_std_val * bb_std)
+        sub_df["BBB_20_2.0"] = (sub_df["close"] - sub_df["BBL_20_2.0"]) / (sub_df["BBU_20_2.0"] - sub_df["BBL_20_2.0"])
+        sub_df["BBP_20_2.0"] = (sub_df["close"] - sub_df["BBL_20_2.0"]) / (sub_df["BBU_20_2.0"] - sub_df["BBL_20_2.0"])
 
-        sub_df["atr_14"] = ta.atr(
-            high=sub_df["high"], low=sub_df["low"], close=sub_df["close"], length=14
-        )
-
-        stoch = ta.stoch(
-            high=sub_df["high"], low=sub_df["low"], close=sub_df["close"], k=14, d=3
-        )
-        if stoch is not None:
-            sub_df = sub_df.join(stoch)
+        # ATR
+        high_low = sub_df["high"] - sub_df["low"]
+        high_close = np.abs(sub_df["high"] - sub_df["close"].shift())
+        low_close = np.abs(sub_df["low"] - sub_df["close"].shift())
+        ranges = pd.concat([high_low, high_close, low_close], axis=1)
+        true_range = np.max(ranges, axis=1)
+        sub_df["atr_14"] = true_range.rolling(14).mean()
+        
+        # Stochastic (simplified)
+        low_14 = sub_df["low"].rolling(window=14).min()
+        high_14 = sub_df["high"].rolling(window=14).max()
+        sub_df["STOCHk_14_3_3"] = 100 * ((sub_df["close"] - low_14) / (high_14 - low_14))
+        sub_df["STOCHd_14_3_3"] = sub_df["STOCHk_14_3_3"].rolling(window=3).mean()
 
         sub_df = sub_df.dropna()
         sub_df["symbol"] = symbol

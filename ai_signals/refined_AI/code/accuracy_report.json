@@ -1,1684 +1,1302 @@
 {
-  "timestamp": "2025-10-16T10:03:55.978207",
+  "timestamp": "2025-10-17T18:35:00.947363",
   "overall_metrics": {
-    "total_decisions": 67,
-    "valid_decisions": 54,
+    "total_decisions": 45,
+    "valid_decisions": 40,
     "price_accuracy": {
-      "avg_mae": 215.74490740740734,
-      "avg_mape": 2.6934933723355026,
-      "direction_accuracy": 0.037037037037037035
+      "avg_mae": 202.8435366161619,
+      "avg_mape": 2.0953752510507906,
+      "direction_accuracy": 0.275
     },
     "signal_accuracy": {
-      "accuracy_rate": 0.21428571428571427,
-      "total_signals": 14
+      "accuracy_rate": 0.125,
+      "total_signals": 40
     }
   },
   "detailed_results": [
     {
       "symbol": "/ES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T09:34:59.214067",
+      "decision_timestamp": "2025-10-17T09:58:08.137321",
       "validity": {
         "is_valid": true,
-        "hours_passed": 0.4824177711111111,
-        "message": "Decision is 0.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      }
-    },
-    {
-      "symbol": "/ES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:42:54.583168",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.3503713775000001,
-        "message": "Decision is 1.4 hours old (valid)"
+        "hours_passed": 8.614643645555555,
+        "message": "Decision is 8.6 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 1,
-        "mae": 153.3699999999999,
-        "mse": 23522.356899999966,
-        "rmse": 153.3699999999999,
-        "mape": 2.27915443771594,
+        "hours_of_data": 9,
+        "mae": 131.7977777777782,
+        "mse": 17913.20206666678,
+        "rmse": 133.8402109482303,
+        "mape": 1.9759564063193895,
         "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.27915443771594,
-        "final_actual_price": 6729.25,
-        "initial_actual_price": 6729.25
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/ES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:36:57.922418",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4494443919444444,
-        "message": "Decision is 1.4 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 153.3699999999999,
-        "mse": 23522.356899999966,
-        "rmse": 153.3699999999999,
-        "mape": 2.27915443771594,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.27915443771594,
-        "final_actual_price": 6729.25,
-        "initial_actual_price": 6729.25
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/ES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:34:33.709535",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4895038002777778,
-        "message": "Decision is 1.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 153.3699999999999,
-        "mse": 23522.356899999966,
-        "rmse": 153.3699999999999,
-        "mape": 2.27915443771594,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.27915443771594,
-        "final_actual_price": 6729.25,
-        "initial_actual_price": 6729.25
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/ES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:33:57.457666",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4995740452777777,
-        "message": "Decision is 1.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 153.3699999999999,
-        "mse": 23522.356899999966,
-        "rmse": 153.3699999999999,
-        "mape": 2.27915443771594,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.27915443771594,
-        "final_actual_price": 6729.25,
-        "initial_actual_price": 6729.25
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/ES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:17:37.309305",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.7718377691666667,
-        "message": "Decision is 1.8 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 153.3699999999999,
-        "mse": 23522.356899999966,
-        "rmse": 153.3699999999999,
-        "mape": 2.27915443771594,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.27915443771594,
-        "final_actual_price": 6729.25,
-        "initial_actual_price": 6729.25
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/ES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:13:02.901919",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.8480620430555557,
-        "message": "Decision is 1.8 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 153.3699999999999,
-        "mse": 23522.356899999966,
-        "rmse": 153.3699999999999,
-        "mape": 2.27915443771594,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.27915443771594,
-        "final_actual_price": 6729.25,
-        "initial_actual_price": 6729.25
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/ES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T07:43:13.844646",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 2.345022396666667,
-        "message": "Decision is 2.3 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 2,
-        "mae": 132.27999999999975,
-        "mse": 17497.99839999993,
-        "rmse": 132.27999999999975,
-        "mape": 1.965746554222235,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -1.965746554222235,
-        "final_actual_price": 6729.25,
-        "initial_actual_price": 6729.25
+        "actual_price_change": 1.277303302849369,
+        "predicted_price_change": -1.2284785730481511,
+        "final_actual_price": 6700.0,
+        "initial_actual_price": 6615.5
       },
       "signal_accuracy": {
         "has_data": true,
         "signal_correct": false,
-        "actual_price_change": 0.0,
+        "actual_price_change": 1.277303302849369,
         "signal": "SELL",
-        "hours_of_data": 2
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
       }
     },
     {
       "symbol": "/ES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T07:41:35.456655",
+      "decision_timestamp": "2025-10-17T09:49:32.250819",
       "validity": {
         "is_valid": true,
-        "hours_passed": 2.3723523941666667,
-        "message": "Decision is 2.4 hours old (valid)"
+        "hours_passed": 8.757945451666666,
+        "message": "Decision is 8.8 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 2,
-        "mae": 132.27999999999975,
-        "mse": 17497.99839999993,
-        "rmse": 132.27999999999975,
-        "mape": 1.965746554222235,
+        "hours_of_data": 9,
+        "mae": 134.69777777777784,
+        "mse": 18686.039177777795,
+        "rmse": 136.69688795937455,
+        "mape": 2.0194611079325306,
         "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -1.965746554222235,
-        "final_actual_price": 6729.25,
-        "initial_actual_price": 6729.25
+        "actual_price_change": 1.277303302849369,
+        "predicted_price_change": -1.2723150177613192,
+        "final_actual_price": 6700.0,
+        "initial_actual_price": 6615.5
       },
       "signal_accuracy": {
         "has_data": true,
         "signal_correct": false,
-        "actual_price_change": 0.0,
+        "actual_price_change": 1.277303302849369,
         "signal": "SELL",
-        "hours_of_data": 2
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
       }
     },
     {
       "symbol": "/ES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T07:26:00.216713",
+      "decision_timestamp": "2025-10-17T09:35:05.056814",
       "validity": {
         "is_valid": true,
-        "hours_passed": 2.632141266944444,
-        "message": "Decision is 2.6 hours old (valid)"
+        "hours_passed": 8.998832675277779,
+        "message": "Decision is 9.0 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 2,
-        "mae": 132.27999999999975,
-        "mse": 17497.99839999993,
-        "rmse": 132.27999999999975,
-        "mape": 1.965746554222235,
+        "hours_of_data": 9,
+        "mae": 134.69777777777784,
+        "mse": 18686.039177777795,
+        "rmse": 136.69688795937455,
+        "mape": 2.0194611079325306,
         "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -1.965746554222235,
-        "final_actual_price": 6729.25,
-        "initial_actual_price": 6729.25
+        "actual_price_change": 1.277303302849369,
+        "predicted_price_change": -1.2723150177613192,
+        "final_actual_price": 6700.0,
+        "initial_actual_price": 6615.5
       },
       "signal_accuracy": {
         "has_data": true,
         "signal_correct": false,
-        "actual_price_change": 0.0,
+        "actual_price_change": 1.277303302849369,
         "signal": "SELL",
-        "hours_of_data": 2
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
       }
     },
     {
-      "symbol": "/MCL:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T09:35:11.511422",
+      "symbol": "/ES:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:32:03.651468",
       "validity": {
         "is_valid": true,
-        "hours_passed": 0.47900529388888885,
-        "message": "Decision is 0.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      }
-    },
-    {
-      "symbol": "/MCL:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T09:33:11.306125",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 0.5123956541666667,
-        "message": "Decision is 0.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      }
-    },
-    {
-      "symbol": "/MCL:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:43:05.828109",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.3472509375,
-        "message": "Decision is 1.3 hours old (valid)"
+        "hours_passed": 9.049227414722221,
+        "message": "Decision is 9.0 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 1,
-        "mae": 1.9400000000000048,
-        "mse": 3.763600000000019,
-        "rmse": 1.9400000000000048,
-        "mape": 3.3032521709518217,
+        "hours_of_data": 9,
+        "mae": 134.69777777777784,
+        "mse": 18686.039177777795,
+        "rmse": 136.69688795937455,
+        "mape": 2.0194611079325306,
         "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 3.3032521709518217,
-        "final_actual_price": 58.73,
-        "initial_actual_price": 58.73
+        "actual_price_change": 1.277303302849369,
+        "predicted_price_change": -1.2723150177613192,
+        "final_actual_price": 6700.0,
+        "initial_actual_price": 6615.5
       },
       "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.277303302849369,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
       }
     },
     {
-      "symbol": "/MCL:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:37:08.019649",
+      "symbol": "/ES:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:30:09.660403",
       "validity": {
         "is_valid": true,
-        "hours_passed": 1.4466424522222223,
-        "message": "Decision is 1.4 hours old (valid)"
+        "hours_passed": 9.080891599444445,
+        "message": "Decision is 9.1 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 1,
-        "mae": 1.9400000000000048,
-        "mse": 3.763600000000019,
-        "rmse": 1.9400000000000048,
-        "mape": 3.3032521709518217,
+        "hours_of_data": 9,
+        "mae": 134.69777777777784,
+        "mse": 18686.039177777795,
+        "rmse": 136.69688795937455,
+        "mape": 2.0194611079325306,
         "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 3.3032521709518217,
-        "final_actual_price": 58.73,
-        "initial_actual_price": 58.73
+        "actual_price_change": 1.277303302849369,
+        "predicted_price_change": -1.2723150177613192,
+        "final_actual_price": 6700.0,
+        "initial_actual_price": 6615.5
       },
       "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.277303302849369,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
       }
     },
     {
-      "symbol": "/MCL:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:34:44.179646",
+      "symbol": "/ES:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:22:48.705886",
       "validity": {
         "is_valid": true,
-        "hours_passed": 1.4865982852777777,
-        "message": "Decision is 1.5 hours old (valid)"
+        "hours_passed": 9.203378965277778,
+        "message": "Decision is 9.2 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 1,
-        "mae": 1.9400000000000048,
-        "mse": 3.763600000000019,
-        "rmse": 1.9400000000000048,
-        "mape": 3.3032521709518217,
+        "hours_of_data": 9,
+        "mae": 134.69777777777784,
+        "mse": 18686.039177777795,
+        "rmse": 136.69688795937455,
+        "mape": 2.0194611079325306,
         "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 3.3032521709518217,
-        "final_actual_price": 58.73,
-        "initial_actual_price": 58.73
+        "actual_price_change": 1.277303302849369,
+        "predicted_price_change": -1.2723150177613192,
+        "final_actual_price": 6700.0,
+        "initial_actual_price": 6615.5
       },
       "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.277303302849369,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
       }
     },
     {
-      "symbol": "/MCL:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:34:09.420204",
+      "symbol": "/ES:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:17:34.312141",
       "validity": {
         "is_valid": true,
-        "hours_passed": 1.496253965,
-        "message": "Decision is 1.5 hours old (valid)"
+        "hours_passed": 9.29071056111111,
+        "message": "Decision is 9.3 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 1,
-        "mae": 1.9400000000000048,
-        "mse": 3.763600000000019,
-        "rmse": 1.9400000000000048,
-        "mape": 3.3032521709518217,
+        "hours_of_data": 9,
+        "mae": 134.69777777777784,
+        "mse": 18686.039177777795,
+        "rmse": 136.69688795937455,
+        "mape": 2.0194611079325306,
         "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 3.3032521709518217,
-        "final_actual_price": 58.73,
-        "initial_actual_price": 58.73
+        "actual_price_change": 1.277303302849369,
+        "predicted_price_change": -1.2723150177613192,
+        "final_actual_price": 6700.0,
+        "initial_actual_price": 6615.5
       },
       "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.277303302849369,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
       }
     },
     {
       "symbol": "/MCL:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:17:43.444978",
+      "decision_timestamp": "2025-10-17T09:58:19.195191",
       "validity": {
         "is_valid": true,
-        "hours_passed": 1.770136246388889,
-        "message": "Decision is 1.8 hours old (valid)"
+        "hours_passed": 8.611576380555556,
+        "message": "Decision is 8.6 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 1,
-        "mae": 1.9400000000000048,
-        "mse": 3.763600000000019,
-        "rmse": 1.9400000000000048,
-        "mape": 3.3032521709518217,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 3.3032521709518217,
-        "final_actual_price": 58.73,
-        "initial_actual_price": 58.73
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/MCL:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T07:42:12.415773",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 2.362089231111111,
-        "message": "Decision is 2.4 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 2,
-        "mae": 2.4049999999999976,
-        "mse": 5.784249999999989,
-        "rmse": 2.4050467770918695,
-        "mape": 4.096064019474094,
+        "hours_of_data": 9,
+        "mae": 1.761111111111112,
+        "mse": 3.1323222222222253,
+        "rmse": 1.7698367784126945,
+        "mape": 3.0664902444587843,
         "direction_correct": true,
-        "actual_price_change": 0.05110732538329477,
-        "predicted_price_change": 4.122657580919922,
-        "final_actual_price": 58.73,
-        "initial_actual_price": 58.7
+        "actual_price_change": 1.015583960777444,
+        "predicted_price_change": 3.6771143407459315,
+        "final_actual_price": 57.69,
+        "initial_actual_price": 57.11
       },
       "signal_accuracy": {
         "has_data": true,
-        "signal_correct": false,
-        "actual_price_change": 0.05110732538329477,
+        "signal_correct": true,
+        "actual_price_change": 1.015583960777444,
         "signal": "BUY",
-        "hours_of_data": 2
+        "signal_strength": "MODERATE",
+        "hours_of_data": 9
       }
     },
     {
-      "symbol": "/MES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T09:35:03.119148",
+      "symbol": "/MCL:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:49:48.005132",
       "validity": {
         "is_valid": true,
-        "hours_passed": 0.48133857194444446,
-        "message": "Decision is 0.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      }
-    },
-    {
-      "symbol": "/MES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T09:32:50.819776",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 0.5180886772222222,
-        "message": "Decision is 0.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      }
-    },
-    {
-      "symbol": "/MES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:42:57.765658",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.349492598888889,
-        "message": "Decision is 1.3 hours old (valid)"
+        "hours_passed": 8.753573619166668,
+        "message": "Decision is 8.8 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 1,
-        "mae": 156.01000000000022,
-        "mse": 24339.12010000007,
-        "rmse": 156.01000000000022,
-        "mape": 2.317611230780661,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.317611230780661,
-        "final_actual_price": 6731.5,
-        "initial_actual_price": 6731.5
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/MES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:37:00.818408",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.448644895,
-        "message": "Decision is 1.4 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 156.01000000000022,
-        "mse": 24339.12010000007,
-        "rmse": 156.01000000000022,
-        "mape": 2.317611230780661,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.317611230780661,
-        "final_actual_price": 6731.5,
-        "initial_actual_price": 6731.5
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/MES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:34:36.559233",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4887171766666665,
-        "message": "Decision is 1.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 156.01000000000022,
-        "mse": 24339.12010000007,
-        "rmse": 156.01000000000022,
-        "mape": 2.317611230780661,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.317611230780661,
-        "final_actual_price": 6731.5,
-        "initial_actual_price": 6731.5
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/MES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:34:01.070825",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.498575344722222,
-        "message": "Decision is 1.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 156.01000000000022,
-        "mse": 24339.12010000007,
-        "rmse": 156.01000000000022,
-        "mape": 2.317611230780661,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.317611230780661,
-        "final_actual_price": 6731.5,
-        "initial_actual_price": 6731.5
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/MES:XCME{=h}",
-      "decision_timestamp": "2025-10-16T07:41:50.653768",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 2.3681356383333334,
-        "message": "Decision is 2.4 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 2,
-        "mae": 133.3100000000004,
-        "mse": 17772.556100000103,
-        "rmse": 133.31375060360466,
-        "mape": 1.9806827778838891,
-        "direction_correct": false,
-        "actual_price_change": 0.029719890036406866,
-        "predicted_price_change": -1.966119325358502,
-        "final_actual_price": 6731.5,
-        "initial_actual_price": 6729.5
-      },
-      "signal_accuracy": {
-        "has_data": true,
-        "signal_correct": false,
-        "actual_price_change": 0.029719890036406866,
-        "signal": "SELL",
-        "hours_of_data": 2
-      }
-    },
-    {
-      "symbol": "/MNQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T09:35:04.699194",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 0.4809010758333333,
-        "message": "Decision is 0.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      }
-    },
-    {
-      "symbol": "/MNQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:42:59.381386",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.3490451897222222,
-        "message": "Decision is 1.3 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 666.0800000000017,
-        "mse": 443662.56640000234,
-        "rmse": 666.0800000000017,
-        "mape": 2.6610203347848738,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.6610203347848738,
-        "final_actual_price": 25031.0,
-        "initial_actual_price": 25031.0
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/MNQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:37:02.102997",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4482894608333332,
-        "message": "Decision is 1.4 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 666.0800000000017,
-        "mse": 443662.56640000234,
-        "rmse": 666.0800000000017,
-        "mape": 2.6610203347848738,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.6610203347848738,
-        "final_actual_price": 25031.0,
-        "initial_actual_price": 25031.0
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/MNQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:34:38.246950",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4882494738888887,
-        "message": "Decision is 1.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 666.0800000000017,
-        "mse": 443662.56640000234,
-        "rmse": 666.0800000000017,
-        "mape": 2.6610203347848738,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.6610203347848738,
-        "final_actual_price": 25031.0,
-        "initial_actual_price": 25031.0
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/MNQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:34:02.658564",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4981354136111111,
-        "message": "Decision is 1.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 666.0800000000017,
-        "mse": 443662.56640000234,
-        "rmse": 666.0800000000017,
-        "mape": 2.6610203347848738,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.6610203347848738,
-        "final_actual_price": 25031.0,
-        "initial_actual_price": 25031.0
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/MNQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T07:41:55.116291",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 2.3668974180555558,
-        "message": "Decision is 2.4 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 2,
-        "mae": 560.8499999999985,
-        "mse": 314585.7849999984,
-        "rmse": 560.8794745754193,
-        "mape": 2.241131291169647,
-        "direction_correct": false,
-        "actual_price_change": 0.04596414796458762,
-        "predicted_price_change": -2.2186694378384804,
-        "final_actual_price": 25031.0,
-        "initial_actual_price": 25019.5
-      },
-      "signal_accuracy": {
-        "has_data": true,
-        "signal_correct": false,
-        "actual_price_change": 0.04596414796458762,
-        "signal": "SELL",
-        "hours_of_data": 2
-      }
-    },
-    {
-      "symbol": "/NQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T09:35:01.480738",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 0.48179674083333335,
-        "message": "Decision is 0.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      }
-    },
-    {
-      "symbol": "/NQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:42:56.201927",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.3499300113888888,
-        "message": "Decision is 1.3 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 659.0499999999993,
-        "mse": 434346.90249999904,
-        "rmse": 659.0499999999993,
-        "mape": 2.633961133036916,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.633961133036916,
-        "final_actual_price": 25021.25,
-        "initial_actual_price": 25021.25
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/NQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:36:59.286484",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4490734672222223,
-        "message": "Decision is 1.4 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 659.0499999999993,
-        "mse": 434346.90249999904,
-        "rmse": 659.0499999999993,
-        "mape": 2.633961133036916,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.633961133036916,
-        "final_actual_price": 25021.25,
-        "initial_actual_price": 25021.25
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/NQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:34:35.123938",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4891189672222223,
-        "message": "Decision is 1.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 659.0499999999993,
-        "mse": 434346.90249999904,
-        "rmse": 659.0499999999993,
-        "mape": 2.633961133036916,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.633961133036916,
-        "final_actual_price": 25021.25,
-        "initial_actual_price": 25021.25
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/NQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:33:59.283292",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4990749830555556,
-        "message": "Decision is 1.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 659.0499999999993,
-        "mse": 434346.90249999904,
-        "rmse": 659.0499999999993,
-        "mape": 2.633961133036916,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.633961133036916,
-        "final_actual_price": 25021.25,
-        "initial_actual_price": 25021.25
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/NQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:17:38.727319",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.7714519183333333,
-        "message": "Decision is 1.8 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 659.0499999999993,
-        "mse": 434346.90249999904,
-        "rmse": 659.0499999999993,
-        "mape": 2.633961133036916,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.633961133036916,
-        "final_actual_price": 25021.25,
-        "initial_actual_price": 25021.25
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/NQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:13:04.252543",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.8476951880555557,
-        "message": "Decision is 1.8 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 659.0499999999993,
-        "mse": 434346.90249999904,
-        "rmse": 659.0499999999993,
-        "mape": 2.633961133036916,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -2.633961133036916,
-        "final_actual_price": 25021.25,
-        "initial_actual_price": 25021.25
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/NQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T07:43:15.256143",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 2.3446386324999997,
-        "message": "Decision is 2.3 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 2,
-        "mae": 557.3549999999996,
-        "mse": 310645.8616499995,
-        "rmse": 557.3561353838311,
-        "mape": 2.2276265627871514,
-        "direction_correct": false,
-        "actual_price_change": 0.008993165194452216,
-        "predicted_price_change": -2.2232303449378454,
-        "final_actual_price": 25021.25,
-        "initial_actual_price": 25019.0
-      },
-      "signal_accuracy": {
-        "has_data": true,
-        "signal_correct": true,
-        "actual_price_change": 0.008993165194452216,
-        "signal": "HOLD",
-        "hours_of_data": 2
-      }
-    },
-    {
-      "symbol": "/NQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T07:41:37.011972",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 2.371928956666667,
-        "message": "Decision is 2.4 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 2,
-        "mae": 557.3549999999996,
-        "mse": 310645.8616499995,
-        "rmse": 557.3561353838311,
-        "mape": 2.2276265627871514,
-        "direction_correct": false,
-        "actual_price_change": 0.008993165194452216,
-        "predicted_price_change": -2.2232303449378454,
-        "final_actual_price": 25021.25,
-        "initial_actual_price": 25019.0
-      },
-      "signal_accuracy": {
-        "has_data": true,
-        "signal_correct": false,
-        "actual_price_change": 0.008993165194452216,
-        "signal": "SELL",
-        "hours_of_data": 2
-      }
-    },
-    {
-      "symbol": "/NQ:XCME{=h}",
-      "decision_timestamp": "2025-10-16T07:26:01.660074",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 2.6317492227777777,
-        "message": "Decision is 2.6 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 2,
-        "mae": 557.3549999999996,
-        "mse": 310645.8616499995,
-        "rmse": 557.3561353838311,
-        "mape": 2.2276265627871514,
-        "direction_correct": false,
-        "actual_price_change": 0.008993165194452216,
-        "predicted_price_change": -2.2232303449378454,
-        "final_actual_price": 25021.25,
-        "initial_actual_price": 25019.0
-      },
-      "signal_accuracy": {
-        "has_data": true,
-        "signal_correct": true,
-        "actual_price_change": 0.008993165194452216,
-        "signal": "HOLD",
-        "hours_of_data": 2
-      }
-    },
-    {
-      "symbol": "/QG:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T09:35:10.159071",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 0.47938866694444443,
-        "message": "Decision is 0.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      }
-    },
-    {
-      "symbol": "/QG:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T09:33:09.520697",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 0.5128993263888889,
-        "message": "Decision is 0.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      }
-    },
-    {
-      "symbol": "/QG:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:43:04.400695",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.3476551630555558,
-        "message": "Decision is 1.3 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 0.06000000000000005,
-        "mse": 0.0036000000000000064,
-        "rmse": 0.06000000000000005,
-        "mape": 1.9672131147541003,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 1.9672131147541003,
-        "final_actual_price": 3.05,
-        "initial_actual_price": 3.05
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/QG:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:37:06.438517",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4470893758333334,
-        "message": "Decision is 1.4 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 0.06000000000000005,
-        "mse": 0.0036000000000000064,
-        "rmse": 0.06000000000000005,
-        "mape": 1.9672131147541003,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 1.9672131147541003,
-        "final_actual_price": 3.05,
-        "initial_actual_price": 3.05
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/QG:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:34:42.579528",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4870504819444443,
-        "message": "Decision is 1.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 0.06000000000000005,
-        "mse": 0.0036000000000000064,
-        "rmse": 0.06000000000000005,
-        "mape": 1.9672131147541003,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 1.9672131147541003,
-        "final_actual_price": 3.05,
-        "initial_actual_price": 3.05
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/QG:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:34:07.540111",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4967836533333334,
-        "message": "Decision is 1.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 0.06000000000000005,
-        "mse": 0.0036000000000000064,
-        "rmse": 0.06000000000000005,
-        "mape": 1.9672131147541003,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 1.9672131147541003,
-        "final_actual_price": 3.05,
-        "initial_actual_price": 3.05
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/QG:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T07:42:09.363017",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 2.362944236111111,
-        "message": "Decision is 2.4 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 2,
-        "mae": 0.07000000000000028,
-        "mse": 0.00490000000000004,
-        "rmse": 0.07000000000000028,
-        "mape": 2.2950819672131244,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 2.2950819672131244,
-        "final_actual_price": 3.05,
-        "initial_actual_price": 3.05
-      },
-      "signal_accuracy": {
-        "has_data": true,
-        "signal_correct": true,
-        "actual_price_change": 0.0,
-        "signal": "HOLD",
-        "hours_of_data": 2
-      }
-    },
-    {
-      "symbol": "/QM:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T09:35:08.649237",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 0.47980945472222225,
-        "message": "Decision is 0.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      }
-    },
-    {
-      "symbol": "/QM:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T09:33:08.234418",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 0.5132582677777777,
-        "message": "Decision is 0.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      }
-    },
-    {
-      "symbol": "/QM:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:43:02.832676",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.3480923616666667,
-        "message": "Decision is 1.3 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 1.9699999999999989,
-        "mse": 3.8808999999999956,
-        "rmse": 1.9699999999999989,
-        "mape": 3.3560477001703557,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 3.3560477001703557,
-        "final_actual_price": 58.7,
-        "initial_actual_price": 58.7
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/QM:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:37:04.950438",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4475043713888889,
-        "message": "Decision is 1.4 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 1.9699999999999989,
-        "mse": 3.8808999999999956,
-        "rmse": 1.9699999999999989,
-        "mape": 3.3560477001703557,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 3.3560477001703557,
-        "final_actual_price": 58.7,
-        "initial_actual_price": 58.7
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/QM:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:34:41.146517",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4874501902777777,
-        "message": "Decision is 1.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 1.9699999999999989,
-        "mse": 3.8808999999999956,
-        "rmse": 1.9699999999999989,
-        "mape": 3.3560477001703557,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 3.3560477001703557,
-        "final_actual_price": 58.7,
-        "initial_actual_price": 58.7
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/QM:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:34:05.657245",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.4973086102777777,
-        "message": "Decision is 1.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 1.9699999999999989,
-        "mse": 3.8808999999999956,
-        "rmse": 1.9699999999999989,
-        "mape": 3.3560477001703557,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 3.3560477001703557,
-        "final_actual_price": 58.7,
-        "initial_actual_price": 58.7
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/QM:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T08:17:41.814151",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.7705986369444446,
-        "message": "Decision is 1.8 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 1.9699999999999989,
-        "mse": 3.8808999999999956,
-        "rmse": 1.9699999999999989,
-        "mape": 3.3560477001703557,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": 3.3560477001703557,
-        "final_actual_price": 58.7,
-        "initial_actual_price": 58.7
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/QM:XNYM{=h}",
-      "decision_timestamp": "2025-10-16T07:42:00.223225",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 2.3654852869444443,
-        "message": "Decision is 2.4 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 2,
-        "mae": 2.4449999999999967,
-        "mse": 5.978649999999984,
-        "rmse": 2.445127808520443,
-        "mape": 4.167040640417334,
+        "hours_of_data": 9,
+        "mae": 1.8911111111111145,
+        "mse": 3.6071111111111245,
+        "rmse": 1.8992396139274066,
+        "mape": 3.2927804611752154,
         "direction_correct": true,
-        "actual_price_change": 0.08525149190111554,
-        "predicted_price_change": 4.2114236999147465,
-        "final_actual_price": 58.7,
-        "initial_actual_price": 58.65
+        "actual_price_change": 1.015583960777444,
+        "predicted_price_change": 3.9047452285063984,
+        "final_actual_price": 57.69,
+        "initial_actual_price": 57.11
       },
       "signal_accuracy": {
         "has_data": true,
-        "signal_correct": false,
-        "actual_price_change": 0.08525149190111554,
+        "signal_correct": true,
+        "actual_price_change": 1.015583960777444,
         "signal": "BUY",
-        "hours_of_data": 2
+        "signal_strength": "MODERATE",
+        "hours_of_data": 9
       }
     },
     {
-      "symbol": "/RTY:XCME{=h}",
-      "decision_timestamp": "2025-10-16T09:35:06.801923",
+      "symbol": "/MCL:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:35:16.369967",
       "validity": {
         "is_valid": true,
-        "hours_passed": 0.48032479916666665,
-        "message": "Decision is 0.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      }
-    },
-    {
-      "symbol": "/RTY:XCME{=h}",
-      "decision_timestamp": "2025-10-16T09:33:00.725010",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 0.5153461638888889,
-        "message": "Decision is 0.5 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "No actual data after decision"
-      }
-    },
-    {
-      "symbol": "/RTY:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:43:01.293057",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.348521991111111,
-        "message": "Decision is 1.3 hours old (valid)"
+        "hours_passed": 8.995694498333334,
+        "message": "Decision is 9.0 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 1,
-        "mae": 81.98000000000002,
-        "mse": 6720.720400000003,
-        "rmse": 81.98000000000002,
-        "mape": 3.2259079998426006,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -3.2259079998426006,
-        "final_actual_price": 2541.3,
-        "initial_actual_price": 2541.3
+        "hours_of_data": 9,
+        "mae": 1.8911111111111145,
+        "mse": 3.6071111111111245,
+        "rmse": 1.8992396139274066,
+        "mape": 3.2927804611752154,
+        "direction_correct": true,
+        "actual_price_change": 1.015583960777444,
+        "predicted_price_change": 3.9047452285063984,
+        "final_actual_price": 57.69,
+        "initial_actual_price": 57.11
       },
       "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
+        "has_data": true,
+        "signal_correct": true,
+        "actual_price_change": 1.015583960777444,
+        "signal": "BUY",
+        "signal_strength": "MODERATE",
+        "hours_of_data": 9
       }
     },
     {
-      "symbol": "/RTY:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:37:03.601426",
+      "symbol": "/MCL:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:32:14.299113",
       "validity": {
         "is_valid": true,
-        "hours_passed": 1.447881055,
-        "message": "Decision is 1.4 hours old (valid)"
+        "hours_passed": 9.046272211388889,
+        "message": "Decision is 9.0 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 1,
-        "mae": 81.98000000000002,
-        "mse": 6720.720400000003,
-        "rmse": 81.98000000000002,
-        "mape": 3.2259079998426006,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -3.2259079998426006,
-        "final_actual_price": 2541.3,
-        "initial_actual_price": 2541.3
+        "hours_of_data": 9,
+        "mae": 1.8911111111111145,
+        "mse": 3.6071111111111245,
+        "rmse": 1.8992396139274066,
+        "mape": 3.2927804611752154,
+        "direction_correct": true,
+        "actual_price_change": 1.015583960777444,
+        "predicted_price_change": 3.9047452285063984,
+        "final_actual_price": 57.69,
+        "initial_actual_price": 57.11
       },
       "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
+        "has_data": true,
+        "signal_correct": true,
+        "actual_price_change": 1.015583960777444,
+        "signal": "BUY",
+        "signal_strength": "MODERATE",
+        "hours_of_data": 9
       }
     },
     {
-      "symbol": "/RTY:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:34:39.689304",
+      "symbol": "/MCL:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:23:25.626625",
       "validity": {
         "is_valid": true,
-        "hours_passed": 1.4878569225,
-        "message": "Decision is 1.5 hours old (valid)"
+        "hours_passed": 9.193126146666668,
+        "message": "Decision is 9.2 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 1,
-        "mae": 81.98000000000002,
-        "mse": 6720.720400000003,
-        "rmse": 81.98000000000002,
-        "mape": 3.2259079998426006,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -3.2259079998426006,
-        "final_actual_price": 2541.3,
-        "initial_actual_price": 2541.3
+        "hours_of_data": 9,
+        "mae": 1.8911111111111145,
+        "mse": 3.6071111111111245,
+        "rmse": 1.8992396139274066,
+        "mape": 3.2927804611752154,
+        "direction_correct": true,
+        "actual_price_change": 1.015583960777444,
+        "predicted_price_change": 3.9047452285063984,
+        "final_actual_price": 57.69,
+        "initial_actual_price": 57.11
       },
       "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
+        "has_data": true,
+        "signal_correct": true,
+        "actual_price_change": 1.015583960777444,
+        "signal": "BUY",
+        "signal_strength": "MODERATE",
+        "hours_of_data": 9
       }
     },
     {
-      "symbol": "/RTY:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:34:04.134158",
+      "symbol": "/MES:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:58:11.401681",
       "validity": {
         "is_valid": true,
-        "hours_passed": 1.4977333519444445,
-        "message": "Decision is 1.5 hours old (valid)"
+        "hours_passed": 8.613744696944446,
+        "message": "Decision is 8.6 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 1,
-        "mae": 81.98000000000002,
-        "mse": 6720.720400000003,
-        "rmse": 81.98000000000002,
-        "mape": 3.2259079998426006,
+        "hours_of_data": 9,
+        "mae": 132.018888888889,
+        "mse": 17971.127455555586,
+        "rmse": 134.0564338461813,
+        "mape": 1.979315473222119,
         "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -3.2259079998426006,
-        "final_actual_price": 2541.3,
-        "initial_actual_price": 2541.3
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/RTY:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:17:40.179948",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.7710542427777778,
-        "message": "Decision is 1.8 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 81.98000000000002,
-        "mse": 6720.720400000003,
-        "rmse": 81.98000000000002,
-        "mape": 3.2259079998426006,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -3.2259079998426006,
-        "final_actual_price": 2541.3,
-        "initial_actual_price": 2541.3
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/RTY:XCME{=h}",
-      "decision_timestamp": "2025-10-16T08:13:05.658112",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 1.847310583611111,
-        "message": "Decision is 1.8 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 1,
-        "mae": 81.98000000000002,
-        "mse": 6720.720400000003,
-        "rmse": 81.98000000000002,
-        "mape": 3.2259079998426006,
-        "direction_correct": false,
-        "actual_price_change": 0.0,
-        "predicted_price_change": -3.2259079998426006,
-        "final_actual_price": 2541.3,
-        "initial_actual_price": 2541.3
-      },
-      "signal_accuracy": {
-        "has_data": false,
-        "message": "Insufficient actual price data for signal validation"
-      }
-    },
-    {
-      "symbol": "/RTY:XCME{=h}",
-      "decision_timestamp": "2025-10-16T07:43:16.539589",
-      "validity": {
-        "is_valid": true,
-        "hours_passed": 2.3442882283333333,
-        "message": "Decision is 2.3 hours old (valid)"
-      },
-      "price_accuracy": {
-        "has_data": true,
-        "hours_of_data": 2,
-        "mae": 69.23000000000025,
-        "mse": 4793.152900000034,
-        "rmse": 69.23259998006743,
-        "mape": 2.7248341861562473,
-        "direction_correct": false,
-        "actual_price_change": 0.04724223455770532,
-        "predicted_price_change": -2.7018621314121534,
-        "final_actual_price": 2541.3,
-        "initial_actual_price": 2540.1
+        "actual_price_change": 1.2735724273459053,
+        "predicted_price_change": -1.2301878235894352,
+        "final_actual_price": 6699.5,
+        "initial_actual_price": 6615.25
       },
       "signal_accuracy": {
         "has_data": true,
         "signal_correct": false,
-        "actual_price_change": 0.04724223455770532,
+        "actual_price_change": 1.2735724273459053,
         "signal": "SELL",
-        "hours_of_data": 2
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
       }
     },
     {
-      "symbol": "/RTY:XCME{=h}",
-      "decision_timestamp": "2025-10-16T07:41:56.548885",
+      "symbol": "/MES:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:49:36.642729",
       "validity": {
         "is_valid": true,
-        "hours_passed": 2.366508145,
-        "message": "Decision is 2.4 hours old (valid)"
+        "hours_passed": 8.756733294722222,
+        "message": "Decision is 8.8 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 2,
-        "mae": 69.23000000000025,
-        "mse": 4793.152900000034,
-        "rmse": 69.23259998006743,
-        "mape": 2.7248341861562473,
+        "hours_of_data": 9,
+        "mae": 134.05888888888896,
+        "mse": 18513.92612222224,
+        "rmse": 136.06588890027595,
+        "mape": 2.0099194179646105,
         "direction_correct": false,
-        "actual_price_change": 0.04724223455770532,
-        "predicted_price_change": -2.7018621314121534,
-        "final_actual_price": 2541.3,
-        "initial_actual_price": 2540.1
+        "actual_price_change": 1.2735724273459053,
+        "predicted_price_change": -1.2610256604058816,
+        "final_actual_price": 6699.5,
+        "initial_actual_price": 6615.25
       },
       "signal_accuracy": {
         "has_data": true,
         "signal_correct": false,
-        "actual_price_change": 0.04724223455770532,
+        "actual_price_change": 1.2735724273459053,
         "signal": "SELL",
-        "hours_of_data": 2
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
       }
     },
     {
-      "symbol": "/RTY:XCME{=h}",
-      "decision_timestamp": "2025-10-16T07:26:03.157719",
+      "symbol": "/MES:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:35:07.998538",
       "validity": {
         "is_valid": true,
-        "hours_passed": 2.6313390244444443,
-        "message": "Decision is 2.6 hours old (valid)"
+        "hours_passed": 8.998024130555555,
+        "message": "Decision is 9.0 hours old (valid)"
       },
       "price_accuracy": {
         "has_data": true,
-        "hours_of_data": 2,
-        "mae": 69.23000000000025,
-        "mse": 4793.152900000034,
-        "rmse": 69.23259998006743,
-        "mape": 2.7248341861562473,
+        "hours_of_data": 9,
+        "mae": 134.05888888888896,
+        "mse": 18513.92612222224,
+        "rmse": 136.06588890027595,
+        "mape": 2.0099194179646105,
         "direction_correct": false,
-        "actual_price_change": 0.04724223455770532,
-        "predicted_price_change": -2.7018621314121534,
-        "final_actual_price": 2541.3,
-        "initial_actual_price": 2540.1
+        "actual_price_change": 1.2735724273459053,
+        "predicted_price_change": -1.2610256604058816,
+        "final_actual_price": 6699.5,
+        "initial_actual_price": 6615.25
       },
       "signal_accuracy": {
         "has_data": true,
         "signal_correct": false,
-        "actual_price_change": 0.04724223455770532,
+        "actual_price_change": 1.2735724273459053,
         "signal": "SELL",
-        "hours_of_data": 2
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/MES:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:32:06.928252",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.04832251888889,
+        "message": "Decision is 9.0 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 134.05888888888896,
+        "mse": 18513.92612222224,
+        "rmse": 136.06588890027595,
+        "mape": 2.0099194179646105,
+        "direction_correct": false,
+        "actual_price_change": 1.2735724273459053,
+        "predicted_price_change": -1.2610256604058816,
+        "final_actual_price": 6699.5,
+        "initial_actual_price": 6615.25
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.2735724273459053,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/MES:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:22:59.695796",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.200331534444445,
+        "message": "Decision is 9.2 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 134.05888888888896,
+        "mse": 18513.92612222224,
+        "rmse": 136.06588890027595,
+        "mape": 2.0099194179646105,
+        "direction_correct": false,
+        "actual_price_change": 1.2735724273459053,
+        "predicted_price_change": -1.2610256604058816,
+        "final_actual_price": 6699.5,
+        "initial_actual_price": 6615.25
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.2735724273459053,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/MES:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:17:56.429957",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.284572045277779,
+        "message": "Decision is 9.3 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 134.05888888888896,
+        "mse": 18513.92612222224,
+        "rmse": 136.06588890027595,
+        "mape": 2.0099194179646105,
+        "direction_correct": false,
+        "actual_price_change": 1.2735724273459053,
+        "predicted_price_change": -1.2610256604058816,
+        "final_actual_price": 6699.5,
+        "initial_actual_price": 6615.25
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.2735724273459053,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/MNQ:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:58:13.046835",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.61329121861111,
+        "message": "Decision is 8.6 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 527.882222222222,
+        "mse": 292613.6605999998,
+        "rmse": 540.9377603754426,
+        "mape": 2.125392702997035,
+        "direction_correct": false,
+        "actual_price_change": 1.6633433710425651,
+        "predicted_price_change": -1.183812159192642,
+        "final_actual_price": 24982.75,
+        "initial_actual_price": 24574.0
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.6633433710425651,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/MNQ:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:49:38.475273",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.756228582222223,
+        "message": "Decision is 8.8 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 558.4722222222222,
+        "mse": 325845.24305555556,
+        "rmse": 570.8285583741896,
+        "mape": 2.248687729997937,
+        "direction_correct": false,
+        "actual_price_change": 1.6633433710425651,
+        "predicted_price_change": -1.3082933181411247,
+        "final_actual_price": 24982.75,
+        "initial_actual_price": 24574.0
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.6633433710425651,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/MNQ:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:35:09.446061",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.997626147222222,
+        "message": "Decision is 9.0 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 558.4722222222222,
+        "mse": 325845.24305555556,
+        "rmse": 570.8285583741896,
+        "mape": 2.248687729997937,
+        "direction_correct": false,
+        "actual_price_change": 1.6633433710425651,
+        "predicted_price_change": -1.3082933181411247,
+        "final_actual_price": 24982.75,
+        "initial_actual_price": 24574.0
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.6633433710425651,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/MNQ:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:32:08.296388",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.047945500833334,
+        "message": "Decision is 9.0 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 558.4722222222222,
+        "mse": 325845.24305555556,
+        "rmse": 570.8285583741896,
+        "mape": 2.248687729997937,
+        "direction_correct": false,
+        "actual_price_change": 1.6633433710425651,
+        "predicted_price_change": -1.3082933181411247,
+        "final_actual_price": 24982.75,
+        "initial_actual_price": 24574.0
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.6633433710425651,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/MNQ:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:23:02.798790",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.199472611388888,
+        "message": "Decision is 9.2 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 558.4722222222222,
+        "mse": 325845.24305555556,
+        "rmse": 570.8285583741896,
+        "mape": 2.248687729997937,
+        "direction_correct": false,
+        "actual_price_change": 1.6633433710425651,
+        "predicted_price_change": -1.3082933181411247,
+        "final_actual_price": 24982.75,
+        "initial_actual_price": 24574.0
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.6633433710425651,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:58:09.672991",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.614231329166667,
+        "message": "Decision is 8.6 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 531.1077777777796,
+        "mse": 295690.17223333515,
+        "rmse": 543.7740084201664,
+        "mape": 2.1385285592752203,
+        "direction_correct": false,
+        "actual_price_change": 1.6256854227494226,
+        "predicted_price_change": -1.2017864227799495,
+        "final_actual_price": 24973.75,
+        "initial_actual_price": 24574.25
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.6256854227494226,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:49:34.773732",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.757258901111111,
+        "message": "Decision is 8.8 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 565.0177777777794,
+        "mse": 332859.78982222406,
+        "rmse": 576.9400227252605,
+        "mape": 2.2752101948897763,
+        "direction_correct": false,
+        "actual_price_change": 1.6256854227494226,
+        "predicted_price_change": -1.339776391955,
+        "final_actual_price": 24973.75,
+        "initial_actual_price": 24574.25
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.6256854227494226,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:35:06.431913",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.998464961944444,
+        "message": "Decision is 9.0 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 565.0177777777794,
+        "mse": 332859.78982222406,
+        "rmse": 576.9400227252605,
+        "mape": 2.2752101948897763,
+        "direction_correct": false,
+        "actual_price_change": 1.6256854227494226,
+        "predicted_price_change": -1.339776391955,
+        "final_actual_price": 24973.75,
+        "initial_actual_price": 24574.25
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.6256854227494226,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:32:05.282080",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.048786458333334,
+        "message": "Decision is 9.0 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 565.0177777777794,
+        "mse": 332859.78982222406,
+        "rmse": 576.9400227252605,
+        "mape": 2.2752101948897763,
+        "direction_correct": false,
+        "actual_price_change": 1.6256854227494226,
+        "predicted_price_change": -1.339776391955,
+        "final_actual_price": 24973.75,
+        "initial_actual_price": 24574.25
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.6256854227494226,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:22:53.701035",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.202003555833334,
+        "message": "Decision is 9.2 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 565.0177777777794,
+        "mse": 332859.78982222406,
+        "rmse": 576.9400227252605,
+        "mape": 2.2752101948897763,
+        "direction_correct": false,
+        "actual_price_change": 1.6256854227494226,
+        "predicted_price_change": -1.339776391955,
+        "final_actual_price": 24973.75,
+        "initial_actual_price": 24574.25
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.6256854227494226,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/NQ:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:17:45.729876",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.2875517375,
+        "message": "Decision is 9.3 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 565.0177777777794,
+        "mse": 332859.78982222406,
+        "rmse": 576.9400227252605,
+        "mape": 2.2752101948897763,
+        "direction_correct": false,
+        "actual_price_change": 1.6256854227494226,
+        "predicted_price_change": -1.339776391955,
+        "final_actual_price": 24973.75,
+        "initial_actual_price": 24574.25
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 1.6256854227494226,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:58:17.783101",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.611981397222223,
+        "message": "Decision is 8.6 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 0.03222222222222223,
+        "mse": 0.0014555555555555617,
+        "rmse": 0.03815174380753207,
+        "mape": 1.0901982736433034,
+        "direction_correct": true,
+        "actual_price_change": 2.7303754266211477,
+        "predicted_price_change": 2.047781569965872,
+        "final_actual_price": 3.01,
+        "initial_actual_price": 2.93
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 2.7303754266211477,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:49:42.983962",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.754981158055555,
+        "message": "Decision is 8.8 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 0.0344444444444444,
+        "mse": 0.0014222222222222197,
+        "rmse": 0.0377123616632825,
+        "mape": 1.1538928732529834,
+        "direction_correct": true,
+        "actual_price_change": 2.7303754266211477,
+        "predicted_price_change": 1.0238907849829284,
+        "final_actual_price": 3.01,
+        "initial_actual_price": 2.93
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 2.7303754266211477,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:35:14.782670",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.996148183611112,
+        "message": "Decision is 9.0 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 0.0344444444444444,
+        "mse": 0.0014222222222222197,
+        "rmse": 0.0377123616632825,
+        "mape": 1.1538928732529834,
+        "direction_correct": true,
+        "actual_price_change": 2.7303754266211477,
+        "predicted_price_change": 1.0238907849829284,
+        "final_actual_price": 3.01,
+        "initial_actual_price": 2.93
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 2.7303754266211477,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:32:12.893503",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.046674701944445,
+        "message": "Decision is 9.0 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 0.0344444444444444,
+        "mse": 0.0014222222222222197,
+        "rmse": 0.0377123616632825,
+        "mape": 1.1538928732529834,
+        "direction_correct": true,
+        "actual_price_change": 2.7303754266211477,
+        "predicted_price_change": 1.0238907849829284,
+        "final_actual_price": 3.01,
+        "initial_actual_price": 2.93
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 2.7303754266211477,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:23:22.216633",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.194084943611111,
+        "message": "Decision is 9.2 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 0.0344444444444444,
+        "mse": 0.0014222222222222197,
+        "rmse": 0.0377123616632825,
+        "mape": 1.1538928732529834,
+        "direction_correct": true,
+        "actual_price_change": 2.7303754266211477,
+        "predicted_price_change": 1.0238907849829284,
+        "final_actual_price": 3.01,
+        "initial_actual_price": 2.93
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 2.7303754266211477,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/QG:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T07:04:47.340438",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 11.503772775555555,
+        "message": "Decision is 11.5 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 11,
+        "mae": 0.03590909090909087,
+        "mse": 0.0014931818181818158,
+        "rmse": 0.038641710859922025,
+        "mape": 1.2089671047785286,
+        "direction_correct": true,
+        "actual_price_change": 3.25900514579759,
+        "predicted_price_change": 1.5437392795883338,
+        "final_actual_price": 3.01,
+        "initial_actual_price": 2.915
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 3.25900514579759,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 11
+      }
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:58:16.330779",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.612387980277777,
+        "message": "Decision is 8.6 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": false,
+        "message": "No actual data after decision"
+      },
+      "signal_accuracy": {
+        "has_data": false,
+        "message": "No actual data after decision"
+      }
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:49:41.654814",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.755353526111112,
+        "message": "Decision is 8.8 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": false,
+        "message": "No actual data after decision"
+      },
+      "signal_accuracy": {
+        "has_data": false,
+        "message": "No actual data after decision"
+      }
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:35:12.680628",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.996736232777778,
+        "message": "Decision is 9.0 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": false,
+        "message": "No actual data after decision"
+      },
+      "signal_accuracy": {
+        "has_data": false,
+        "message": "No actual data after decision"
+      }
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:32:11.022551",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.047197707222223,
+        "message": "Decision is 9.0 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": false,
+        "message": "No actual data after decision"
+      },
+      "signal_accuracy": {
+        "has_data": false,
+        "message": "No actual data after decision"
+      }
+    },
+    {
+      "symbol": "/QM:XNYM{=h}",
+      "decision_timestamp": "2025-10-17T09:23:11.332614",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.19711157861111,
+        "message": "Decision is 9.2 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": false,
+        "message": "No actual data after decision"
+      },
+      "signal_accuracy": {
+        "has_data": false,
+        "message": "No actual data after decision"
+      }
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:58:14.791390",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.612817864722222,
+        "message": "Decision is 8.6 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 49.18888888888907,
+        "mse": 2475.794444444462,
+        "rmse": 49.75735568179304,
+        "mape": 1.997511599667755,
+        "direction_correct": false,
+        "actual_price_change": 0.2528651250050906,
+        "predicted_price_change": -1.619152493984268,
+        "final_actual_price": 2458.1,
+        "initial_actual_price": 2451.9
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 0.2528651250050906,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:49:40.142740",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.755775823055556,
+        "message": "Decision is 8.8 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 48.68888888888907,
+        "mse": 2426.855555555573,
+        "rmse": 49.2631257184882,
+        "mape": 1.977197677024456,
+        "direction_correct": false,
+        "actual_price_change": 0.2528651250050906,
+        "predicted_price_change": -1.5987601451935345,
+        "final_actual_price": 2458.1,
+        "initial_actual_price": 2451.9
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 0.2528651250050906,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:35:10.983464",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 8.9972098975,
+        "message": "Decision is 9.0 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 48.68888888888907,
+        "mse": 2426.855555555573,
+        "rmse": 49.2631257184882,
+        "mape": 1.977197677024456,
+        "direction_correct": false,
+        "actual_price_change": 0.2528651250050906,
+        "predicted_price_change": -1.5987601451935345,
+        "final_actual_price": 2458.1,
+        "initial_actual_price": 2451.9
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 0.2528651250050906,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:32:09.696878",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.0475672825,
+        "message": "Decision is 9.0 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 48.68888888888907,
+        "mse": 2426.855555555573,
+        "rmse": 49.2631257184882,
+        "mape": 1.977197677024456,
+        "direction_correct": false,
+        "actual_price_change": 0.2528651250050906,
+        "predicted_price_change": -1.5987601451935345,
+        "final_actual_price": 2458.1,
+        "initial_actual_price": 2451.9
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 0.2528651250050906,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
+      }
+    },
+    {
+      "symbol": "/RTY:XCME{=h}",
+      "decision_timestamp": "2025-10-17T09:23:06.452014",
+      "validity": {
+        "is_valid": true,
+        "hours_passed": 9.19846863361111,
+        "message": "Decision is 9.2 hours old (valid)"
+      },
+      "price_accuracy": {
+        "has_data": true,
+        "hours_of_data": 9,
+        "mae": 48.68888888888907,
+        "mse": 2426.855555555573,
+        "rmse": 49.2631257184882,
+        "mape": 1.977197677024456,
+        "direction_correct": false,
+        "actual_price_change": 0.2528651250050906,
+        "predicted_price_change": -1.5987601451935345,
+        "final_actual_price": 2458.1,
+        "initial_actual_price": 2451.9
+      },
+      "signal_accuracy": {
+        "has_data": true,
+        "signal_correct": false,
+        "actual_price_change": 0.2528651250050906,
+        "signal": "SELL",
+        "signal_strength": "WEAK",
+        "hours_of_data": 9
       }
     }
   ]

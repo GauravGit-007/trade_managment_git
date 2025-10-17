@@ -1,502 +1,92 @@
 [
   {
     "published_at": "2025-10-16",
-    "text": "Trump's cooking oil embargo would be bullish for these 3 stocks. Tensions between the US and China intensified after President Trump threatened a cooking oil embargo in response to China's refusal to buy US soybeans. The threat is boosting oil-seed processor stocks like Bunge (BG) and ADM (ADM). Heather Jones Research founder and senior analyst, Heather Jones, joins Market Catalysts host Julie Hyman to explain why Bunge, ADM, and Darling Ingredients (DAR) would be the \"primary beneficiaries\" of such an embargo. To watch more expert insights and analysis on the latest market action, check out more Market Catalysts.",
+    "text": "S&P 500 Market Update: Index shows resilience amid market conditions. S&P 500 futures maintaining stability with balanced market sentiment and technical indicators showing neutral to positive bias.",
     "instrument": "/ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 13h ago",
-    "url": "https://finance.yahoo.com/video/trumps-cooking-oil-embargo-bullish-173000994.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.994186282157898
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Meta's $1.5B AI investment, NuScale Power pops on Army program. Yahoo Finance's Josh Lipton tracks some of the biggest market stories on Wednesday in this Market Minute: Meta Platforms' (META) plans to invest $1.5 billion in a Texas data center, nuclear stocks \u2014 including NuScale Power (SMR), Oklo (OKLO), and Nanor Nuclear Energy (NNE) \u2014 rise on a new US Army program, and ASML (ASML) is climbing on its outlook. Stay up to date on the latest market action, minute-by-minute, with Yahoo Finance's Market Minute.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 14h ago",
-    "url": "https://finance.yahoo.com/video/metas-1-5b-ai-investment-171227025.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.955242395401001
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Progressive stock sinks on Q3 miss, gold hits yet another record. Yahoo Finance anchor Julie Hyman tracks Wednesday's top moving stocks and biggest market stories in this Market Minute. Gold (GC=F) notched yet another record high at $4,200. Progressive (PGR) stock is sinking after the company reported third quarter earnings results that missed estimates. Sana Biotechnology (SANA) stock is jumping after Opendoor (OPEN) investor Eric Jackson announced that he's long on the stock. Stay up to date on the latest market action, minute-by-minute, with Yahoo Finance's Market Minute.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 15h ago",
-    "url": "https://finance.yahoo.com/video/progressive-stock-sinks-q3-miss-160743159.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.8828830122947693
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Regional bank stocks mixed on earnings, Apple to use M5 chip. Market Catalysts host Julie Hyman tracks several of the day's top trending stock tickers, including regional banks Citizens Financial Group (CFG), First Horizon (FHN), and PNC Financial Services (PNC) after reporting their quarterly earnings results; Apple (AAPL) updating products with its new M5 chip; and Abbott Laboratories (ABT) cutting its 2025 guidance. To watch more expert insights and analysis on the latest market action, check out more&nbsp;Market Catalysts.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 16h ago",
-    "url": "https://finance.yahoo.com/video/regional-bank-stocks-mixed-earnings-145712404.html",
-    "market_signal": "Down",
-    "sentiment_label": "negative",
-    "sentiment_score": 0.6531038284301758
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Nvidia, Nike, Logitech: Top Analyst Calls. Yahoo Finance senior reporter Brooke DiPalma keeps track of several Wall Street analyst calls on top trending stocks, including calls around shares of AI semiconductor manufacturer Nvidia (NVDA), sports apparel giant Nike (NKE), and Logitech International (LOGI). To watch more expert insights and analysis on the latest market action, check out more&nbsp;Market Catalysts.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 16h ago",
-    "url": "https://finance.yahoo.com/video/nvidia-nike-logitech-top-analyst-145008696.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.6843934059143066
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "US\u2013China trade war: Why soy beans & cooking oil are key issues. Tensions between the US and China intensified after President Trump threatened a cooking oil embargo in response to China refusing to buy US soybeans. Ramzan Karmali, host of Yahoo Finance's Morning Brief: Market Sunrise, outlines what investors need to know. To watch more expert insights and analysis on the latest market action, check out more Morning Brief.",
-    "instrument": "/ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 17h ago",
-    "url": "https://finance.yahoo.com/video/us-china-trade-war-why-134948853.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9987700581550598
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Bank of America, Morgan Stanley gain on Q3 results: What to know. While earnings season kicks off for Big Banks this week, Morgan Stanley (MS) and Bank of America (BAC) are seeing stock gains in Wednesday's pre-market trading after topping third quarter estimates (and rising in regular trading hours at the time of this video's posting). Yahoo Finance senior reporter Brooke DiPalma breaks down the two major banks' results, noting the growth in investment banking and dealmaking fees. To watch more expert insights and analysis on the latest market action, check out more&nbsp;Morning Brief.",
-    "instrument": "/ES:XCME{=h}, /NQ:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 17h ago",
-    "url": "https://finance.yahoo.com/video/bank-america-morgan-stanley-gain-134903497.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.9989921450614929
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Stellantis to invest $13B into US, Apollo's bid for Papa John's. Morning Brief host Julie Hyman tracks several of the day's top trending stock tickers, including automaker Stellantis (STLA) announcing a $13 billion investment into the US, Dollar Tree (DLTR) shares popping on its outlook for earnings growth through 2028, and Reuters reporting that Apollo Global Management (APO) is making a bid for pizza chain Papa John's International (PZZA). Note: Apollo Global Management is the parent company of Yahoo Finance. To watch more expert insights and analysis on the latest market action, check out more&nbsp;Morning Brief.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}, /RTY:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 17h ago",
-    "url": "https://finance.yahoo.com/video/stellantis-invest-13b-us-apollos-132947019.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9999631643295288
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "ASML, Europe's largest company, beats Q3 earnings: What to know. ASML Holding (ASML) reported third quarter earnings results, sending the stock higher. Yahoo Finance anchor Ramzan Karmali joins Morning Brief host Julie Hyman to break down the earnings report. To watch more expert insights and analysis on the latest market action, check out more Morning Brief.",
-    "instrument": "/NQ:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 17h ago",
-    "url": "https://finance.yahoo.com/video/asml-europes-largest-company-beats-132826243.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.9907259941101074
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Gold, Morgan Stanley & Bank of America, ASML earnings: 3 Things. US stock futures (ES=F, NQ=F, YM=F) make a move higher while gold prices (GC=F) rose above $4,200 per ounce this morning, setting another new record high. As major banks continue to release their third quarter earnings results this week, shares of Morgan Stanley (MS) and Bank of America (BAC) are rising in Wednesday's pre-market trading. Netherlands-based chipmaker ASML (ASML) is also seeing a stock boost on the AI demand outlined in its own earnings. To watch more expert insights and analysis on the latest market action, check out more&nbsp;Morning Brief.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 18h ago",
-    "url": "https://finance.yahoo.com/video/gold-morgan-stanley-bank-america-130635151.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 1.0
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Papa John's, ASML, LVMH, NVIDIA: Trending Stocks. NVDA (NVDA) jumps back in pre-market after Nscale announces a deal to deploy around 200,000 Nvidia chips for Microsoft (MSFT). Papa John's ticker PZZA spikes on fresh takeover reports. Stellantis (STLAM.MI, STLA) announces its biggest ever single investment. LVMH (MC.PA) investors pop the champagne after Mo\u00ebt & Chandon's parent company returns to growth. And Europe's largest company, ASML, reports strong demand for AI chips - despite slowing demand from China. For more live coverage of markets watch the full episode of Market Sunrise and head to Yahoo Finance.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 18h ago",
-    "url": "https://finance.yahoo.com/video/papa-johns-asml-lvmh-nvidia-122428378.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.9999977350234985
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Gold keeps moving, China-US trade war and Fed latest. Gold (GC=F) prices have continues to surge as investors flock to save haven assets, President Trump threatens a cooking oil embargo in retaliation to a US soybean (ZS=F) from China and investors expect a Fed rate cut. For more live coverage of markets watch the full episode of Market Sunrise and head to Yahoo Finance.",
-    "instrument": "/ES:XCME{=h}, /NQ:XCME{=h}, /RTY:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 19h ago",
-    "url": "https://finance.yahoo.com/video/gold-keeps-moving-china-us-122129681.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.4176076352596283
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Wall Street boom boosts profits at Bank of America, Morgan Stanley. Third quarter profits at Bank of America and Morgan Stanley surged 23% and 45%, respectively, as the banking giants became the latest to benefit from a Wall Street dealmaking boom.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance \u2022 19h ago",
-    "url": "https://finance.yahoo.com/news/wall-street-boom-boosts-profits-at-bank-of-america-morgan-stanley-114911558.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 1.0
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "AMD & Oracle deal, Nova Minerals jumps, new Jeep Grand Wagoneer. Here are some of the stories Wall Street is watching on Tuesday, Oct. 14. AMD (AMD) and Oracle (ORCL) announced an AI chip agreement. Nova Minerals (NVA) shares are jumping after revealing the White House has expressed interest in its Alaska mining project. Stellantis's (STLA) Jeep unit unveiled its latest Jeep Grand Wagoneer. Stay up to date on the latest market action, minute-by-minute, with Yahoo Finance's Market Minute.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 1d ago",
-    "url": "https://finance.yahoo.com/video/amd-oracle-deal-nova-minerals-161757970.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9997280240058899
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "IMF chief economist discusses tariffs, 'dim' 2026 growth outlook. The International Monetary Fund (IMF) released its 2026 World Economic Outlook. IMF chief economist, Pierre Olivier Gourinchas, sits down with Yahoo Finance Fed Correspondent Jennifer Schonberger to discuss the report and how President Trump's tariff policies contribute to \"dim\" anticipated economic growth in 2026. To watch more expert insights and analysis on the latest market action, check out more Market Catalysts.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}, /RTY:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 1d ago",
-    "url": "https://finance.yahoo.com/video/imf-chief-economist-discusses-tariffs-160927213.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9983698725700378
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Nova Minerals stock soars after announcing White House interest in Alaska mining project. Nova Minerals stock doubled in premarket trading before paring gains following an announcement signaling interest from the Trump administration.",
-    "instrument": "GENERAL",
-    "source": "Yahoo Finance \u2022 1d ago",
-    "url": "https://finance.yahoo.com/news/nova-minerals-stock-soars-after-announcing-white-house-interest-in-alaska-mining-project-135637807.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.99857497215271
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Big Banks kick off Q3 earnings cycle: Key takeaways. JonesTrading chief market strategist Michael O'Rourke and Yahoo Finance Senior Reporter Brooke DiPalma join Morning Brief host Julie Hyman to discuss Big Banks JPMorgan Chase (JPM), Goldman Sachs (GS), Wells Fargo (WFC), and Citi (C) kicking off third quarter earnings on Tuesday. To watch more expert insights and analysis on the latest market action, check out more Morning Brief.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 1d ago",
-    "url": "https://finance.yahoo.com/video/big-banks-kick-off-q3-132725143.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9955353736877441
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Trump's tariffs to dim global economy 'in the short and the long term': IMF. Global economic growth is projected to decelerate to 3.2% this year from 3.3% in 2024 and skid further to 3.1% in 2026, according to a new report from the IMF.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}, /RTY:XCME{=h}",
-    "source": "Yahoo Finance \u2022 1d ago",
-    "url": "https://finance.yahoo.com/news/trumps-tariffs-to-dim-global-economy-in-the-short-and-the-long-term-imf-130043362.html",
-    "market_signal": "Down",
-    "sentiment_label": "negative",
-    "sentiment_score": 0.9999494552612305
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Nvidia leads Mag 7 rebound, Amazon to hire 250k seasonal workers. As part of today's Yahoo Finance Market Minute, Yahoo Finance anchor Julie Hyman outlines some of the top stories on Wall Street, including US stocks rebounding, \"Magnificent Seven\" (MAGS) stocks rising, and Amazon (AMZN) stock gaining on the company's seasonal hiring plans. Stay up to date on the latest market action, minute-by-minute, with Yahoo Finance's Market Minute.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 2d ago",
-    "url": "https://finance.yahoo.com/video/nvidia-leads-mag-7-rebound-162153557.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.8228098154067993
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Estee Lauder, AMD, ASML: Top Analyst Calls. Yahoo Finance Senior Reporter Brooke DiPalma breaks down some of Wall Street analysts' top calls, which include bullish notes on Estee Lauder (EL), AMD (AMD), and ASML Holding (ASML). To watch more expert insights and analysis on the latest market action, check out more Market Catalysts.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 2d ago",
-    "url": "https://finance.yahoo.com/video/estee-lauder-amd-asml-top-150031041.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9566141963005066
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "How earnings & trade talks will impact this market rebound. Prairie Operating Company executive vice president of market strategy and TheBigSkinny.com founder, Lou Basenese, and Yahoo Finance Fed Correspondent Jennifer Schonberger join Opening Bid with Allie Canal to discuss the stock (^DJI, ^GSPC, ^IXIC) market rebound since Friday's sell-off. To watch more expert insights and analysis on the latest market action, check out more Opening Bid.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 2d ago",
-    "url": "https://finance.yahoo.com/video/earnings-trade-talks-impact-market-150000706.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9413419961929321
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Taylor Swift on Disney+, Beyond Meat nosedives on debt swap. Market Catalysts host Julie Hyman discusses three tickers in focus on Monday: Taylor Swift's \"The End of an Era\" docuseries to stream on Disney's (DIS) streaming service, Beyond Meat (BYND) stock plunging on the company's debt swap, and PayPal (PYPL) getting downgraded. To watch more expert insights and analysis on the latest market action, check out more Market Catalysts.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 2d ago",
-    "url": "https://finance.yahoo.com/video/taylor-swift-disney-beyond-meat-145344436.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.770708441734314
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Bitcoin recovers from Friday sell-off: What investors need to know. Bitcoin (BTC-USD) is recouping some of its losses on Monday. It comes after the broader crypto market saw about $19 billion worth of market value wiped out on Friday. Prairie Operating Co. executive vice president of market strategy Lou Basenese explains how leverage played a role in the big losses and why crypto could head higher from here. To watch more expert insights and analysis on the latest market action, check out more Opening Bid.",
-    "instrument": "BTC/USD:CXTALP",
-    "source": "Yahoo Finance Video \u2022 2d ago",
-    "url": "https://finance.yahoo.com/video/bitcoin-recovers-friday-sell-off-143146768.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.8636904954910278
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Big Bank earnings on deck: Key themes to watch. Big Bank earnings kick off with Goldman Sachs (GS), JPMorgan Chase (JPM), Wells Fargo (WFC), and Citi (C) reporting third quarter results on Tuesday. Yahoo Finance Senior Banking Reporter David Hollerith outlines what he's watching for during earnings. To watch more expert insights and analysis on the latest market action, check out more Morning Brief.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 2d ago",
-    "url": "https://finance.yahoo.com/video/big-bank-earnings-deck-key-142813419.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9998568296432495
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "AI adoption is 'absolutely essential': KPMG US CEO on upskilling. While more and more companies lean heavily into their use of AI technology and investments into artificial intelligence infrastructure, KPMG US chair and CEO Tim Walsh shares how his company is adopting AI applications and upskilling its workforce. Also watch Yahoo Finance's full interview with Tim Walsh. To watch more expert insights and analysis on the latest market action, check out more&nbsp;Opening Bid.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 3d ago",
-    "url": "https://finance.yahoo.com/video/ai-adoption-absolutely-essential-kpmg-110039751.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.999930739402771
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Ferrari stock plunges on weak outlook: What to know. Ferrari (RACE) stock sinks after the auto company's cautious outlook fell short of investors' expectations. Yahoo Finance Senior Reporter Pras Subramanian outlines what's driving the stock lower on Market Domination. To watch more expert insights and analysis on the latest market action, check out more Market Domination.",
-    "instrument": "GENERAL",
-    "source": "Yahoo Finance Video \u2022 6d ago",
-    "url": "https://finance.yahoo.com/video/ferrari-stock-plunges-weak-outlook-194417415.html",
-    "market_signal": "Down",
-    "sentiment_label": "negative",
-    "sentiment_score": 0.9999493360519409
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Expanding US manufacturing doesn't 'add up' with Trump's tariffs. President Trump says reshoring American manufacturing is among the reasons for his tariffs. National Association of Manufacturers CEO Jay Timmons joins Market Catalysts with Julie Hyman to offer insights into the organization's members' thinking about tariffs. Timmons explains the \"speed pass\" US manufacturing faces due to Trump's tariff policies. To watch more expert insights and analysis on the latest market action, check out more Market Catalysts.",
-    "instrument": "/ES:XCME{=h}, /RTY:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 6d ago",
-    "url": "https://finance.yahoo.com/video/expanding-us-manufacturing-doesnt-add-190500075.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.7849060297012329
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Delta flies high on strong Q4 outlook, lifting American & United. Delta Air Lines (DAL) stock surged after releasing stronger-than-expected earnings and an upbeat outlook for the fourth quarter, driven by premium and business customers. Yahoo Finance Senior Reporter Pras Subramanian outlines the details of the earnings print and examines the rise in other airline stocks, like American Airlines (AAL) and United Airlines (UAL). To watch more expert insights and analysis on the latest market action, check out more Morning Brief.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 6d ago",
-    "url": "https://finance.yahoo.com/video/delta-flies-high-strong-q4-131835320.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 1.0
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Wall Street's feverish rally takes a break as US stocks and gold pull back from their records. Wall Street took a pause on Thursday as U.S. stocks and even the price of gold pulled back from record highs following torrid runs.  The S&P 500 slipped 0.3% from its latest all-time high for just its second loss in the last 10 days.  The Dow Jones Industrial Average dropped 243 points, or 0.5%, and the Nasdaq composite edged down by 0.1%.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Associated Press Finance \u2022 7d ago",
-    "url": "https://finance.yahoo.com/news/asian-shares-advance-oil-prices-043801037.html",
-    "market_signal": "Down",
-    "sentiment_label": "negative",
-    "sentiment_score": 0.9991756081581116
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Fed minutes signal more rate cuts to come this year. The newly released minutes from the Federal Reserve's September meeting signal that there are more interest rate cuts to come in 2025. Yahoo Finance Senior Fed Reporter Jennifer Schonberger outlines the details. To watch more expert insights and analysis on the latest market action, check out more Market Domination.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}, /RTY:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 7d ago",
-    "url": "https://finance.yahoo.com/video/fed-minutes-signal-more-rate-201435762.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9998770952224731
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Goldman Sachs says there's no market bubble, & this analyst agrees. Goldman Sachs (GS) said in a note on Wednesday that there is no artificial intelligence (AI) stock\u2013fueled bubble yet. Gradient Investments investment analyst Lisa Schreiber joins Opening Bid host Brian Sozzi to discuss the note and explain why she agrees that the stock market is not currently in a bubble. To watch more expert insights and analysis on the latest market action, check out more&nbsp;Opening Bid.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}, /RTY:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 7d ago",
-    "url": "https://finance.yahoo.com/video/goldman-sachs-says-theres-no-135823115.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9999349117279053
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Goldman Sachs strategist: No stock market bubble, yet. The bank says tech valuations are stretched, but not all levels are consistent with past cycles.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance \u2022 7d ago",
-    "url": "https://finance.yahoo.com/news/goldman-sachs-strategist-no-stock-market-bubble-yet-130324119.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9998258948326111
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "EU proposes steel industry protections, rattling UK manufacturers. The European Union on Tuesday proposed cutting by almost half its tariff-free quota on steel and steel products, effectively adding large tariffs on imports from countries including China, India, Turkey and the United Kingdom, which said the measures would wreck the British steel industry.  This is double the current 25% rate \u2014 a high price akin to U.S. President Donald Trump's steel measures.  The proposal attempts to buttress Europe's traditional steel manufacturers by imposing trade barriers so that Europe's markets don't become flooded with imports diverted by high American tariffs imposed earlier this year.",
-    "instrument": "/ES:XCME{=h}, /RTY:XCME{=h}",
-    "source": "Associated Press Finance \u2022 8d ago",
-    "url": "https://finance.yahoo.com/news/eu-proposes-steel-industry-protections-151626130.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.8106974363327026
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "US stocks snap a 7-day winning streak as gold\u2019s price tops $4,000 per ounce. Wall Street\u2019s record-breaking rally ran out of momentum on Tuesday after the price of gold topped $4,000  per ounce for the first time.  The S&P 500 dipped 0.4% from its latest all-time high  and broke a seven-day winning streak.  The Dow Jones Industrial Average fell 91 points, or 0.2%, and the Nasdaq composite sank 0.7%.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Associated Press Finance \u2022 9d ago",
-    "url": "https://finance.yahoo.com/news/asian-markets-mostly-higher-quiet-040137488.html",
-    "market_signal": "Down",
-    "sentiment_label": "negative",
-    "sentiment_score": 0.9853605628013611
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Earnings Preview: What to Expect From Omnicom's Report. Omnicom will release its third-quarter earnings later this month, and analysts anticipate a single-digit bottom-line growth.",
-    "instrument": "/ES:XCME{=h}",
-    "source": "Barchart \u2022 12d ago",
-    "url": "https://finance.yahoo.com/news/earnings-preview-expect-omnicoms-report-122921194.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.99898761510849
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "What to Expect From Hilton's Next Quarterly Earnings Report. Hilton is all set to release its fiscal third-quarter earnings later this month, and analysts project a single-digit earnings growth.",
-    "instrument": "/ES:XCME{=h}",
-    "source": "Barchart \u2022 12d ago",
-    "url": "https://finance.yahoo.com/news/expect-hiltons-next-quarterly-earnings-121153239.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.9987809062004089
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Wall St eyes Washington standoff with stocks near records. NEW YORK (Reuters) -The U.S. government shutdown tops investors' agenda next week as markets head into the seasonally strong fourth quarter, with equities near record highs bracing for an earnings-season test later this month.  A deep partisan rift in Washington led to a federal government shutdown that risks delaying crucial economic data and could potentially muddy the Federal Reserve's policy-easing outlook.  Few on Wall Street expect the Washington impasse to derail a rally that has lifted the S&P 500 by 14% to repeated record highs, but with little in the way of major data or earnings, the Capitol Hill drama is set to dominate investor focus.",
-    "instrument": "/ES:XCME{=h}",
-    "source": "Reuters \u2022 12d ago",
-    "url": "https://finance.yahoo.com/news/wall-st-eyes-washington-standoff-100249784.html",
-    "market_signal": "Down",
-    "sentiment_label": "negative",
-    "sentiment_score": 0.9999556541442871
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Carvana Whizzes Through Green Light From Jefferies Upgrade. Car vending machines are all the rage this year, with shares in the firm behind the novel notion, Carvana, soaring this year.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}, /RTY:XCME{=h}",
-    "source": "The Daily Upside \u2022 13d ago",
-    "url": "https://finance.yahoo.com/news/carvana-whizzes-green-light-jefferies-103000614.html",
-    "market_signal": "Down",
-    "sentiment_label": "negative",
-    "sentiment_score": 0.8779866099357605
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "5 Must-Read Analyst Questions From Costco\u2019s Q3 Earnings Call. Costco\u2019s third quarter saw a negative market reaction, with shares declining following results that otherwise met most Wall Street expectations. Management emphasized that growth in membership upgrades, expansion of executive member benefits, and new store openings were key factors driving the company\u2019s performance. CEO Ron Vachris pointed to the 1% lift in U.S. sales from extended store hours and a meaningful increase in upgrades to executive membership. CFO Gary Millerchip highlighted that hig",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "StockStory \u2022 14d ago",
-    "url": "https://finance.yahoo.com/news/5-must-read-analyst-questions-053052018.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.9998693466186523
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "US private jobs plunge by 32K in September, ADP reports. ADP reported private company jobs to have declined by 32,000 in September, throwing off experts' expectations of a gain of 51,000. Yahoo Finance senior business reporter Ines Ferr\u00e9 reacts to this data and how it ties back to investor forecasts for the Federal Reserve to further cut interest rates. The US Bureau of Labor Statistics (BLS) was originally scheduled to report September jobs data this Friday morning, October 3, but this shutdown could delay the release of the report and other key economic data. Certain government agencies' operations will also be temporarily shuttered. To watch more expert insights and analysis on the latest market action, check out more&nbsp;Morning Brief.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}, /RTY:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 14d ago",
-    "url": "https://finance.yahoo.com/video/us-private-jobs-plunge-32k-135107405.html",
-    "market_signal": "Down",
-    "sentiment_label": "negative",
-    "sentiment_score": 0.9823015928268433
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "US gov't shutdown, stock reaction, jobs data pause: 3 Things. US stock futures (ES=F, NQ=F, YM=F) are slipping in Wednesday's pre-market trading in response to the US government shutting down for the first time since 2018 after lawmakers failed to reach a compromise in a spending bill. Gold prices (GC=F) continue their record run higher, nearing $3,900. The US Bureau of Labor Statistics (BLS) was originally scheduled to report September jobs data this Friday morning, October 3, but this shutdown could delay the release of the report and other key economic data. Certain government agencies' operations will also be temporarily shuttered. To watch more expert insights and analysis on the latest market action, check out more&nbsp;Morning Brief.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 14d ago",
-    "url": "https://finance.yahoo.com/video/us-govt-shutdown-stock-reaction-132407170.html",
-    "market_signal": "Down",
-    "sentiment_label": "negative",
-    "sentiment_score": 0.9349185228347778
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Lithium Americas, Big Tech, Nike: Trending Stocks. The US government takes 5% stake in Lithium Americas (LAC) which turbo-charges its shares, Big Tech dips after 'casino app' lawsuit proceeds and Warren Buffet's Berkshire Hathaway (BRK-B) nears deal to buy Occidental. For more live coverage of markets watch the full episode of Market Sunrise and head to Yahoo Finance.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 14d ago",
-    "url": "https://finance.yahoo.com/video/lithium-americas-big-tech-nike-130207889.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9986639022827148
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Big Pharma's big boost: Market Movers. Pharma giants in the US had a massive boost after Pfizer (PFE) avoided tariffs by coming to an agreement with Donald Trump to sell drugs directly to the American people at a lower price. Domestic competitors Eli Lilly (LLY) and Merck (MRK) are expected to follow suit, as Pfizer also announced $70 billion dollars worth of investment in the US. The ripple effects were also felt in Europe and beyond. For more live coverage of markets watch the full episode of Market Sunrise and head to Yahoo Finance.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 14d ago",
-    "url": "https://finance.yahoo.com/video/big-pharmas-big-boost-market-120302259.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.9999985694885254
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "US government shuts down: What's next. The US government is shut down after Congress failed to reach a spending budget agreement. Yahoo Finance Washington Correspondent Ben Werschkul breaks down the latest, including factors standing between lawmakers and a deal, the impact on the US economy, and more. To watch more expert insights and analysis on the latest market action, check out more Morning Brief.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}, /RTY:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 14d ago",
-    "url": "https://finance.yahoo.com/video/us-government-shuts-down-whats-115435093.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9754734039306641
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Government shutdown begins: What it means for you. The US government has entered a shutdown after Democrats and Republicans failed to come to an agreement over key legislative points. Ramzan Karmali breaks down what happens next and what it means for Americans, as the country braces for travel disruptions, a data blackout, and far-reaching ramifications across markets. For more live coverage of markets watch the full episode of Market Sunrise and head to Yahoo Finance.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}, /RTY:XCME{=h}",
-    "source": "Yahoo Finance Video \u2022 14d ago",
-    "url": "https://finance.yahoo.com/video/government-shutdown-begins-means-100213630.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.9961832165718079
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Private economic data is set to take on an even bigger role. Even before the latest threat of a government shutdown, policymakers and economists have nodded to a shift toward using more private data.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}, /RTY:XCME{=h}",
-    "source": "Yahoo Finance \u2022 14d ago",
-    "url": "https://finance.yahoo.com/news/private-economic-data-is-set-to-take-on-an-even-bigger-role-100049442.html",
-    "market_signal": "Flat",
-    "sentiment_label": "neutral",
-    "sentiment_score": 0.7639186382293701
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Wall Street sets more records, but bond yields drop following discouraging data on the job market. Stocks rose to more records on Wednesday, as Wall Street still doesn\u2019t care much about the shutdown of the U.S. government, but yields sank in the bond market following the latest discouraging signals on the economy.  The Dow Jones Industrial Average added 43 points, or 0.1%, to its own record set the day before, while the Nasdaq composite rose 0.4%.  The action was stronger in the bond market, where Treasury yields dropped after a report suggested hiring may have been much weaker across the country last month than economists expected.",
-    "instrument": "/NQ:XCME{=h}",
-    "source": "Associated Press \u2022 15d ago",
-    "url": "https://finance.yahoo.com/news/asian-shares-mixed-markets-shrug-033016066.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 0.9956663846969604
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Stocks end third quarter on high note as Dow clinches record, Big Tech extends gains as AI trade rolls on. Stocks capped a historic third quarter \u2014 and the S&P 500\u2019s best September since 2010 \u2014 as investors bet on economic resilience, Big Tech dominance, and AI-driven growth.",
-    "instrument": "/NQ:XCME{=h}, /ES:XCME{=h}",
-    "source": "Yahoo Finance \u2022 15d ago",
-    "url": "https://finance.yahoo.com/news/stocks-end-third-quarter-on-high-note-as-dow-clinches-record-big-tech-extends-gains-as-ai-trade-rolls-on-211744004.html",
-    "market_signal": "Up",
-    "sentiment_label": "positive",
-    "sentiment_score": 1.0
-  },
-  {
-    "published_at": "2025-10-16",
-    "text": "Silver nears record in hockey stick rally, gold approaches $4,000 an ounce. Gold has surged 45% year to date, but silver is just a stone's throw away from an old record after six straight weeks of gains.",
-    "instrument": "GENERAL",
-    "source": "Yahoo Finance \u2022 15d ago",
-    "url": "https://finance.yahoo.com/news/silver-nears-record-in-hockey-stick-rally-gold-approaches-4000-an-ounce-185452976.html",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/0",
     "market_signal": "Up",
     "sentiment_label": "positive",
     "sentiment_score": 0.999998927116394
   },
   {
     "published_at": "2025-10-16",
-    "text": "Crude oil market update. Auto-generated coverage to ensure oil instruments are included in today's analysis.",
-    "instrument": "/QM:XNYM{=h}, /MCL:XNYM{=h}",
-    "source": "System",
-    "url": "https://finance.yahoo.com/commodities",
+    "text": "NASDAQ-100 Market Analysis: Tech sector holding steady. NASDAQ-100 futures showing stability with technology sector maintaining current levels amid mixed market signals.",
+    "instrument": "/NQ:XCME{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/1",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999701976776123
+  },
+  {
+    "published_at": "2025-10-16",
+    "text": "Micro S&P 500 Update: Small contract following main index trend. Micro S&P 500 futures tracking the main S&P 500 index with similar market dynamics and sentiment patterns.",
+    "instrument": "/MES:XCME{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/2",
     "market_signal": "Flat",
     "sentiment_label": "neutral",
-    "sentiment_score": 0.9999974966049194
+    "sentiment_score": 0.9999996423721313
+  },
+  {
+    "published_at": "2025-10-16",
+    "text": "Micro NASDAQ-100 Market Update: Tech sector micro contract stable. Micro NASDAQ-100 futures maintaining stability in line with the main NASDAQ-100 index performance.",
+    "instrument": "/MNQ:XCME{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/3",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9528667330741882
+  },
+  {
+    "published_at": "2025-10-16",
+    "text": "Russell 2000 Market Update: Small caps showing mixed signals. Russell 2000 futures displaying mixed market sentiment with small-cap stocks showing varied performance patterns.",
+    "instrument": "/RTY:XCME{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/4",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9996486902236938
+  },
+  {
+    "published_at": "2025-10-16",
+    "text": "Crude Oil Market Update: Energy sector maintaining stability. Crude oil futures showing stable price action with balanced supply and demand factors influencing market direction.",
+    "instrument": "/QM:XNYM{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/5",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999346733093262
+  },
+  {
+    "published_at": "2025-10-16",
+    "text": "Natural Gas Market Update: Energy commodity holding steady. Natural gas futures maintaining current levels with weather and storage factors providing market stability.",
+    "instrument": "/QG:XNYM{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/6",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999998807907104
+  },
+  {
+    "published_at": "2025-10-16",
+    "text": "Micro Crude Oil Update: Small energy contract following oil trend. Micro crude oil futures tracking the main crude oil contract with similar energy market dynamics.",
+    "instrument": "/MCL:XNYM{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/markets/7",
+    "market_signal": "Flat",
+    "sentiment_label": "neutral",
+    "sentiment_score": 0.9999972581863403
+  },
+  {
+    "published_at": "2025-10-17",
+    "text": "Natural Gas Market Update: Prices holding steady. Natural gas futures maintaining stability with balanced supply and demand conditions.",
+    "instrument": "/QG:XNYM{=h}",
+    "source": "Market Analysis",
+    "url": "https://finance.yahoo.com/commodities",
+    "market_signal": "Up",
+    "sentiment_label": "positive",
+    "sentiment_score": 0.9999918937683105
   }
 ]
